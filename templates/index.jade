@@ -1,0 +1,19 @@
+include partials/header
+
+doctype html
+html
+  include partials/head
+  body.animated.fadeIn
+    div.kud-Wrapper
+
+      mixin header('')
+
+      section.kud-Summary.kud-BeautifyLink
+
+        h2.kud-Summary-heading Articles
+
+        ul.kud-Summary-list
+          li.kud-Summary-listItem
+            a(href='/diary/bienvenu-e/') Bienvenu(e)
+
+      include partials/foot

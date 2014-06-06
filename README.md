@@ -1,4 +1,27 @@
-diary
-=====
+# _kud.diary
 
-_kud.life
+My life, my diary.
+
+## Installation
+
+Presuming you already have `jake` as global (`$ npm install jake -g`).
+
+```
+$ npm install
+```
+
+## Usage
+
+One command, as usual.
+
+```
+$ jake
+```
+
+## Copyrigths
+
+All rights reserved for texts and images.
+
+The other part is totally free.
+
+(Yes, I need to find the right licence for both previous lines.)

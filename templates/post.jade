@@ -1,0 +1,21 @@
+include partials/header
+
+doctype html
+html
+  include partials/head
+  body.animated.fadeIn
+    div.kud-Wrapper
+
+      mixin header('kud-Header--small')
+
+      section.kud-Post
+
+        h2.kud-Post-heading= title
+
+        p
+          | Le 
+          time= date + '.'
+
+        div!= contents
+
+      include partials/foot
