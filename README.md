@@ -1,0 +1,4 @@
+diary
+=====
+
+_kud.life
