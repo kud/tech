@@ -10,11 +10,11 @@ html
 
       section.kud-Post.kud-BeautifyLink
 
-        h2.kud-Post-heading= title
-
         p
           | Le 
           time= moment(date).lang('fr').format('dddd Do MMMM YYYY.')
+
+        h2.kud-Post-heading= title
 
         div!= contents
 

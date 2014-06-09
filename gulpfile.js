@@ -12,7 +12,7 @@ var server = lr()
 
 gulp.task( 'clean', require(__dirname + '/tasks/clean') )
 
-gulp.task( 'markup', function() {
+gulp.task( 'markup', function(cb) {
   var Metalsmith = require('metalsmith')
   var permalinks = require('metalsmith-permalinks')
   var markdown   = require('metalsmith-markdown')
@@ -48,14 +48,16 @@ gulp.task( 'markup', function() {
     )
     .clean( false )
     .destination('dist')
-    .build()
+    .build(function() {
+      cb()
+    })
 })
 
 gulp.task( 'styles', require(__dirname + '/tasks/styles') )
 gulp.task( 'jshint', require(__dirname + '/tasks/jshint') )
 gulp.task( 'scripts', ['jshint'], require(__dirname + '/tasks/scripts') )
 gulp.task( 'server', require(__dirname + '/tasks/server') )
-gulp.task( 'deploy', require(__dirname + '/tasks/deploy') )
+gulp.task( 'deploy', ['compile'], require(__dirname + '/tasks/deploy') )
 
 /**
  * Public tasks

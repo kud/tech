@@ -38,10 +38,8 @@ task('deploy', function() {
 
   console.log( chalk.blue('❯ Deploying...\n') )
 
-  jake.exec('gulp compile', { interactive: true }, function() {
-    jake.exec('gulp deploy', { interactive: true }, function() {
-      console.log( chalk.green('\n✔ Deployed!') )
-    })
+  jake.exec('gulp deploy', { interactive: true }, function() {
+    console.log( chalk.green('\n✔ Deployed!') )
   })
 
 })
