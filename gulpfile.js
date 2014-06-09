@@ -18,11 +18,13 @@ gulp.task( 'markup', function() {
   var markdown   = require('metalsmith-markdown')
   var templates  = require('metalsmith-templates')
   var ignore     = require('metalsmith-ignore')
+  var moment     = require('moment')
 
   var metalsmith = Metalsmith( __dirname )
     .use(
       ignore([
-        'styles/*'
+        'styles/**/*',
+        'templates/**/*'
       ])
     )
     .use(
@@ -32,7 +34,13 @@ gulp.task( 'markup', function() {
         tables: true
       })
     )
-    .use( templates('jade') )
+    .use(
+      templates({
+        engine: 'jade',
+        directory: 'src/templates',
+        moment: moment
+      })
+    )
     .use(
       permalinks({
         pattern: ':title'

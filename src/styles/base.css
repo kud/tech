@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  border-bottom: 5px solid black;
+  min-height: 100%;
+} 
+
 html,
 body {
   font-family: 'IM Fell English', serif;
@@ -11,6 +16,8 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  /*background: #FAFAFA;*/
+  background: #FFF;
 }
 
 body.animated.fadeIn {
@@ -29,15 +36,20 @@ a {
 .kud-BeautifyLink a:hover {
   color: white;
   background: #333;
-  padding: .3rem;
-  margin: -.3rem;
+  padding: .1rem .3rem;
+  margin: -.1rem -.3rem;
   cursor: pointer;
+}
+
+.kud-Text--center {
+  text-align: center;
 }
 
 .kud-Wrapper {
   max-width: 45rem;
   padding: 1rem;
   margin: auto;
+  overflow: hidden;
 }
 
 /**
@@ -114,6 +126,21 @@ a {
 .kud-Post {
 
 }
+
+  .kud-Post img {
+    width: 75%;
+    margin: auto;
+    display: block;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+
+  .kud-Post img:hover {
+    border: 5px solid #FFF;
+    width: 80%;
+  }
 
   .kud-Post-heading {
     color: #ED4545;

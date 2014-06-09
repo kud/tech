@@ -8,13 +8,13 @@ html
 
       mixin header('kud-Header--small')
 
-      section.kud-Post
+      section.kud-Post.kud-BeautifyLink
 
         h2.kud-Post-heading= title
 
         p
           | Le 
-          time= date + '.'
+          time= moment(date).lang('fr').format('dddd Do MMMM YYYY.')
 
         div!= contents
 
