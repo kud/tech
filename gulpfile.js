@@ -30,6 +30,7 @@ gulp.task( 'markup', function(cb) {
   var metalsmith = Metalsmith( __dirname )
     .use(
       ignore([
+        'images/**/*',
         'styles/**/*',
         'templates/**/*'
       ])
@@ -73,6 +74,7 @@ gulp.task( 'markup', function(cb) {
 gulp.task( 'styles', require(__dirname + '/tasks/styles') )
 gulp.task( 'jshint', require(__dirname + '/tasks/jshint') )
 gulp.task( 'scripts', ['jshint'], require(__dirname + '/tasks/scripts') )
+gulp.task( 'images', require(__dirname + '/tasks/images') )
 gulp.task( 'server', require(__dirname + '/tasks/server') )
 gulp.task( 'deploy', ['compile'], require(__dirname + '/tasks/deploy') )
 
@@ -81,7 +83,7 @@ gulp.task( 'deploy', ['compile'], require(__dirname + '/tasks/deploy') )
  */
 
 // compile files
-gulp.task('compile', ['clean', 'markup', 'scripts', 'styles'])
+gulp.task('compile', ['clean', 'markup', 'images', 'scripts', 'styles'])
 
 // watch files
 gulp.task('watch', ['server', 'compile'], function() {

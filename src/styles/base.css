@@ -5,40 +5,82 @@
 }
 
 html {
-  border-bottom: 5px solid #909090;
+  border-bottom: 10px solid #333;
   min-height: 100%;
-} 
+}
 
 html,
 body {
-  font-family: 'IM Fell English', serif;
+  font-family: 'Droid Serif', serif;
   font-size: 1.1rem;
   margin: 0;
   padding: 0;
   color: #333;
-  /*background: #FAFAFA;*/
   background: #FFF;
+  line-height: 1.6rem
 }
 
-body.animated.fadeIn {
-  animation-duration: 2s;
+html {
+  background: url('images/mountain.jpg') center -200px fixed no-repeat;
+  background-size: cover;
+  padding-top: 250px;
 }
+
+body {
+  /*border-top: 1px solid #333;*/
+  min-height: 100%;
+}
+
+/*body.animated.fadeIn {
+  animation-duration: 2s;
+}*/
 
 a {
-  color: #909090;
+  /*color: #909090;*/
+  color: #ED4545;
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'IM Fell English', serif;
+}
+
 .kud-BeautifyLink a {
-  transition: all .3s ease;
+  transition: 0.5s ease;
+}
+
+.kud-BeautifyLink a {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.kud-BeautifyLink a:before {
+  content: '';
+  position: absolute;
+  border: #F5F7E7 solid 4px;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  opacity: 0;
+  transition-duration: .3s;
+  transition-property: top right bottom left;
+  border-radius: 4px;
 }
 
 .kud-BeautifyLink a:hover {
-  color: white;
-  background: #333;
-  padding: .1rem .3rem;
-  margin: -.1rem -.3rem;
-  cursor: pointer;
+  background: #F5F7E7;
+}
+
+.kud-BeautifyLink a:hover:before {
+  opacity: 1;
 }
 
 .kud-Text--center {
@@ -49,14 +91,19 @@ a {
   max-width: 45rem;
   padding: 1rem;
   margin: auto;
-  overflow: hidden;
+  background: white;
+  position: relative;
+  padding-top: 220px;
 }
 
 /**
  * Header
  */
 .kud-Header {
-  position: relative;
+  position: absolute;
+  top: -75px;
+  left: 0;
+  right: 0;
   padding-top: 10rem;
 }
 
@@ -93,7 +140,7 @@ a {
     text-align: center;
   }
 
-    .kud-Header--small {
+    /*.kud-Header--small {
       padding-top: 0;
       padding-left: 5rem;
       margin-bottom: 4rem;
@@ -117,34 +164,7 @@ a {
       height: 5rem;
       top: -1.6rem;
       left: -0.5rem;
-    }
-
-/**
- * Post
- */
-
-.kud-Post {
-
-}
-
-  .kud-Post img {
-    width: 75%;
-    margin: auto;
-    display: block;
-    border: 5px solid #FFF;
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: all .3s ease;
-  }
-
-  .kud-Post img:hover {
-    border: 5px solid #FFF;
-    width: 80%;
-  }
-
-  .kud-Post-heading {
-    color: #ED4545;
-  }
+    }*/
 
 /**
  * Footer
@@ -177,4 +197,59 @@ a {
 
   .kud-Footer-listItem a {
     display: inline-block;
+  }
+
+/**
+ * Post
+ */
+html.kud-Status--post {
+  padding-top: 120px;
+}
+
+html.kud-Status--post .kud-Wrapper {
+  padding-top: 135px;
+}
+
+html.kud-Status--post .kud-Header {
+  top: -35px;
+  padding-top: 4rem;
+}
+
+
+html.kud-Status--post .kud-Header-avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+html.kud-Status--post .kud-Header-avatar:hover {
+  width: 5rem;
+  height: 5rem;
+  top: -.5rem;
+}
+
+html.kud-Status--post .kud-Header-heading {
+  font-size: 1.2rem;
+}
+
+.kud-Post {
+
+}
+
+  .kud-Post img {
+    width: 75%;
+    margin: auto;
+    display: block;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+
+  .kud-Post img:hover {
+    border: 5px solid #FFF;
+    width: 80%;
+  }
+
+  .kud-Post-heading {
+    color: #ED4545;
   }
