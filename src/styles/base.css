@@ -31,9 +31,9 @@ body {
   min-height: 100%;
 }
 
-/*body.animated.fadeIn {
+.animated.fadeIn {
   animation-duration: 2s;
-}*/
+}
 
 a {
   /*color: #909090;*/
