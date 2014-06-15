@@ -2,6 +2,7 @@
 title: Comment je suis passé de flickr à 500px
 date: 2014-06-09
 template: post.jade
+collection: posts
 ---
 
 ...ou plutôt comment j'ai importé mes photos de [flickr](http://www.flickr.com/) sur [500px](http://500px.com) car je ne voulais plus être sur deux réseaux.

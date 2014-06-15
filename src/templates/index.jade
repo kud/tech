@@ -14,13 +14,9 @@ html
 
         ul.kud-Summary-list
 
-          li.kud-Summary-listItem
-            a(href='/comment-je-suis-pass-de-flickr-500px/') Comment je suis passé de flickr à 500px
+          each post in collections.posts
 
-          li.kud-Summary-listItem
-            a(href='/petite-tourn-e-en-sicile-quel-pied/') Petite tournée en Sicile, quel pied !
-
-          li.kud-Summary-listItem
-            a(href='/bienvenu-e/') Bienvenu(e)
+            li.kud-Summary-listItem
+              a(href=post.path + '/')= post.title
 
       include partials/foot

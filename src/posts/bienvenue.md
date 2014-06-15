@@ -2,6 +2,7 @@
 title: Bienvenu(e)
 date: 2014-06-07
 template: post.jade
+collection: posts
 ---
 
 Bienvenue sur mon journal de bord.

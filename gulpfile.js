@@ -13,13 +13,20 @@ var server = lr()
 gulp.task( 'clean', require(__dirname + '/tasks/clean') )
 
 gulp.task( 'markup', function(cb) {
-  var Metalsmith = require('metalsmith')
-  var permalinks = require('metalsmith-permalinks')
-  var markdown   = require('metalsmith-markdown')
-  var templates  = require('metalsmith-templates')
-  var ignore     = require('metalsmith-ignore')
-  var moment     = require('moment')
+  var Metalsmith  = require('metalsmith')
+  var permalinks  = require('metalsmith-permalinks')
+  var markdown    = require('metalsmith-markdown')
+  var templates   = require('metalsmith-templates')
+  var ignore      = require('metalsmith-ignore')
+  var collections = require('metalsmith-collections')
+  var moment      = require('moment')
 
+  var debug = function( files, metalsmith, done ) {
+    console.log(files)
+    done()
+  }
+
+  // order is important here
   var metalsmith = Metalsmith( __dirname )
     .use(
       ignore([
@@ -35,15 +42,25 @@ gulp.task( 'markup', function(cb) {
       })
     )
     .use(
-      templates({
-        engine: 'jade',
-        directory: 'src/templates',
-        moment: moment
+      collections({
+        posts: {
+          pattern: 'src/posts/*.md',
+          sortBy: 'date',
+          reverse: true
+        }
       })
     )
     .use(
       permalinks({
         pattern: ':title'
+      })
+    )
+    // .use( debug )
+    .use(
+      templates({
+        engine: 'jade',
+        directory: 'src/templates',
+        moment: moment
       })
     )
     .clean( false )
