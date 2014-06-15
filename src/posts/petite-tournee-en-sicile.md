@@ -1,5 +1,5 @@
 ---
-title: Petite tournée en Sicile, quel pied !
+title: Petite tournée en Sicile
 date: 2014-06-08
 template: post.jade
 collection: posts

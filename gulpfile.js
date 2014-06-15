@@ -32,7 +32,8 @@ gulp.task( 'markup', function(cb) {
       ignore([
         'images/**/*',
         'styles/**/*',
-        'templates/**/*'
+        'templates/**/*',
+        'posts/drafts/**/*'
       ])
     )
     .use(

@@ -50,7 +50,7 @@ h6 {
   font-family: 'IM Fell English', serif;
 }
 
-.kud-BeautifyLink a {
+/*.kud-BeautifyLink a {
   transition: 0.5s ease;
 }
 
@@ -81,6 +81,29 @@ h6 {
 
 .kud-BeautifyLink a:hover:before {
   opacity: 1;
+}*/
+
+.kud-BeautifyLink a {
+  position: relative;
+}
+
+.kud-BeautifyLink a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ED4545;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(10px);
+}
+
+.kud-BeautifyLink a:hover::after,
+.kud-BeautifyLink a:focus::after {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .kud-Text--center {
@@ -198,6 +221,18 @@ h6 {
   .kud-Footer-listItem a {
     display: inline-block;
   }
+
+/**
+ * Summury
+ */
+.kud-Summary-list {
+  list-style: none;
+}
+
+.kud-Summary-listItemTime {
+  color: #AAA;
+  margin-right: 15px;
+}
 
 /**
  * Post

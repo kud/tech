@@ -7,6 +7,6 @@ collection: posts
 
 Bienvenue sur mon journal de bord.
 
-Je ne vous ferai ici aucune explication quant à l'utilité de celui-ci car je ne l'ai même pas encore trouvée. Mais comme j'en ressens le besoin, je m'essaie et nous verrons ce que cela donne.
+Je ne vous ferai ici aucune explication quant à l'utilité de celui-ci car je ne l'ai même pas encore trouvée même après de nombreux essais. Mais comme j'en ressens le besoin, je me lance et nous verrons ce que cela donne.
 
-A bientôt.
+À bientôt.

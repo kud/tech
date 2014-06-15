@@ -18,6 +18,7 @@ html
           each post in collections.posts
 
             li.kud-Summary-listItem
-              a(href=post.path + '/')= post.title
+              time.kud-Summary-listItemTime= moment(post.date).lang('fr').format('DD MMM YYYY')
+              a(href=post.path + '/').kud-Summary-listItemHeading= post.title
 
       include partials/foot
