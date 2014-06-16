@@ -5,8 +5,7 @@
 }
 
 html {
-  border-bottom: 10px solid #333;
-  min-height: 100%;
+  height: 100%;
 }
 
 html,
@@ -29,6 +28,7 @@ html {
 body {
   /*border-top: 1px solid #333;*/
   min-height: 100%;
+  border-bottom: 10px solid #333;
 }
 
 .animated.fadeIn {
