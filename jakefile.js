@@ -5,7 +5,7 @@ task('update', function() {
 
   console.log( chalk.blue('❯ Updating...\n') )
 
-  jake.exec('npm-pkgr', { interactive: true }, function() {
+  jake.exec('npm update', { interactive: true }, function() {
     console.log( chalk.green('\n✔ Updated!') )
   })
 
