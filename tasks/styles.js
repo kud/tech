@@ -6,7 +6,15 @@ module.exports = function() {
 
   return gulp.src('src/styles/index.css')
     .pipe( plumber() )
-    .pipe( myth({ sourcemap: true }) )
+    .pipe( require('gulp-cssnext')({
+      features: {
+        import: {
+          path: [
+            'node_modules'
+          ]
+        }
+      }
+    }))
     .pipe( gulp.dest('dist') )
 
 }

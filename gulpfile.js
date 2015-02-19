@@ -27,7 +27,7 @@ gulp.task( 'markup', function(cb) {
   }
 
   // order is important here
-  var metalsmith = Metalsmith( __dirname )
+  Metalsmith( __dirname )
     .use(
       ignore([
         'images/**/*',
@@ -66,8 +66,9 @@ gulp.task( 'markup', function(cb) {
       })
     )
     .clean( false )
-    .destination('dist')
-    .build(function() {
+    .destination('./dist')
+    .build(function(err) {
+      if (err) throw err
       cb()
     })
 })
