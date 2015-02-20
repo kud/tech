@@ -1,4 +1,6 @@
-@import '../../node_modules/normalize.css/normalize.css';
-@import '../../node_modules/animate.css/animate.css';
+/* node_modules */
+@import 'normalize.css/normalize.css';
+@import 'animate.css/animate.css';
 
+/* normal */
 @import 'base.css';

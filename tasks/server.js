@@ -1,17 +1,23 @@
-var connect = require('connect')
-var http    = require('http')
-var gutil   = require('gulp-util')
+var finalhandler = require('finalhandler')
+var http         = require('http')
+var serveStatic  = require('serve-static')
+var gutil        = require('gulp-util')
 
 module.exports = function() {
 
   gutil.log('Running server on: ' + gutil.colors.cyan('http://localhost:3000') )
 
-  var app = connect()
-    .use( connect.static('dist') )
+  // Serve up public/ftp folder
+  var serve = serveStatic('dist', {'index': ['index.html', 'index.htm']})
 
-  http.createServer( app ).listen( 3000 )
+  // Create server
+  var server = http.createServer(function(req, res){
+    var done = finalhandler(req, res)
+    serve(req, res, done)
+  })
 
-  // opn('http://localhost:3000')
+  // Listen
+  server.listen(3000)
 
 }
 

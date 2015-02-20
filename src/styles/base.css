@@ -1,6 +1,6 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,13 +10,14 @@ html {
 
 html,
 body {
-  font-family: 'Droid Serif', serif;
+  /*font-family: 'Droid Serif', serif;*/
+  font-family: 'Arial';
   font-size: 1.1rem;
   margin: 0;
   padding: 0;
   color: #333;
   background: #FFF;
-  line-height: 1.6rem
+  line-height: 1.6rem;
 }
 
 html {
@@ -47,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'IM Fell English', serif;
+  /*font-family: 'IM Fell English', serif;*/
 }
 
 /*.kud-BeautifyLink a {
@@ -208,13 +209,13 @@ h6 {
     padding-right: 0;
   }
 
-  .kud-Footer-listItem:before {
+  .kud-Footer-listItem::before {
     content: '✦';
     display: inline-block;
     margin-right: 2rem;
   }
 
-  .kud-Footer-listItem:first-child:before {
+  .kud-Footer-listItem:first-child::before {
     display: none;
   }
 
