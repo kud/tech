@@ -11,7 +11,7 @@ html {
 html,
 body {
   /*font-family: 'Droid Serif', serif;*/
-  font-family: 'Arial';
+  font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ body {
 }
 
 .animated.fadeIn {
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 a {
@@ -49,40 +49,8 @@ h4,
 h5,
 h6 {
   /*font-family: 'IM Fell English', serif;*/
+  font-family: 'Montserrat', sans-serif;
 }
-
-/*.kud-BeautifyLink a {
-  transition: 0.5s ease;
-}
-
-.kud-BeautifyLink a {
-  display: inline-block;
-  position: relative;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-}
-
-.kud-BeautifyLink a:before {
-  content: '';
-  position: absolute;
-  border: #F5F7E7 solid 4px;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-  opacity: 0;
-  transition-duration: .3s;
-  transition-property: top right bottom left;
-  border-radius: 4px;
-}
-
-.kud-BeautifyLink a:hover {
-  background: #F5F7E7;
-}
-
-.kud-BeautifyLink a:hover:before {
-  opacity: 1;
-}*/
 
 .kud-BeautifyLink a {
   position: relative;
@@ -98,7 +66,7 @@ h6 {
   content: '';
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
-  transform: translateY(10px);
+  transform: translateY(2px);
 }
 
 .kud-BeautifyLink a:hover::after,
@@ -164,38 +132,11 @@ h6 {
     text-align: center;
   }
 
-    /*.kud-Header--small {
-      padding-top: 0;
-      padding-left: 5rem;
-      margin-bottom: 4rem;
-    }
-
-    .kud-Header--small .kud-Header-heading {
-      text-align: left;
-      font-size: 1.4rem;
-    }
-
-    .kud-Header--small .kud-Header-avatar {
-      left: 0rem;
-      top: -1.1rem;
-      transform: translate(0, 0);
-      width: 4rem;
-      height: 4rem;
-    }
-
-    .kud-Header--small .kud-Header-avatar:hover {
-      width: 5rem;
-      height: 5rem;
-      top: -1.6rem;
-      left: -0.5rem;
-    }*/
-
 /**
  * Footer
  */
 .kud-Footer {
   margin: 2rem 0;
-  text-align: center;
 }
 
   .kud-Footer-list {
@@ -210,7 +151,7 @@ h6 {
   }
 
   .kud-Footer-listItem::before {
-    content: '✦';
+    content: '×';
     display: inline-block;
     margin-right: 2rem;
   }
@@ -233,6 +174,8 @@ h6 {
 .kud-Summary-listItemTime {
   color: #AAA;
   margin-right: 15px;
+  width: 7rem;
+  display: inline-block;
 }
 
 /**
@@ -288,4 +231,8 @@ html.kud-Status--post .kud-Header-heading {
 
   .kud-Post-heading {
     color: #ED4545;
+  }
+
+  .kud-Post-date {
+    font-style: italic;
   }
