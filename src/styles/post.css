@@ -1,0 +1,57 @@
+/**
+ * Post
+ */
+html.kud-Status--post {
+  padding-top: 120px;
+}
+
+html.kud-Status--post .kud-Wrapper {
+  padding-top: 135px;
+}
+
+html.kud-Status--post .kud-Header {
+  top: -35px;
+  padding-top: 4rem;
+}
+
+
+html.kud-Status--post .kud-Header-avatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+html.kud-Status--post .kud-Header-avatar:hover {
+  width: 5rem;
+  height: 5rem;
+  top: -.5rem;
+}
+
+html.kud-Status--post .kud-Header-heading {
+  font-size: 1.2rem;
+}
+
+.kud-Post {
+
+}
+
+  .kud-Post img {
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .kud-Post-heading {
+    color: #ED4545;
+  }
+
+  .kud-Post-date {
+    font-style: italic;
+  }
+
+@media (max-width: 640px) {
+
+  html.kud-Status--post {
+    padding-top: 50px;
+  }
+
+}

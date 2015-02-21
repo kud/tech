@@ -1,0 +1,43 @@
+/**
+ * Header
+ */
+.kud-Header {
+  position: absolute;
+  top: -75px;
+  left: 0;
+  right: 0;
+  padding-top: 10rem;
+}
+
+  .kud-Header-avatar {
+    width: 8.75rem;
+    height: 8.75rem;
+    display: block;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .kud-Header-avatar:hover {
+    border: 3px solid #FFF;
+    width: 9.75rem;
+    height: 9.75rem;
+    top: -.5rem;
+  }
+
+  .kud-Header-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .kud-Header-heading {
+    text-align: center;
+  }

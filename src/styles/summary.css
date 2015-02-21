@@ -1,0 +1,22 @@
+/**
+ * Summury
+ */
+.kud-Summary-list {
+  list-style: none;
+}
+
+.kud-Summary-listItemTime {
+  color: #AAA;
+  margin-right: 15px;
+  width: 7rem;
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+
+  .kud-Summary-listItemTime {
+    display: block;
+    width: 100%;
+  }
+
+}

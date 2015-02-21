@@ -1,11 +1,10 @@
 ---
 title: Nexus 7 - Incapable de gérer le 5ghz
+heading: /images/nexus-7-pas-5ghz/head.jpg
 date: 2015-02-19
 template: post.jade
 collection: posts
 ---
-
-![](/images/nexus-7-pas-5ghz/head.jpg)
 
 Ouaip vous avez bien lu. La version 2012 est incapable de se connecter a un réseau wifi 5ghz.  Incapable tout bonnement parce qu'elle n'a pas la capacité hardware à le faire. En soi, pourquoi pas, mais quand vous savez que votre Galaxy Nexus bien plus vieux est capable de le faire, oui c'est rageant.
 

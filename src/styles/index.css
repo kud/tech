@@ -4,3 +4,8 @@
 
 /* normal */
 @import 'base.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'beautiful-links.css';
+@import 'summary.css';
+@import 'post.css';

@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 html,
 body {
   /*font-family: 'Droid Serif', serif;*/
@@ -24,6 +20,7 @@ html {
   background: url('images/mountain.jpg') center -420px fixed no-repeat;
   background-size: cover;
   padding-top: 250px;
+  height: 100%;
 }
 
 body {
@@ -48,31 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family: 'IM Fell English', serif;*/
   font-family: 'Montserrat', sans-serif;
-}
-
-.kud-BeautifyLink a {
-  position: relative;
-}
-
-.kud-BeautifyLink a::after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #ED4545;
-  content: '';
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  transform: translateY(2px);
-}
-
-.kud-BeautifyLink a:hover::after,
-.kud-BeautifyLink a:focus::after {
-  opacity: 1;
-  transform: translateY(0px);
 }
 
 .kud-Text--center {
@@ -88,151 +61,11 @@ h6 {
   padding-top: 220px;
 }
 
-/**
- * Header
- */
-.kud-Header {
-  position: absolute;
-  top: -75px;
-  left: 0;
-  right: 0;
-  padding-top: 10rem;
-}
+@media (max-width: 640px) {
 
-  .kud-Header-avatar {
-    width: 8.75rem;
-    height: 8.75rem;
-    display: block;
-    border-radius: 50%;
-    border: 3px solid #FFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    cursor: pointer;
-    transition: all .3s ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+  html {
+    background: none;
+    padding-top: 100px;
   }
-
-  .kud-Header-avatar:hover {
-    border: 3px solid #FFF;
-    width: 9.75rem;
-    height: 9.75rem;
-    top: -.5rem;
-  }
-
-  .kud-Header-avatar img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .kud-Header-heading {
-    text-align: center;
-  }
-
-/**
- * Footer
- */
-.kud-Footer {
-  margin: 2rem 0;
-}
-
-  .kud-Footer-list {
-    margin: 0;
-    padding: 0;
-  }
-
-  .kud-Footer-listItem {
-    display: inline-block;
-    padding: 2rem;
-    padding-right: 0;
-  }
-
-  .kud-Footer-listItem::before {
-    content: '×';
-    display: inline-block;
-    margin-right: 2rem;
-  }
-
-  .kud-Footer-listItem:first-child::before {
-    display: none;
-  }
-
-  .kud-Footer-listItem a {
-    display: inline-block;
-  }
-
-/**
- * Summury
- */
-.kud-Summary-list {
-  list-style: none;
-}
-
-.kud-Summary-listItemTime {
-  color: #AAA;
-  margin-right: 15px;
-  width: 7rem;
-  display: inline-block;
-}
-
-/**
- * Post
- */
-html.kud-Status--post {
-  padding-top: 120px;
-}
-
-html.kud-Status--post .kud-Wrapper {
-  padding-top: 135px;
-}
-
-html.kud-Status--post .kud-Header {
-  top: -35px;
-  padding-top: 4rem;
-}
-
-
-html.kud-Status--post .kud-Header-avatar {
-  width: 4rem;
-  height: 4rem;
-}
-
-html.kud-Status--post .kud-Header-avatar:hover {
-  width: 5rem;
-  height: 5rem;
-  top: -.5rem;
-}
-
-html.kud-Status--post .kud-Header-heading {
-  font-size: 1.2rem;
-}
-
-.kud-Post {
 
 }
-
-  .kud-Post img {
-    width: 75%;
-    margin: auto;
-    display: block;
-    border: 5px solid #FFF;
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: all .3s ease;
-  }
-
-  .kud-Post img:hover {
-    border: 5px solid #FFF;
-    width: 80%;
-  }
-
-  .kud-Post-heading {
-    color: #ED4545;
-  }
-
-  .kud-Post-date {
-    font-style: italic;
-  }
