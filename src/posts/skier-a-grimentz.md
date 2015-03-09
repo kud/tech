@@ -31,7 +31,7 @@ En revanche, nous sommes en Suisse, ne l'oubliez pas. Comptez 160 € pour la l
 - soit vous avez une carte Visa **Premier** (ou une autre carte "premium") et dans ce cas, pas de souci, vous êtes assuré(e)
 - soit vous vous prenez une assurance ski avant de partir car les prix suisses pour une assurance sont d'au moins 50 € (alors que 15 € à ce que j'ai pu voir en France).
 
-Je vous parle d'assurance pour vous, pas si vous renversez quelqu'un car vous êtes déjà assuré(e) normalement par votre assurance habitation. Par exemple, être remboursé(e) si on vient vous chercher en hélicoptère parce que vous avez chuté. À titre d'exemple, quand je suis parti à Gourmette dans les Pyrénées, le forfait pouvait être boosté avec une assurance de ce genre à +3 € par jour. Chose qui n'existe pas en Suisse.
+Je vous parle d'assurance pour vous, pas si vous renversez quelqu'un car vous êtes déjà assuré(e) normalement par votre assurance habitation. Par exemple, être remboursé(e) si on vient vous chercher en hélicoptère parce que vous avez chuté. À titre d'exemple, quand je suis parti à [Gourette](http://www.gourette.com) dans les Pyrénées, le forfait pouvait être boosté avec une assurance de ce genre à +3 € par jour. Chose qui n'existe pas en Suisse.
 
 Assez parlé, laissons place aux images.
 
