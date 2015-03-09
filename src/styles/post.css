@@ -48,6 +48,13 @@ html.kud-Status--post .kud-Header-heading {
     font-style: italic;
   }
 
+  .kud-Post-content p:first-of-type::first-letter {
+    font-size: 4.375rem;
+    float: left;
+    line-height: 3.75rem;
+    padding: 4px 12px 0px 0px;
+  }
+
 @media (max-width: 640px) {
 
   html.kud-Status--post {

@@ -19,7 +19,7 @@ html.kud-Status--post
           | Le 
           time= moment(date).locale('fr').format('dddd Do MMMM YYYY.')
 
-        div!= contents
+        div.kud-Post-content!= contents
 
       include partials/foot
     include partials/scripts

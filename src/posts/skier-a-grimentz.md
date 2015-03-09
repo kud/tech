@@ -14,6 +14,10 @@ Le départ commence fort. À peine rentrés dans le train qu'on tombe nez-à-nez
 
 Une fois arrivée à Lausanne, direction [Grimentz](http://www.valdanniviers.ch/tourism/grimentz--saint-jean.html). Je ne connais pas du tout mais on verra bien. De toute façon, c'est en Suisse, ça ne peut qu'être chouette.
 
+<div style="text-align: center;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88489.54178736107!2d7.5636251!3d46.12488994999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f246fee8f1355%3A0x2b28b50a45ba82c1!2sGrimentz%2C+Switzerland!5e0!3m2!1sen!2sfr!4v1425939984664" width="720" height="540" frameborder="0" style="border:0"></iframe>
+</div>
+
 Après 2h de route, nous voilà arrivés au chalet. La station semble être un petit village, c'est mignon comme tout.
 
 …et effectivement, c'était une excellente semaine ! J'ai pu profiter des pistes en skiant, il a fait super beau, avec de la bonne neige. Juste un jour où on voyait vraiment rien et on avait l'impression de faire du hors-piste sur n'importe quelles pistes tellement la neige était molle.
@@ -25,6 +29,8 @@ Je vous invite d'ailleurs vivement à suivre ces [cours](http://www.abc-apprendr
 Bon. Je vous passe les détails de la semaine sinon, je préfère me focaliser sur les tips, les points d'informations, et les photos. Attention, c'est parti.
 
 Première chose, Grimentz est une très belle station d'un peu plus de 40 pistes. Le coin se partage en 4 stations mais je n'en ai fait que deux. D'ailleurs, [le forfait](http://www.rma.ch/) que j'ai pris comprend 4 stations dont 2 qui sont très facilement rejoignables par une grosse benne, le reste se fait _apparemment_ par bus (gratuit).
+
+[![](/images/skier-a-grimentz/pistes_small.jpg)](/images/skier-a-grimentz/pistes.jpg)
 
 En revanche, nous sommes en Suisse, ne l'oubliez pas. Comptez 160 € pour la location de ski et 209 € pour le forfait, tout ça pour 4 jours. De plus, soyez attentifs, les suisses ne vous proposeront jamais d'assurance car ils sont déjà couverts par leur travail ou autre. Si vous êtes français, vous avez au moins deux choix :
 
