@@ -10,6 +10,7 @@
   margin-right: 15px;
   width: 7rem;
   display: inline-block;
+  text-align: right;
 }
 
 @media (max-width: 640px) {
