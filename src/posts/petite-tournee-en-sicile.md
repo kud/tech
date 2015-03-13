@@ -1,5 +1,6 @@
 ---
 title: Petite tournée en Sicile
+heading: /images/petite-tournee-en-sicile/heading.png
 date: 2014-06-08
 template: post.jade
 collection: posts

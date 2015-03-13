@@ -11,13 +11,17 @@ html.kud-Status--post
 
       section.kud-Post.kud-BeautifyLink.animated.fadeIn
 
-        img(src=heading).kud-Post-headingImage
+        div.kud-PostHeader
 
-        h2.kud-Post-heading= title
+          img(src=heading).kud-PostHeader-img
 
-        p.kud-Post-date
-          | Le 
-          time= moment(date).locale('fr').format('dddd Do MMMM YYYY.')
+          div.kud-PostHeader-overlay
+
+            div.kud-PostHeader-wrapper
+
+              h2.kud-PostHeader-heading=title
+
+              time.kud-PostHeader-date= moment(date).locale('fr').format('dddd Do MMMM YYYY')
 
         div.kud-Post-content!= contents
 

@@ -1,13 +1,12 @@
 ---
 title: Comment je suis passé de flickr à 500px
+heading: https://31.media.tumblr.com/5aa2ec6aea4151ff9099a742b2998a25/tumblr_inline_mz8xrz2TTN1qbzli5.jpg
 date: 2014-06-09
 template: post.jade
 collection: posts
 ---
 
 ...ou plutôt comment j'ai importé mes photos de [flickr](http://www.flickr.com/) sur [500px](http://500px.com) car je ne voulais plus être sur deux réseaux.
-
-<img src="https://31.media.tumblr.com/5aa2ec6aea4151ff9099a742b2998a25/tumblr_inline_mz8xrz2TTN1qbzli5.jpg" style="float: left; margin-right: 10px; margin-bottom: 10px; width: 300px;">
 
 Tout d'abord, il me fallait une solution simple pour exporter toutes mes photos [flickr](http://www.flickr.com/) sur mon poste. J'ai alors cherché sur internet et j'ai trouvé ce logiciel s'appelant [Bulkr](http://clipyourphotos.com/bulkr). Etant un peu parano, j'en ai profité pour le scanner sur [ClamWin](http://fr.clamwin.com/), et je n'ai pas trouvé de virus ou de spyware donc plutôt _safe_ (contrairement justement à ce [logiciel](http://janten.com/downloadr/) dont je tairai le nom qui - lui - contient un spyware).
 

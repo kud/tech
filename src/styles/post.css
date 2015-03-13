@@ -34,18 +34,52 @@ html.kud-Status--post .kud-Header-heading {
 
 }
 
-  .kud-Post img {
-    display: block;
+  .kud-PostHeader {
+    position: relative;
     border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .kud-PostHeader-img {
+    opacity: 0.9;
+    position: relative;
+    display: block;
     width: 100%;
   }
 
-  .kud-Post-heading {
-    color: #ED4545;
+  .kud-PostHeader-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    content: '';
+    padding: 1rem;
   }
 
-  .kud-Post-date {
-    font-style: italic;
+  .kud-PostHeader-overlay::before {
+    content: '';
+    border: 1px solid #FFF;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .kud-PostHeader-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .kud-PostHeader-heading {
+    color: white;
+    font-family: "Raleway",Arial,sans-serif;
+  }
+
+  .kud-PostHeader-date {
     color: #c5c3c7;
     font-size: .9375rem;
   }
@@ -55,6 +89,12 @@ html.kud-Status--post .kud-Header-heading {
     float: left;
     line-height: 3.75rem;
     padding: 4px 12px 0px 0px;
+  }
+
+  .kud-Post-content img {
+    display: block;
+    border-radius: 4px;
+    width: 100%;
   }
 
 @media (max-width: 640px) {

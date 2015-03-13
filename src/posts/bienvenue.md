@@ -1,5 +1,6 @@
 ---
 title: Bienvenu(e)
+heading: http://i.giphy.com/HwePORLAGGJOw.gif
 date: 2014-06-07
 template: post.jade
 collection: posts
