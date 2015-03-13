@@ -53,12 +53,12 @@ h6 {
 }
 
 .kud-Wrapper {
-  max-width: 45rem;
+  max-width: 43rem;
   padding: 1rem;
+  padding-top: 220px;
   margin: auto;
   background: white;
   position: relative;
-  padding-top: 220px;
 }
 
 @media (max-width: 640px) {

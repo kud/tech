@@ -46,6 +46,8 @@ html.kud-Status--post .kud-Header-heading {
 
   .kud-Post-date {
     font-style: italic;
+    color: #c5c3c7;
+    font-size: .9375rem;
   }
 
   .kud-Post-content p:first-of-type::first-letter {
