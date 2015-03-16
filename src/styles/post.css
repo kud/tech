@@ -56,6 +56,8 @@ html.kud-Status--post .kud-Header-heading {
     background: rgba(0,0,0,.5);
     content: '';
     padding: 1rem;
+    transition: .5s;
+    cursor: pointer;
   }
 
   .kud-PostHeader-overlay::before {
@@ -64,6 +66,24 @@ html.kud-Status--post .kud-Header-heading {
     width: 100%;
     height: 100%;
     display: block;
+    border-radius: 2px;
+    transition: .5s;
+  }
+
+  .kud-PostHeader-overlay:hover {
+    background: rgba(0,0,0,.0);
+  }
+
+  .kud-PostHeader-overlay:hover::before {
+    border: 0;
+  }
+
+  .kud-PostHeader-overlay:hover .kud-PostHeader-heading {
+    transform: translateY(-2000px);
+  }
+
+  .kud-PostHeader-overlay:hover .kud-PostHeader-date {
+    transform: translateY(2000px);
   }
 
   .kud-PostHeader-wrapper {
@@ -77,11 +97,14 @@ html.kud-Status--post .kud-Header-heading {
   .kud-PostHeader-heading {
     color: white;
     font-family: "Raleway",Arial,sans-serif;
+    transition: .5s;
   }
 
   .kud-PostHeader-date {
     color: #c5c3c7;
     font-size: .9375rem;
+    display: block;
+    transition: .5s;
   }
 
   .kud-Post-content p:first-of-type::first-letter {
@@ -97,10 +120,18 @@ html.kud-Status--post .kud-Header-heading {
     width: 100%;
   }
 
+  .kud-Post-content iframe {
+    width: 100%;
+  }
+
 @media (max-width: 640px) {
 
   html.kud-Status--post {
     padding-top: 50px;
+  }
+
+  .kud-Footer {
+    padding-top: 1rem;
   }
 
 }
