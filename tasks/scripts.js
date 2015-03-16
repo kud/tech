@@ -10,8 +10,8 @@ module.exports = function() {
   return gulp.src('src/scripts/index.js')
     .pipe( plumber() )
     .pipe( browserify({
-      insertGlobals : true,
-      debug : true
+      insertGlobals: true,
+      debug: true
     }) )
     .pipe( gulp.dest('dist') )
     .pipe( livereload( server ) )

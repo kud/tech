@@ -1,8 +1,13 @@
-head
-  meta(charset='utf-8')
-  title='_kud.diary'
-  meta(name='description' content='Diary of the _kud')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='http://kud.io/favicon.png')
-  link(href='http://fonts.googleapis.com/css?family=Montserrat|Lato|Raleway:400,800,300' rel='stylesheet' type='text/css')
-  link(rel='stylesheet' href='/index.css')
+mixin head(title)
+  head
+    meta(charset='utf-8')
+    if title
+      title='_kud.diary — ' + title
+    else
+      title='_kud.diary'
+    meta(name='description' content='Diary of the _kud')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon' type='image/png' href='http://kud.io/favicon.png')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat|Lato|Raleway:400,800,300' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' href='/index.css')
+
