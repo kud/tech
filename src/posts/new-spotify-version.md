@@ -47,4 +47,4 @@ For the moment, it's all what I see but it feels to me like a regression. Sad.
 
 ## "Connect"
 
-All isn't so bad though. The new bloody brilliant feature is you can connect to other devices and control it. For instance, I'm on my Mac and I want to control my Windows which has the speakers, now I can. It was already available on Android but now it seems to be every. Congrats for that.
+All isn't so bad though. The new bloody brilliant feature is you can connect to other devices and control it. For instance, I'm on my Mac and I want to control my Windows which has the speakers, now I can. It was already available on Android but now it seems to be every. Congrats for that. 👍
