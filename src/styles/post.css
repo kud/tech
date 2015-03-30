@@ -124,6 +124,12 @@ html.kud-Status--post .kud-Header-heading {
     width: 100%;
   }
 
+  .kud-Post-content hr {
+    border: 0;
+    height: 0;
+    border-bottom: 1px dashed #EEE;
+  }
+
 @media (max-width: 640px) {
 
   html.kud-Status--post {

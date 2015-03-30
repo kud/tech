@@ -35,9 +35,15 @@ Disagracious effect when you change the song. It "bounces" the "New Playlist" bu
 
 No more third-party apps. In fact I don't mind but I just wanted to tell you it's no more here. cf https://developer.spotify.com/technologies/apps/
 
+## 5. You cannot go anymore to the right line when you click on the record cover
+
+Previously, when you were in a playlist and you clicked on the record cover, spotify focused on the line of current song playing. Now, it's not possible anymore. Which sucks.
+
 For the moment, it's all what I see but it feels to me like a regression. Sad.
 
 ![](/images/new-spotify-version/sad.gif)
+
+---
 
 ## "Connect"
 
