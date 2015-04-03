@@ -4,6 +4,7 @@ var markdown    = require('metalsmith-markdown')
 var templates   = require('metalsmith-templates')
 var ignore      = require('metalsmith-ignore')
 var collections = require('metalsmith-collections')
+var metallic    = require('metalsmith-metallic')
 var moment      = require('moment')
 
 module.exports = function(cb) {
@@ -23,6 +24,7 @@ module.exports = function(cb) {
         'posts/drafts/**/*'
       ])
     )
+    .use( metallic() )
     .use(
       markdown({
         smartypants: true,
