@@ -1,5 +1,16 @@
 var chalk      = require('chalk')
 
+desc('Install environnement.')
+task('install', function() {
+
+  console.log( chalk.blue('❯ Installing...\n') )
+
+  jake.exec('npm install', { interactive: true }, function() {
+    console.log( chalk.green('\n✔ Installed!') )
+  })
+
+})
+
 desc('Update environnement.')
 task('update', function() {
 

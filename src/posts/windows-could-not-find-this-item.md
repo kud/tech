@@ -25,7 +25,7 @@ This bug comes from two facts:
 
 The solution so?
 
-Re-active the libraries (and re-disable it if you want). Here are the two `.reg`
+Re-active the libraries (and re-disable them if you want). Here are the two `.reg`
 
 - [Enable Libraries Feature](/files/windows-could-not-find-this-item/EnableLibrariesFeature.reg)
 - [Disable Libraries Feature](/files/windows-could-not-find-this-item/DisableLibariesFeature.reg)
