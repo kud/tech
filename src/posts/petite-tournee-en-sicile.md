@@ -1,9 +1,10 @@
 ---
 title: Petite tournée en Sicile
-heading: /images/petite-tournee-en-sicile/heading.png
+header: /images/petite-tournee-en-sicile/header.png
 date: 2014-06-08
 template: post.jade
 collection: posts
+lang: fr
 ---
 
 Je n'étais jamais allé en Sicile. D'ailleurs, je ne suis jamais allé en Italie pour le moment (mais c'est prévu !), c'était l'occasion pour moi de découvrir ces italiens vraiment pas comme les autres. J'avais certes l'habitude de la Corse et ses Corses mais là, c'était différent.

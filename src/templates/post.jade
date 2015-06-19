@@ -14,7 +14,7 @@ html.kud-Status--post
 
         div.kud-PostHeader
 
-          img(src=heading).kud-PostHeader-img
+          img(src=header).kud-PostHeader-img
 
           div.kud-PostHeader-overlay
 
@@ -22,7 +22,7 @@ html.kud-Status--post
 
               h2.kud-PostHeader-heading=title
 
-              time.kud-PostHeader-date= moment(date).locale('fr').format('dddd Do MMMM YYYY')
+              time.kud-PostHeader-date= moment(date).locale(lang).format('dddd Do MMMM YYYY')
 
         div.kud-Post-content!= contents
 

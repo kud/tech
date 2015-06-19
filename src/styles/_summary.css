@@ -5,6 +5,12 @@
   list-style: none;
 }
 
+.kud-Summary-listItem {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .kud-Summary-listItemTime {
   color: #AAA;
   margin-right: 15px;

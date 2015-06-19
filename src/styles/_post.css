@@ -130,6 +130,10 @@ html.kud-Status--post .kud-Header-heading {
     border-bottom: 1px dashed #EEE;
   }
 
+  .kud-Post-content p {
+    clear: both;
+  }
+
 @media (max-width: 640px) {
 
   html.kud-Status--post {

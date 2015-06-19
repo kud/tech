@@ -1,9 +1,10 @@
 ---
 title: Avoir le clavier de Lollipop sur une ancienne version Android
-heading: /images/clavier-lollipop-sur-ancien-android/heading.jpg
+header: /images/clavier-lollipop-sur-ancien-android/header.jpg
 date: 2014-12-17
 template: post.jade
 collection: posts
+lang: fr
 ---
 
 Récemment est sortie la nouvelle version d'Android dénommée [Lollipop](http://www.android.com/versions/lollipop-5-0/) (la numéro 5) qui apporte son lot d'amélioration dont le material design, style tiré du flat design comprenant plus de subtilité que ce précédent. J'ai pu avoir le plaisir de l'installer sur ma nexus 7 première édition. (Je vous conseille vivement d'ailleurs de faire une remise à zéro usine à chaque (grosse ?) mise à jour.) Après quelques jours d'essai, j'ai été bluffé par le confort de cette toute nouvelle version d'Android. Simple, efficace, minimaliste, et joli ! J'ai tellement été convaincu par cette solution que j'ai cherché une méthode pour obtenir le [clavier Lollipop](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin&hl=en) sur mon vieux mais toujours aussi utile Galaxy Nexus.

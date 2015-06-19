@@ -1,9 +1,10 @@
 ---
 title: What's wrong with the latest Spotify version?
-heading: /images/new-spotify-version/title.png
+header: /images/new-spotify-version/title.png
 date: 2015-03-16
 template: post.jade
 collection: posts
+lang: en
 ---
 
 I love Spotify. Yes I love it. I follow this application since the beginning and it's probably the first app I wanted to pay every month to get a service. Though, I'm getting more dissapointed as the days go by. Yes I'm disappointed.

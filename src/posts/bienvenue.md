@@ -1,9 +1,10 @@
 ---
 title: Bienvenu(e)
-heading: http://i.giphy.com/HwePORLAGGJOw.gif
-date: 2014-06-07
+header: http://i.giphy.com/HwePORLAGGJOw.gif
+date: 1970-01-01
 template: post.jade
 collection: posts
+lang: fr
 ---
 
 Bienvenue sur mon journal de bord.

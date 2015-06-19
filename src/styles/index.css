@@ -3,9 +3,10 @@
 @import 'animate.css/animate.css';
 
 /* normal */
-@import 'base.css';
-@import 'header.css';
-@import 'footer.css';
-@import 'beautiful-links.css';
-@import 'summary.css';
-@import 'post.css';
+/*@import './_fonts.css';*/
+@import './_base.css';
+@import './_header.css';
+@import './_footer.css';
+@import './_beautiful-links.css';
+@import './_summary.css';
+@import './_post.css';

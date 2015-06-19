@@ -1,9 +1,10 @@
 ---
 title: Secret of Mana disponible sur Android et iOS
-heading: /images/secret-of-mana-dispo-sur-android-et-ios/title.jpg
+header: /images/secret-of-mana-dispo-sur-android-et-ios/title.jpg
 date: 2014-11-21
 template: post.jade
 collection: posts
+lang: fr
 ---
 
 Je ne sais pas si comme moi vous avez passé des heures et des heures sur ce jeu fantastique sur Super NES mais celui-ci revient sur iOS et Android, et ce n'est pas pour me déplaire.

@@ -1,9 +1,10 @@
 ---
 title: How to avoid popup blockers when ajax + event
-heading: http://media.giphy.com/media/JdDnwsVcpa1B6/giphy.gif
+header: http://media.giphy.com/media/JdDnwsVcpa1B6/giphy.gif
 date: 2015-04-03
 template: post.jade
 collection: posts
+lang: en
 ---
 
 Hey there,

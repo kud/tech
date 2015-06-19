@@ -1,9 +1,10 @@
 ---
 title: Skier à Grimentz
-heading: /images/skier-a-grimentz/img_19_small.jpg
+header: /images/skier-a-grimentz/img_19_small.jpg
 date: 2015-03-09
 template: post.jade
 collection: posts
+lang: fr
 ---
 
 Drôle de situation que voilà. Après 10 ans sans avoir pu poser mes pieds dans des chaussures de ski, me voilà à nouveau parti à la neige pour la deuxième fois en moins de 3 mois en cet hiver 2014-2015. Je ne vous cache pas que j'étais excité comme une puce à l'idée de redécouvrir les sensations de la glisse.

@@ -19,8 +19,24 @@ html
           each post in collections.posts
 
             li.kud-Summary-listItem
-              time.kud-Summary-listItemTime= moment(post.date).locale('fr').format('DD MMM YYYY')
-              a(href=post.path + '/').kud-Summary-listItemHeading= post.title
+              if post.lang === 'en'
+                time.kud-Summary-listItemTime= moment(post.date).locale('en').format('DD MMM YYYY')
+                if post.redirectUrl
+                  a(href=post.redirectUrl target="_blank").kud-Summary-listItemHeading= '[en] 📌 ' + post.title
+                else
+                  a(href=post.path + '/').kud-Summary-listItemHeading= '[en] ' + post.title
+
+        ul.kud-Summary-list
+
+          each post in collections.posts
+
+            li.kud-Summary-listItem
+              if post.lang === 'fr'
+                time.kud-Summary-listItemTime= moment(post.date).locale('fr').format('DD MMM YYYY')
+                if post.redirectUrl
+                  a(href=post.redirectUrl target="_blank").kud-Summary-listItemHeading= '[fr] 📌 ' + post.title
+                else
+                  a(href=post.path + '/').kud-Summary-listItemHeading= '[fr] ' + post.title
 
       include partials/foot
     include partials/scripts

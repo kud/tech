@@ -1,9 +1,10 @@
 ---
 title: Comment je suis passé de flickr à 500px
-heading: https://31.media.tumblr.com/5aa2ec6aea4151ff9099a742b2998a25/tumblr_inline_mz8xrz2TTN1qbzli5.jpg
+header: https://31.media.tumblr.com/5aa2ec6aea4151ff9099a742b2998a25/tumblr_inline_mz8xrz2TTN1qbzli5.jpg
 date: 2014-06-09
 template: post.jade
 collection: posts
+lang: fr
 ---
 
 ...ou plutôt comment j'ai importé mes photos de [flickr](http://www.flickr.com/) sur [500px](http://500px.com) car je ne voulais plus être sur deux réseaux.
