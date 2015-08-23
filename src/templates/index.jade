@@ -2,41 +2,10 @@ include partials/head
 include partials/header
 
 doctype html
-html
+html.naked
   mixin head('')
-  //- body.animated.fadeIn
   body
-    div.kud-Wrapper
-
-      mixin header('')
-
-      section.kud-Summary.kud-BeautifyLink.animated.fadeIn
-
-        h2.kud-Summary-heading Articles
-
-        ul.kud-Summary-list
-
-          each post in collections.posts
-
-            li.kud-Summary-listItem
-              if post.lang === 'en'
-                time.kud-Summary-listItemTime= moment(post.date).locale('en').format('DD MMM YYYY')
-                if post.redirectUrl
-                  a(href=post.redirectUrl target="_blank").kud-Summary-listItemHeading= '[en] 📌 ' + post.title
-                else
-                  a(href=post.path + '/').kud-Summary-listItemHeading= '[en] ' + post.title
-
-        ul.kud-Summary-list
-
-          each post in collections.posts
-
-            li.kud-Summary-listItem
-              if post.lang === 'fr'
-                time.kud-Summary-listItemTime= moment(post.date).locale('fr').format('DD MMM YYYY')
-                if post.redirectUrl
-                  a(href=post.redirectUrl target="_blank").kud-Summary-listItemHeading= '[fr] 📌 ' + post.title
-                else
-                  a(href=post.path + '/').kud-Summary-listItemHeading= '[fr] ' + post.title
-
-      include partials/foot
+    p.kud-LanguageChoice
+      a(href='/fr/').kud-LanguageChoice-button Français
+      a(href='/en/').kud-LanguageChoice-button English
     include partials/scripts

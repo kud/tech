@@ -3,6 +3,5 @@ title: Comment déboguer facilement du web y compris sur tablettes et téléphon
 date: 2015-05-19
 template: post.jade
 collection: posts
-lang: fr
 redirectUrl: http://putaindecode.fr/posts/frontend/comment-deboguer-du-web-sur-tablettes-et-telephones/
 ---

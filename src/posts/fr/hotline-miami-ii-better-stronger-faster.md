@@ -4,7 +4,6 @@ header: /images/hotline-miami-ii-better-stronger-faster/hotline_14_small.jpg
 date: 2015-04-05
 template: post.jade
 collection: posts
-lang: fr
 ---
 
 Nouvel opus de Hotline Miami sorti le 10 mars 2015 s'intitulant "**Wrong Number**". Le précédent était déjà un bijou de par sa réalisation, sa BO, son efficacité mais là, ils se sont surpassés et ont sorti un jeu d'une certaine maturité, énergique à souhait, BO toujours au poil. Côté difficulté, on est aussi au dessus, et il ne sera pas rare de devoir recommencer le niveau plusieurs fois.

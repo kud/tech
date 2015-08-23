@@ -4,7 +4,6 @@ header: http://i.giphy.com/NgZvvu1dq9HCE.gif
 date: 2015-04-10
 template: post.jade
 collection: posts
-lang: en
 ---
 
 Just a few quotes from <a href="https://twitter.com/substack">@substack</a> I find really revelant about my profession.

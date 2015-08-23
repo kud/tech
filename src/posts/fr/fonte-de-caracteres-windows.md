@@ -4,7 +4,6 @@ header: /images/fonte-de-caracteres-windows/head.jpg
 date: 2015-02-22
 template: post.jade
 collection: posts
-lang: fr
 ---
 
 Je ne sais pas si c'est votre cas mais j'ai l'habitude de passer de Mac OS X à Windows et vice-versa. Le problème, c'est que le rendu des fontes n'est pas du tout le même, et j'avoue qu'Apple a fait / fait un travail énorme sur ça. Du coup, quand je reviens sur Windows, c'est assez insupportable à lire. Pour cela, j'ai tenté de résoudre ce problème à coup de logiciels, de fontes "safe" et autres. Je suis finalement tombé sur un compromis qui me permet maintenant de lire les textes sans avoir un mal de crâne pas possible (rassurez-vous, ce n'est qu'une image).
