@@ -18,10 +18,15 @@ module.exports = function(cb) {
   Metalsmith( __dirname + '/..' )
     .use(
       ignore([
+        '**/.DS_Store',
+        'files/**/*',
         'images/**/*',
         'styles/**/*',
+        'posts/en/drafts/**/*',
+        'posts/fr/**/*',
         'templates/**/*',
-        'posts/drafts/**/*'
+        'CNAME',
+        'index.md'
       ])
     )
     .use( metallic() )
@@ -35,7 +40,7 @@ module.exports = function(cb) {
     .use(
       collections({
         posts: {
-          pattern: 'src/posts/*.md',
+          pattern: 'src/posts/en/*.md',
           sortBy: 'date',
           reverse: true
         }
@@ -51,11 +56,12 @@ module.exports = function(cb) {
       templates({
         engine: 'jade',
         directory: 'src/templates',
-        moment: moment
+        moment: moment,
+        lang: 'en'
       })
     )
     .clean( false )
-    .destination('./dist')
+    .destination('./dist/en/')
     .build(function(err) {
       if (err) throw err
       cb()

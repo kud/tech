@@ -1,0 +1,22 @@
+.kud-LanguageChoice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+  .kud-LanguageChoice-button {
+    display: inline-block;
+    border: 1px solid #78BDE9;
+    padding: 15px 20px;
+    margin: 0 20px;
+    color: #78BDE9;
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+    .kud-LanguageChoice-button:hover {
+      color: #FFF;
+      background: #78BDE9;
+    }

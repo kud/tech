@@ -4,7 +4,6 @@ header: http://media.giphy.com/media/h9sHcXAnI9OBG/giphy.gif
 date: 2015-04-27
 template: post.jade
 collection: posts
-lang: en
 ---
 
 You're there, sitting on your chair, comfily and suddenly, you get this error.

@@ -29,6 +29,15 @@ body {
   border-bottom: 10px solid #333;
 }
 
+html.naked {
+  padding-top: 0;
+  background: none;
+}
+
+html.naked body {
+  border-bottom: 0px;
+}
+
 .animated.fadeIn {
   animation-duration: 1s;
 }

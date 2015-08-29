@@ -5,13 +5,31 @@
 var gulp   = require('gulp')
 var lr     = require('tiny-lr')
 var server = lr()
+var del    = require('del')
 
 /**
  * Private tasks
  */
 
 gulp.task( 'clean', require(__dirname + '/tasks/clean') )
-gulp.task( 'markup', require(__dirname + '/tasks/markup') )
+gulp.task( 'markup-global', require(__dirname + '/tasks/markup-global') )
+gulp.task( 'markup-fr', require(__dirname + '/tasks/markup-fr') )
+gulp.task( 'markup-en', require(__dirname + '/tasks/markup-en') )
+gulp.task( 'markup', ['markup-global', 'markup-fr', 'markup-en'], function( cb ) {
+
+  // crap hack
+  gulp.src('./dist/fr/posts/fr/index.html')
+    .pipe( gulp.dest('./dist/fr/') )
+
+  gulp.src('./dist/en/posts/en/index.html')
+    .pipe( gulp.dest('./dist/en/') )
+
+  del([
+    './dist/fr/posts/',
+    './dist/en/posts/'
+  ], cb)
+
+})
 gulp.task( 'styles', require(__dirname + '/tasks/styles') )
 gulp.task( 'jshint', require(__dirname + '/tasks/jshint') )
 gulp.task( 'scripts', ['jshint'], require(__dirname + '/tasks/scripts') )
