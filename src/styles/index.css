@@ -3,7 +3,7 @@
 @import 'animate.css/animate.css';
 
 /* normal */
-/*@import './_fonts.css';*/
+@import './_fonts.css';
 @import './_base.css';
 @import './_header.css';
 @import './_footer.css';
