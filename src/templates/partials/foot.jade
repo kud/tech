@@ -2,11 +2,28 @@ div.kud-Footer.kud-BeautifyLink
 
   ul.kud-Footer-list
 
-    li.kud-Footer-listItem
-      a(href='http://kud.io') La Maison
+    if lang === 'fr'
+      li.kud-Footer-listItem
+        a(href='http://kud.io') La Maison
 
-    li.kud-Footer-listItem
-      a(href='http://instagram.kud.io') Le Instagram
+      li.kud-Footer-listItem
+        a(href='http://instagram.kud.io') Le Instagram
 
-    li.kud-Footer-listItem
-      a(href='http://twitter.kud.io') Le Twitter
+      li.kud-Footer-listItem
+        a(href='http://twitter.kud.io') Le Twitter
+
+      li.kud-Footer-listItem
+        a(href='/en/') I speak English
+
+    if lang === 'en'
+      li.kud-Footer-listItem
+        a(href='http://kud.io') Homepage
+
+      li.kud-Footer-listItem
+        a(href='http://instagram.kud.io') Instagram
+
+      li.kud-Footer-listItem
+        a(href='http://twitter.kud.io') Twitter
+
+      li.kud-Footer-listItem
+        a(href='/fr/') Je parle français

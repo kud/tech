@@ -1,22 +1,25 @@
-.kud-LanguageChoice {
+.kud-IndexWrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
+  margin: 0;
 }
 
-  .kud-LanguageChoice-button {
-    display: inline-block;
-    border: 1px solid #78BDE9;
-    padding: 15px 20px;
-    margin: 0 20px;
-    color: #78BDE9;
-    font-size: 30px;
-    font-weight: normal;
-  }
+  .kud-IndexLanguageChoice {}
 
-    .kud-LanguageChoice-button:hover {
-      color: #FFF;
-      background: #78BDE9;
+    .kud-IndexLanguageChoice-button {
+      display: inline-block;
+      padding: 15px 20px;
+      margin: 0 20px;
+      color: #333;
+      font-size: 30px;
+      font-weight: normal;
+      border-bottom: 2px dotted transparent;
+      transition: .5s ease;
     }
+
+      .kud-IndexLanguageChoice-button:hover {
+        border-bottom-color: #333;
+      }
