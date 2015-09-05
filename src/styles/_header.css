@@ -41,3 +41,7 @@
   .kud-Header-heading {
     text-align: center;
   }
+
+  .kud-Header--index {
+    top: -200px;
+  }

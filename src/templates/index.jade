@@ -5,7 +5,14 @@ doctype html
 html.naked
   mixin head('')
   body
-    p.kud-LanguageChoice
-      a(href='/fr/').kud-LanguageChoice-button Français
-      a(href='/en/').kud-LanguageChoice-button English
+    div.kud-IndexWrapper
+
+      div(class='kud-Header kud-Header--index')
+        div(class='kud-Header-avatar')
+          img(src='http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=500')
+
+      p.kud-IndexLanguageChoice
+        a(href='/fr/').kud-IndexLanguageChoice-button fr_FR
+        a(href='/en/').kud-IndexLanguageChoice-button en_UK
+
     include partials/scripts
