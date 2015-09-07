@@ -5,6 +5,7 @@
 /* normal */
 @import './_fonts.css';
 @import './_base.css';
+@import './_banner.css';
 @import './_header.css';
 @import './_footer.css';
 @import './_index.css';
