@@ -1,35 +1,6 @@
 /**
  * Post
  */
-html.kud-Status--post {
-  padding-top: 120px;
-}
-
-html.kud-Status--post .kud-Wrapper {
-  padding-top: 135px;
-}
-
-html.kud-Status--post .kud-Header {
-  top: -35px;
-  padding-top: 4rem;
-}
-
-
-html.kud-Status--post .kud-Header-avatar {
-  width: 4rem;
-  height: 4rem;
-}
-
-html.kud-Status--post .kud-Header-avatar:hover {
-  width: 5rem;
-  height: 5rem;
-  top: -.5rem;
-}
-
-html.kud-Status--post .kud-Header-heading {
-  font-size: 1.2rem;
-}
-
 .kud-Post {
 
 }
@@ -37,17 +8,14 @@ html.kud-Status--post .kud-Header-heading {
   .kud-PostHeader {
     position: relative;
     border-radius: 4px;
-    overflow: hidden;
   }
 
   .kud-PostHeader-img {
-    opacity: 0.9;
-    position: relative;
     display: block;
     width: 100%;
   }
 
-  .kud-PostHeader-overlay {
+/*  .kud-PostHeader-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,27 +52,34 @@ html.kud-Status--post .kud-Header-heading {
 
   .kud-PostHeader-overlay:hover .kud-PostHeader-date {
     transform: translateY(2000px);
-  }
+  }*/
 
-  .kud-PostHeader-wrapper {
+/*  .kud-PostHeader-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+  }*/
 
   .kud-PostHeader-heading {
-    color: white;
+    color: #4F5A63;
     font-family: "Raleway",Arial,sans-serif;
-    transition: .5s;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   .kud-PostHeader-date {
-    color: #c5c3c7;
-    font-size: .9375rem;
+    color: #869D9E;
+    font-size: 1rem;
     display: block;
-    transition: .5s;
+    text-align: center;
+  }
+
+/** content */
+  .kud-Post-content {
+    line-height: 1.6rem;
   }
 
   .kud-Post-content p:first-of-type::first-letter {

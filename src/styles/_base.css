@@ -13,29 +13,22 @@ body {
   padding: 0;
   color: #333;
   background: #FFF;
-  line-height: 1.6rem;
+  /*line-height: 1.6rem;*/
 }
 
 html {
-  background: url('images/mountain.jpg') center -420px fixed no-repeat;
-  background-size: cover;
-  padding-top: 250px;
   height: 100%;
+}
+
+html.posts {
+  background: url('images/mountain.jpg') center -420px fixed no-repeat;
+  padding-top: 250px;
+  background-size: cover;
 }
 
 body {
   /*border-top: 1px solid #333;*/
   min-height: 100%;
-  border-bottom: 10px solid #333;
-}
-
-html.naked {
-  padding-top: 0;
-  background: none;
-}
-
-html.naked body {
-  border-bottom: 0px;
 }
 
 .animated.fadeIn {
@@ -64,15 +57,18 @@ h6 {
 .kud-Wrapper {
   max-width: 43rem;
   padding: 1rem;
-  padding-top: 220px;
   margin: auto;
   background: white;
   position: relative;
 }
 
+.posts .kud-Wrapper {
+  padding-top: 220px;
+}
+
 @media (max-width: 640px) {
 
-  html {
+  html.posts {
     background: none;
     padding-top: 100px;
   }

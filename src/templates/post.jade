@@ -2,10 +2,19 @@ include partials/head
 include partials/header
 
 doctype html
-html.kud-Status--post
+html
   mixin head(title)
   //- body.animated.fadeIn
   body
+
+    div.kud-Banner
+
+      if lang === 'fr'
+        a(class="kud-Banner-link" href='/' + lang + '/') « Retour à la page principale
+
+      if lang === 'en'
+        a(class="kud-Banner-link" href='/' + lang + '/') « Back to home
+
     div.kud-Wrapper
 
       //- mixin header('')
@@ -26,5 +35,5 @@ html.kud-Status--post
 
         div.kud-Post-content!= contents
 
-      include partials/foot
+      include partials/footer
     include partials/scripts

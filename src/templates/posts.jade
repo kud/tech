@@ -2,7 +2,7 @@ include partials/head
 include partials/header
 
 doctype html
-html
+html.posts
   mixin head('')
   //- body.animated.fadeIn
   body
@@ -25,5 +25,5 @@ html
               else
                 a(href=post.path + '/').kud-Summary-listItemHeading= post.title
 
-      include partials/foot
+      include partials/footer
     include partials/scripts
