@@ -24,10 +24,10 @@ gulp.task( 'markup', ['markup-global', 'markup-fr', 'markup-en'], function( cb )
   gulp.src('./dist/en/posts/en/index.html')
     .pipe( gulp.dest('./dist/en/') )
 
-  del([
+  return del([
     './dist/fr/posts/',
     './dist/en/posts/'
-  ], cb)
+  ])
 
 })
 gulp.task( 'styles', require(__dirname + '/tasks/styles') )
