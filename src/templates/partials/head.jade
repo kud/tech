@@ -7,6 +7,17 @@ mixin head(title)
       title='_kud.diary'
     meta(name='description' content='Diary of the _kud')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+    if title
+      meta(property="og:title" content=title)
+    else
+      meta(property="og:title" content='Diary of the _kud')
+
+    if header
+      meta(property="og:image" content='http://diary.kud.io' + header)
+    else
+      meta(property="og:image" content='http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=500')
+
     link(rel='shortcut icon' type='image/png' href='http://kud.io/favicon.png')
     link(href='http://fonts.googleapis.com/css?family=Montserrat|Lato|Raleway:400,800,300' rel='stylesheet' type='text/css')
     link(href='http://yandex.st/highlightjs/8.0/styles/default.min.css' rel='stylesheet' type='text/css')
