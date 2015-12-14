@@ -6,25 +6,25 @@ template: post.jade
 collection: posts
 ---
 
-M'ayant régulièrement mis au *running* depuis quelque temps, il me devenait nécessaire de trouver une bonne paire de chaussures, à la fois dans le but de **mieux profiter de cette activité** mais aussi d'**éviter de quelconques entorses ou fatigues inutiles**.
+M'étant régulièrement mis au *running* depuis quelque temps, il me devenait nécessaire de trouver une bonne paire de chaussures, à la fois dans le but de **mieux profiter de cette activité** mais aussi d'**éviter de quelconques entorses ou fatigues inutiles**.
 
 Pour cela, je devais avant tout connaître mon type de foulée car c'est cela qui va définir le genre de chaussures que vous allez acheter.
 
-Il existe globalement 3 types de personnes :
+Il existe globalement 3 types de personnes :
 
-- les sur-pronateurs ;
-- les sous-pronateurs ;
+- les sur-pronateurs ;
+- les sous-pronateurs ;
 - et les neutres / universels.
 
-Il est important de connaître le vôtre car si vous choisissez une mauvaise paire, non seulement vous n'allez pas bénéficier des avantages de la chaussure mais vous allez aussi augmenter les problèmes.
+Il est important de connaître le vôtre car si vous choisissez une mauvaise paire, non seulement vous n'allez pas bénéficier des avantages de la chaussure, mais vous allez aussi augmenter les problèmes.
 
 Tout est une notion d'**équilibre**. Votre pied doit être à l'équilibre lorsqu'il se pose sur le sol. En fonction de la morphologie de votre pied, la chaussure devra contenir ou non un renforcement afin de permettre de le rééquilibrer. Si vous avez tendance à courir sur l'extérieur de votre pied alors la chaussure devra avoir un renforcement de ce côté.
 
 Tout est merveilleusement bien expliqué sur [le site de Asics](http://www.asics.com/fr/fr-fr/sports/running/preparation/understanding-pronation-find-the-right-shoes-for-you).
 
-Pour faire le test, j'avais deux choix à ma connaissance :
+Pour faire le test, j'avais deux choix à ma connaissance :
 
-- soit aller au [Nike Store à Saint-Michel](https://www.google.fr/maps/place/Nike+Store/@48.848568,2.341838,15z/data=!4m2!3m1!1s0x0:0xc7c49e9f4fbbf118?sa=X&ved=0ahUKEwigv_ufmtXJAhWLhhoKHUSGDBEQ_BIIhwEwCg) ;
+- soit aller au [Nike Store à Saint-Michel](https://www.google.fr/maps/place/Nike+Store/@48.848568,2.341838,15z/data=!4m2!3m1!1s0x0:0xc7c49e9f4fbbf118?sa=X&ved=0ahUKEwigv_ufmtXJAhWLhhoKHUSGDBEQ_BIIhwEwCg) ;
 - soit aller au tout nouveau [Asics Store à côté de la gare Saint-Lazare](https://www.google.fr/maps/place/asics/@48.8760386,2.3248993,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66e359aa4521b:0x9d3c1fadf4e0c47e) qui vient d'ouvrir.
 
 Appréciant grandement la marque [Asics](http://www.asics.com/fr/fr-fr) et m'étant redirigé vers eux plusieurs fois pour le professionnalisme de leurs chaussures, je me suis rendu à l'Asics Store.
@@ -33,8 +33,8 @@ Une fois arrivé au magasin, il vous faut vous rendre à l'étage où se situent
 
 Ce test se déroule en 3 parties :
 
-- caractéristiques de vos pieds
-- type de foulée
+- caractéristiques de vos pieds,
+- type de foulée,
 - aisance dans une paire Asics
 
 ## Scanner des pieds
@@ -53,7 +53,7 @@ Cette étape se traduit par mettre votre pied sur un scanner, un peu comme celui
 
 On vous demande alors de courir avec ces chaussures de test sur un tapis de course. C'était la première fois que je courais sur un tapis, étant habitué à courir dehors par n'importe quel temps. L'impression est quelque peu particulière. Bref. Vous courez sur ce tapis avec les chaussures de tests, on vous filme puis on vous fait un débriefing pour savoir finalement votre foulée.
 
-Il s'avère que je suis neutre ; je n'ai nullement besoin de renfort sur les cotés pour courir correctement.
+Il s'avère que je suis neutre ; je n'ai nullement besoin de renfort sur les cotés pour courir correctement.
 
 ## L'essai final
 
@@ -63,7 +63,7 @@ Me voilà alors partant pour une belle paire de Nimbus 17. Plus qu'à choisir la
 
 Pour information, vous pouvez trouver les différents modèles qui peuvent vous correspondre sur le [site américain d'Asics](http://www.asicsamerica.com/medias/sys_master/he4/h13/9687465590814/pronation_chart.jpg).
 
-À la fin de ce test, on vous remet un bilan complet de vos caractéristiques podaux. Vous avez maintenant toutes les informations quant à vos pieds et vous savez quelle type de foulée vous avez.
+À la fin de ce test, on vous remet un bilan complet de vos caractéristiques podales. Vous avez maintenant toutes les informations quant à vos pieds et vous savez quel type de foulée vous avez.
 
 **Le test coûte 20€** mais est déductible en caisse. Cependant il est vrai que même en payant ce test, cela vous coûtera tout de même moins cher en achetant sur Internet plutôt qu'au magasin.
 
