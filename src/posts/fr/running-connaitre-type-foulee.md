@@ -79,4 +79,4 @@ Bonne course !
 
 <img style="width: 50%; margin: auto;" src="http://i.giphy.com/fUMhF7Vp5iLVm.gif">
 
-(Merci à [@madx](https://twitter.com/madx) et [@Macxim](https://twitter.com/madx) pour leurs corrections de texte).
+(Merci à [@madx](https://twitter.com/madx) et [@Macxim](https://twitter.com/Macxim) pour leurs corrections de texte).
