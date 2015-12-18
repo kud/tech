@@ -47,6 +47,8 @@ gulp.task('compile', ['clean', 'markup', 'images', 'scripts', 'styles'])
 // watch files
 gulp.task('watch', ['server', 'compile'], function() {
 
+  require('monitorctrlc')()
+
   server.listen(35729, function (err) {
     if ( err ) {
       return console.log( err )
