@@ -1,14 +1,15 @@
 /* node_modules */
-@import 'normalize.css/normalize.css';
-@import 'animate.css/animate.css';
+@import 'normalize.css/normalize';
+@import 'animate.css/animate';
 
 /* normal */
-@import './shared/fonts.css';
-@import './shared/base.css';
-@import './shared/banner.css';
-@import './shared/header.css';
-@import './shared/footer.css';
-@import './shared/beautiful-links.css';
-@import './views/index.css';
-@import './views/posts.css';
-@import './views/post.css';
+@import './shared/fonts';
+@import './shared/base';
+@import './shared/banner';
+@import './shared/header';
+@import './shared/footer';
+@import './shared/beautiful-links';
+@import './shared/anchor';
+@import './views/index';
+@import './views/posts';
+@import './views/post';

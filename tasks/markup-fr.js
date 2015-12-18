@@ -1,13 +1,12 @@
-var Metalsmith  = require('metalsmith')
-var permalinks  = require('metalsmith-permalinks')
-var markdown    = require('metalsmith-markdown')
-var templates   = require('metalsmith-templates')
-var ignore      = require('metalsmith-ignore')
-var collections = require('metalsmith-collections')
-var metallic    = require('metalsmith-metallic')
-var moment      = require('moment')
-var gulp        = require('gulp')
-var rimraf      = require('rimraf')
+var Metalsmith         = require('metalsmith')
+var permalinks         = require('metalsmith-permalinks')
+var markdown           = require('metalsmith-markdown')
+var templates          = require('metalsmith-templates')
+var ignore             = require('metalsmith-ignore')
+var collections        = require('metalsmith-collections')
+var metallic           = require('metalsmith-metallic')
+var headingsidentifier = require("metalsmith-headings-identifier")
+var moment             = require('moment')
 
 module.exports = function( cb ) {
 
@@ -61,6 +60,11 @@ module.exports = function( cb ) {
         directory: 'src/templates',
         moment: moment,
         lang: 'fr'
+      })
+    )
+    .use(
+      headingsidentifier({
+        linkTemplate: '<a class="kud-Anchor" href="#%s"><span class="kud-Anchor-el">#</span></a>'
       })
     )
     .clean( false )

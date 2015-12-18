@@ -1,0 +1,29 @@
+.kud-Anchor {
+  position: relative;
+  display: none;
+  transition: 300ms;
+}
+
+  .kud-Anchor-el {
+    position: absolute;
+    left: -26px;
+    top: 4px;
+  }
+
+  .kud-Anchor::after {
+    display: none;
+  }
+
+  .kud-Post-content .kud-Anchor {
+    display: inline;
+    opacity: 0;
+  }
+
+  .kud-Post-content h1:hover .kud-Anchor,
+  .kud-Post-content h2:hover .kud-Anchor,
+  .kud-Post-content h3:hover .kud-Anchor,
+  .kud-Post-content h4:hover .kud-Anchor,
+  .kud-Post-content h5:hover .kud-Anchor,
+  .kud-Post-content h6:hover .kud-Anchor {
+    opacity: 1;
+  }
