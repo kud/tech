@@ -19,11 +19,11 @@ html.posts
           each post in collections.posts
 
             li.kud-Summary-listItem
-              time.kud-Summary-listItemTime= moment(post.date).locale(lang).format('DD MMM YYYY')
+              time(title=moment(post.date).locale(lang).format('Do MMMM YYYY')).kud-Summary-listItemTime= moment(post.date).locale(lang).format('DD MMM YYYY')
               if post.redirectUrl
-                a(href=post.redirectUrl target="_blank").kud-Summary-listItemHeading= '⤤ ' + post.title
+                a(href=post.redirectUrl target="_blank" title=post.title).kud-Summary-listItemHeading= '⤤ ' + post.title
               else
-                a(href=post.path + '/').kud-Summary-listItemHeading= post.title
+                a(href=post.path + '/' title=post.title).kud-Summary-listItemHeading= post.title
 
       include partials/footer
     include partials/scripts

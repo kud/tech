@@ -3,12 +3,12 @@
 @import 'animate.css/animate.css';
 
 /* normal */
-@import './_fonts.css';
-@import './_base.css';
-@import './_banner.css';
-@import './_header.css';
-@import './_footer.css';
-@import './_index.css';
-@import './_beautiful-links.css';
-@import './_summary.css';
-@import './_post.css';
+@import './shared/fonts.css';
+@import './shared/base.css';
+@import './shared/banner.css';
+@import './shared/header.css';
+@import './shared/footer.css';
+@import './shared/beautiful-links.css';
+@import './views/index.css';
+@import './views/posts.css';
+@import './views/post.css';

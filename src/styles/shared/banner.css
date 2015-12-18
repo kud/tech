@@ -1,0 +1,14 @@
+.kud-Banner {
+  background: #FAFAFA;
+  padding: 1rem 2rem;
+}
+
+  .kud-Banner-link {
+    color: #869D9A;
+    font-size: 0.8rem;
+    transition: all .3s ease;
+  }
+
+    .kud-Banner-link:hover {
+      color: #4F5A63;
+    }
