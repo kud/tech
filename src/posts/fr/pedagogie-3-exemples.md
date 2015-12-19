@@ -1,6 +1,6 @@
 ---
 title: Pédagogie - De l'intérêt de toujours donner 3 exemples
-header: /images/pedagogie-3-exemples/head.gif
+cover: /images/pedagogie-3-exemples/cover.gif
 date: 2015-11-18
 template: post.jade
 collection: posts

@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "semi": 0,
+    "semi-spacing": 0,
+    "quotes": 0,
+    "strict": 0,
+    "new-cap": 0,
+    "curly": 0,
+    "no-console": 1,
+    "no-underscore-dangle": 0,
+    "yoda": 0,
+    "no-new": 0,
+    "no-debugger": 1,
+    "no-multi-spaces": 0
+  },
+  "globals":{
+  }
+}

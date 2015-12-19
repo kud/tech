@@ -63,7 +63,7 @@ module.exports = function(cb) {
     )
     .use(
       headingsidentifier({
-        linkTemplate: '<a class="kud-Anchor" href="#%s"><span class="kud-Anchor-el">#</span></a>'
+        linkTemplate: '<a class="kud-Anchor" href="#%s"><span></span></a>'
       })
     )
     .clean( false )

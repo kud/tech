@@ -13,8 +13,8 @@ mixin head(title)
     else
       meta(property="og:title" content='Diary of the _kud')
 
-    if header
-      meta(property="og:image" content='http://diary.kud.io' + header)
+    if cover
+      meta(property="og:image" content=cover.match(/http/) ? cover : 'http://diary.kud.io' + cover)
     else
       meta(property="og:image" content='http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=500')
 

@@ -9,6 +9,10 @@
   padding-top: 10rem;
 }
 
+  .kud-Header--index {
+    top: -200px;
+  }
+
   .kud-Header-avatar {
     width: 8.75rem;
     height: 8.75rem;
@@ -40,8 +44,4 @@
 
   .kud-Header-heading {
     text-align: center;
-  }
-
-  .kud-Header--index {
-    top: -200px;
   }

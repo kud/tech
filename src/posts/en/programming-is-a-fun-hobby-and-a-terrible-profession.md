@@ -1,6 +1,6 @@
 ---
 title: Programming is a fun hobby and a terrible profession
-header: http://i.giphy.com/NgZvvu1dq9HCE.gif
+cover: http://i.giphy.com/NgZvvu1dq9HCE.gif
 date: 2015-04-10
 template: post.jade
 collection: posts

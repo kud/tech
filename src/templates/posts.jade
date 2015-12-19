@@ -4,26 +4,22 @@ include partials/header
 doctype html
 html.posts
   mixin head('')
-  //- body.animated.fadeIn
   body
     div.kud-Wrapper
 
       mixin header('')
 
-      section.kud-Summary.kud-BeautifyLink.animated.fadeIn
-
-        h2.kud-Summary-heading Articles
-
-        ul.kud-Summary-list
+      section.kud-Posts.kud-Text--wowLink.animated.fadeIn
+        h2.kud-Posts-heading Articles
+        ul.kud-Posts-list
 
           each post in collections.posts
-
-            li.kud-Summary-listItem
-              time(title=moment(post.date).locale(lang).format('Do MMMM YYYY')).kud-Summary-listItemTime= moment(post.date).locale(lang).format('DD MMM YYYY')
+            li.kud-Posts-listItem
+              time(title=moment(post.date).locale(lang).format('Do MMMM YYYY')).kud-Posts-listItemTime= moment(post.date).locale(lang).format('DD MMM YYYY')
               if post.redirectUrl
-                a(href=post.redirectUrl target="_blank" title=post.title).kud-Summary-listItemHeading= '⤤ ' + post.title
+                a(href=post.redirectUrl target="_blank" title=post.title).kud-Posts-listItemHeading= '⤤ ' + post.title
               else
-                a(href=post.path + '/' title=post.title).kud-Summary-listItemHeading= post.title
+                a(href=post.path + '/' title=post.title).kud-Posts-listItemHeading= post.title
 
       include partials/footer
     include partials/scripts
