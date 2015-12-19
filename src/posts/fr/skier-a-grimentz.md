@@ -1,6 +1,6 @@
 ---
 title: Skier à Grimentz
-header: /images/skier-a-grimentz/img_19_small.jpg
+cover: /images/skier-a-grimentz/img_19_small.jpg
 date: 2015-03-09
 template: post.jade
 collection: posts

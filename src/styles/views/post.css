@@ -15,56 +15,9 @@
     width: 100%;
   }
 
-/*  .kud-PostHeader-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    content: '';
-    padding: 1rem;
-    transition: .5s;
-    cursor: pointer;
-  }
-
-  .kud-PostHeader-overlay::before {
-    content: '';
-    border: 1px solid #FFF;
-    width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 2px;
-    transition: .5s;
-  }
-
-  .kud-PostHeader-overlay:hover {
-    background: rgba(0,0,0,.0);
-  }
-
-  .kud-PostHeader-overlay:hover::before {
-    border: 0;
-  }
-
-  .kud-PostHeader-overlay:hover .kud-PostHeader-heading {
-    transform: translateY(-2000px);
-  }
-
-  .kud-PostHeader-overlay:hover .kud-PostHeader-date {
-    transform: translateY(2000px);
-  }*/
-
-/*  .kud-PostHeader-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }*/
-
   .kud-PostHeader-heading {
     color: #4F5A63;
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: Raleway, Arial, sans-serif;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -77,7 +30,7 @@
     text-align: center;
   }
 
-/** content */
+  /** content */
   .kud-Post-content {
     line-height: 1.6rem;
   }
@@ -108,15 +61,3 @@
   .kud-Post-content p {
     clear: both;
   }
-
-@media (max-width: 640px) {
-
-  html.kud-Status--post {
-    padding-top: 50px;
-  }
-
-  .kud-Footer {
-    padding-top: 1rem;
-  }
-
-}

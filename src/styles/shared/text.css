@@ -1,8 +1,12 @@
-.kud-BeautifyLink a {
+.kud-Text--center {
+  text-align: center;
+}
+
+.kud-Text--wowLink a:not(.kud-Anchor) {
   position: relative;
 }
 
-  .kud-BeautifyLink a::after {
+  .kud-Text--wowLink a:not(.kud-Anchor)::after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -15,8 +19,8 @@
     transform: translateY(2px);
   }
 
-  .kud-BeautifyLink a:hover::after,
-  .kud-BeautifyLink a:focus::after {
+  .kud-Text--wowLink a:not(.kud-Anchor):hover::after,
+  .kud-Text--wowLink a:not(.kud-Anchor):focus::after {
     opacity: 1;
     transform: translateY(0px);
   }

@@ -1,36 +1,26 @@
+if lang === 'fr'
+  - var bannerTitle = "Retour à la page principale"
+else
+  - var bannerTitle = "Back to home"
+
 include partials/head
 include partials/header
 
 doctype html
-html
+html.post
   mixin head(title)
-  //- body.animated.fadeIn
   body
-
     div.kud-Banner
-
-      if lang === 'fr'
-        a(class="kud-Banner-link" href='/' + lang + '/') « Retour à la page principale
-
-      if lang === 'en'
-        a(class="kud-Banner-link" href='/' + lang + '/') « Back to home
+      a(class="kud-Banner-link" href='/' + lang + '/')= '« ' + bannerTitle
 
     div.kud-Wrapper
-
-      //- mixin header('')
-
-      section.kud-Post.kud-BeautifyLink.animated.fadeIn
+      section.kud-Post.kud-Text--wowLink.animated.fadeIn
 
         div.kud-PostHeader
-
-          img(src=header).kud-PostHeader-img
-
+          img(src=cover).kud-PostHeader-img
           div.kud-PostHeader-overlay
-
             div.kud-PostHeader-wrapper
-
               h2.kud-PostHeader-heading=title
-
               time.kud-PostHeader-date= moment(date).locale(lang).format('dddd Do MMMM YYYY')
 
         div.kud-Post-content!= contents

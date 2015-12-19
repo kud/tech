@@ -5,10 +5,10 @@
 /* normal */
 @import './shared/fonts';
 @import './shared/base';
+@import './shared/text';
 @import './shared/banner';
 @import './shared/header';
 @import './shared/footer';
-@import './shared/beautiful-links';
 @import './shared/anchor';
 @import './views/index';
 @import './views/posts';

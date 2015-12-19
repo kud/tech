@@ -1,29 +1,23 @@
-div.kud-Footer.kud-BeautifyLink
+if lang === 'fr'
+  - var titles = { home: "La Maison", instagram: "Le Instagram", twitter: "Le Twitter", speaking: "I speak English" }
+  - var href = '/en/'
+else
+  - var titles = { home: "Homepage", instagram: "Instagram", twitter: "Twitter", speaking: "Je parle français" }
+  - var href = '/fr/'
+
+div.kud-Footer.kud-Text--wowLink
 
   ul.kud-Footer-list
 
-    if lang === 'fr'
-      li.kud-Footer-listItem
-        a(href='http://kud.io').kud-Footer-listLink La Maison
+    li.kud-Footer-listItem
+      a(href='http://kud.io').kud-Footer-listLink= titles.home
 
-      li.kud-Footer-listItem
-        a(href='http://instagram.kud.io').kud-Footer-listLink Le Instagram
+    li.kud-Footer-listItem
+      a(href='http://instagram.kud.io').kud-Footer-listLink= titles.instagram
 
-      li.kud-Footer-listItem
-        a(href='http://twitter.kud.io').kud-Footer-listLink Le Twitter
+    li.kud-Footer-listItem
+      a(href='http://twitter.kud.io').kud-Footer-listLink= titles.twitter
 
-      li.kud-Footer-listItem
-        a(href='/en/').kud-Footer-listLink I speak English
+    li.kud-Footer-listItem
+      a(href=href).kud-Footer-listLink= titles.speaking
 
-    if lang === 'en'
-      li.kud-Footer-listItem
-        a(href='http://kud.io').kud-Footer-listLink Homepage
-
-      li.kud-Footer-listItem
-        a(href='http://instagram.kud.io').kud-Footer-listLink Instagram
-
-      li.kud-Footer-listItem
-        a(href='http://twitter.kud.io').kud-Footer-listLink Twitter
-
-      li.kud-Footer-listItem
-        a(href='/fr/').kud-Footer-listLink Je parle français

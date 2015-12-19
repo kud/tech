@@ -1,6 +1,6 @@
 ---
 title: La bonne fonte de caractères sous Windows
-header: /images/fonte-de-caracteres-windows/head.jpg
+cover: /images/fonte-de-caracteres-windows/cover.jpg
 date: 2015-02-22
 template: post.jade
 collection: posts

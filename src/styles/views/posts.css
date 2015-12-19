@@ -1,37 +1,54 @@
 /**
- * Summury
+ * Posts
  */
-.kud-Summary-list {
-  list-style: none;
+html.posts {
+  background: url('./../images/background.jpg') center -600px fixed no-repeat;
+  padding-top: 250px;
+  background-size: cover;
 }
 
-.kud-Summary-listItem {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.6rem;
+html.posts .kud-Wrapper {
+  padding-top: 220px;
 }
 
-.kud-Summary-listItemTime {
-  color: #AAA;
-  margin-right: 15px;
-  width: 7rem;
-  display: inline-block;
-  text-align: right;
-}
+.kud-Posts {}
+
+  .kud-Posts-list {
+    list-style: none;
+  }
+
+  .kud-Posts-listItem {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.6rem;
+  }
+
+  .kud-Posts-listItemTime {
+    color: #AAA;
+    margin-right: 15px;
+    width: 7rem;
+    display: inline-block;
+    text-align: right;
+  }
 
 @media (max-width: 640px) {
 
-  .kud-Summary-list {
+  html.posts {
+    background: none;
+    padding-top: 100px;
+  }
+
+  .kud-Posts-list {
     margin: 0;
     padding: 0;
   }
 
-  .kud-Summary-listItem {
+  .kud-Posts-listItem {
     margin-bottom: 0.5rem;
   }
 
-  .kud-Summary-listItemTime {
+  .kud-Posts-listItemTime {
     display: block;
     width: 100%;
     text-align: left;

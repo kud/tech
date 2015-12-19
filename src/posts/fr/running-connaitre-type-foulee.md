@@ -1,6 +1,6 @@
 ---
 title: Running - Choisir le bon type de chaussures
-header: /images/running-connaitre-type-foulee/heading.gif
+cover: /images/running-connaitre-type-foulee/cover.gif
 date: 2015-12-12
 template: post.jade
 collection: posts

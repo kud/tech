@@ -1,6 +1,6 @@
 ---
 title: GTA V PC - How to fix the BEX64 error
-header: /images/gta-v-pc-fix-bex64-error/head.jpg
+cover: /images/gta-v-pc-fix-bex64-error/cover.jpg
 date: 2015-04-15
 template: post.jade
 collection: posts

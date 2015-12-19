@@ -6,28 +6,19 @@
 
 html,
 body {
-  /*font-family: 'Droid Serif', serif;*/
   font-family: 'Proxima Nova Thin', sans-serif;
   font-size: 1.1rem;
   margin: 0;
   padding: 0;
   color: #333;
   background: #FFF;
-  /*line-height: 1.6rem;*/
 }
 
 html {
   height: 100%;
 }
 
-html.posts {
-  background: url('./../images/cover.jpg') center -600px fixed no-repeat;
-  padding-top: 250px;
-  background-size: cover;
-}
-
 body {
-  /*border-top: 1px solid #333;*/
   min-height: 100%;
 }
 
@@ -36,7 +27,6 @@ body {
 }
 
 a {
-  /*color: #909090;*/
   color: #ED4545;
   text-decoration: none;
 }
@@ -50,27 +40,10 @@ h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.kud-Text--center {
-  text-align: center;
-}
-
 .kud-Wrapper {
   max-width: 43rem;
   padding: 1rem;
   margin: auto;
   background: white;
   position: relative;
-}
-
-.posts .kud-Wrapper {
-  padding-top: 220px;
-}
-
-@media (max-width: 640px) {
-
-  html.posts {
-    background: none;
-    padding-top: 100px;
-  }
-
 }

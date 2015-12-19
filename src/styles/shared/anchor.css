@@ -1,22 +1,39 @@
-.kud-Anchor {
+.kud-Post-content h1,
+.kud-Post-content h2,
+.kud-Post-content h3,
+.kud-Post-content h4,
+.kud-Post-content h5,
+.kud-Post-content h6 {
   position: relative;
-  display: none;
-  transition: 300ms;
 }
 
-  .kud-Anchor-el {
+.kud-Post-content .kud-Anchor {
+  height: 20px;
+  width: 20px;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  height: 100%;
+  background: transparent;
+  color: #ED4545;
+  vertical-align: middle;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+  .kud-Post-content .kud-Anchor span::before {
+    content: "¶";
     position: absolute;
-    left: -26px;
-    top: 4px;
-  }
-
-  .kud-Anchor::after {
-    display: none;
-  }
-
-  .kud-Post-content .kud-Anchor {
-    display: inline;
-    opacity: 0;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
   }
 
   .kud-Post-content h1:hover .kud-Anchor,

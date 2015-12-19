@@ -1,6 +1,6 @@
 ---
 title: Avoir le clavier de Lollipop sur une ancienne version Android
-header: /images/clavier-lollipop-sur-ancien-android/header.jpg
+cover: /images/clavier-lollipop-sur-ancien-android/cover.jpg
 date: 2014-12-17
 template: post.jade
 collection: posts
