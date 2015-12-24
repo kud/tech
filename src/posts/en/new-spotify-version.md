@@ -2,7 +2,7 @@
 title: What's wrong with the latest Spotify version?
 cover: /images/new-spotify-version/cover.png
 date: 2015-03-16
-template: post.jade
+layout: post.jade
 collection: posts
 ---
 

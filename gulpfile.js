@@ -45,7 +45,9 @@ gulp.task( 'deploy', ['compile'], require(__dirname + '/tasks/deploy') )
 gulp.task('compile', ['clean', 'markup', 'images', 'scripts', 'styles'])
 
 // watch files
-gulp.task('watch', ['server', 'compile'], function() {
+gulp.task('watch', ['compile'], function() {
+
+  gulp.start('server')
 
   require('monitorctrlc')()
 

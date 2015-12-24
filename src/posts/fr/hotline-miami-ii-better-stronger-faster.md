@@ -2,7 +2,7 @@
 title: Hotline Miami II - Better, Stronger, Harder
 cover: /images/hotline-miami-ii-better-stronger-faster/hotline_14_small.jpg
 date: 2015-04-05
-template: post.jade
+layout: post.jade
 collection: posts
 ---
 

@@ -1,7 +1,7 @@
 var Metalsmith  = require('metalsmith')
 var permalinks  = require('metalsmith-permalinks')
 var markdown    = require('metalsmith-markdown')
-var templates   = require('metalsmith-templates')
+var layouts     = require('metalsmith-layouts')
 var ignore      = require('metalsmith-ignore')
 var collections = require('metalsmith-collections')
 var metallic    = require('metalsmith-metallic')
@@ -34,7 +34,7 @@ module.exports = function(cb) {
     )
     // .use( debug )
     .use(
-      templates({
+      layouts({
         engine: 'jade',
         directory: 'src/templates',
         moment: moment
