@@ -1,23 +1,16 @@
-if lang === 'fr'
-  - var titles = { home: "La Maison", instagram: "Le Instagram", twitter: "Le Twitter", speaking: "I speak English" }
-  - var href = '/en/'
-else
-  - var titles = { home: "Homepage", instagram: "Instagram", twitter: "Twitter", speaking: "Je parle français" }
-  - var href = '/fr/'
-
 div.kud-Footer.kud-Text--wowLink
 
   ul.kud-Footer-list
 
     li.kud-Footer-listItem
-      a(href='http://kud.io').kud-Footer-listLink= titles.home
+      a(href='http://kud.io').kud-Footer-listLink= trans.footer.home
 
     li.kud-Footer-listItem
-      a(href='http://instagram.kud.io').kud-Footer-listLink= titles.instagram
+      a(href='http://instagram.kud.io').kud-Footer-listLink= trans.footer.instagram
 
     li.kud-Footer-listItem
-      a(href='http://twitter.kud.io').kud-Footer-listLink= titles.twitter
+      a(href='http://twitter.kud.io').kud-Footer-listLink= trans.footer.twitter
 
     li.kud-Footer-listItem
-      a(href=href).kud-Footer-listLink= titles.speaking
+      a(href='/' + antiLang + '/').kud-Footer-listLink= trans.footer.speaking
 
