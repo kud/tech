@@ -1,3 +1,3 @@
 ---
-template: posts.jade
+layout: posts.jade
 ---

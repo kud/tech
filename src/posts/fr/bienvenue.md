@@ -2,7 +2,7 @@
 title: Bienvenu(e)
 cover: http://i.giphy.com/HwePORLAGGJOw.gif
 date: 1970-01-01
-template: post.jade
+layout: post.jade
 collection: posts
 ---
 

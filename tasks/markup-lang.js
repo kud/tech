@@ -1,11 +1,12 @@
 var Metalsmith         = require('metalsmith')
 var permalinks         = require('metalsmith-permalinks')
 var markdown           = require('metalsmith-markdown')
-var templates          = require('metalsmith-templates')
+var layouts            = require('metalsmith-layouts')
 var ignore             = require('metalsmith-ignore')
 var collections        = require('metalsmith-collections')
 var metallic           = require('metalsmith-metallic')
 var headingsidentifier = require("metalsmith-headings-identifier")
+var drafts             = require("metalsmith-drafts")
 var moment             = require('moment')
 
 module.exports = function( cb, lang ) {
@@ -26,12 +27,12 @@ module.exports = function( cb, lang ) {
         'images/**/*',
         'styles/**/*',
         'posts/' + antiLang + '/**/*',
-        'posts/' + lang + '/drafts/**/*',
         'templates/**/*',
         'CNAME',
         'index.md'
       ])
     )
+    .use( drafts() )
     .use( metallic() )
     .use(
       markdown({
@@ -56,7 +57,7 @@ module.exports = function( cb, lang ) {
     )
     // .use( debug )
     .use(
-      templates({
+      layouts({
         engine: 'jade',
         directory: 'src/templates',
         moment: moment,
