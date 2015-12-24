@@ -2,7 +2,7 @@
 title: Comment je suis passé de flickr à 500px
 cover: https://31.media.tumblr.com/5aa2ec6aea4151ff9099a742b2998a25/tumblr_inline_mz8xrz2TTN1qbzli5.jpg
 date: 2014-06-09
-template: post.jade
+layout: post.jade
 collection: posts
 ---
 

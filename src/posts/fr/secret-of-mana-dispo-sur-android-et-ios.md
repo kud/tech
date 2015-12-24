@@ -2,7 +2,7 @@
 title: Secret of Mana disponible sur Android et iOS
 cover: /images/secret-of-mana-dispo-sur-android-et-ios/cover.jpg
 date: 2014-11-21
-template: post.jade
+layout: post.jade
 collection: posts
 ---
 
