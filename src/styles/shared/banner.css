@@ -1,6 +1,6 @@
 .kud-Banner {
   background: #FAFAFA;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem 1rem;
 }
 
   .kud-Banner-link {
@@ -8,6 +8,14 @@
     font-size: 0.8rem;
     transition: all .3s ease;
   }
+
+    .kud-Banner-link::before {
+      content: '«';
+      display: inline-block;
+      vertical-align: -2px;
+      margin-right: 3px;
+      font-size: 1.5rem;
+    }
 
     .kud-Banner-link:hover {
       color: #4F5A63;

@@ -37,7 +37,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', Arial, sans-serif;*/
+  font-family: 'Oswald', Arial, sans-serif;
 }
 
 .kud-Wrapper {

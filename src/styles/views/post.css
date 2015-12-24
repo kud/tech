@@ -17,7 +17,7 @@
 
   .kud-PostHeader-heading {
     color: #4F5A63;
-    font-family: Raleway, Arial, sans-serif;
+    /*font-family: Raleway, Arial, sans-serif;*/
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -39,7 +39,12 @@
     font-size: 4.375rem;
     float: left;
     line-height: 3.75rem;
+    font-family: "Raleway";
     padding: 4px 12px 0px 0px;
+  }
+
+  .kud-Post-content p {
+    clear: both;
   }
 
   .kud-Post-content img {
@@ -58,6 +63,20 @@
     border-bottom: 1px dashed #EEE;
   }
 
-  .kud-Post-content p {
-    clear: both;
+
+  .kud-Post-content ul {
+    list-style: none;
   }
+
+  .kud-Post-content li {
+    position: relative;
+  }
+
+    .kud-Post-content li::before {
+      content: '✕';
+      position: absolute;
+      left: -18px;
+      top: 0px;
+      font-size: 1rem;
+      color: #869D9E;
+    }
