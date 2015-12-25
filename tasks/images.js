@@ -7,6 +7,5 @@ module.exports = function() {
     .src(['src/images/**/*', '!src/images/_covers/**/*'])
     .pipe( gutil.env.dist ? require('gulp-imagemin')() : gutil.noop() )
     .pipe( gulp.dest('dist/images/') )
-    .pipe( require('gulp-livereload')() )
 
 }

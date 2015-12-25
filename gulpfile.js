@@ -74,7 +74,12 @@ gulp.task('watch', ['compile'], function() {
 
   gulp.watch([
       'src/images/**/*'
-    ], ['images'])
+    ], function() {
+      gulp.start('images', function() {
+        livereload.reload()
+      })
+    }
+  )
 
 })
 
