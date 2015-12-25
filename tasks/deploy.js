@@ -1,11 +1,11 @@
 var gulp   = require('gulp')
-var deploy = require('gulp-gh-pages')
 
 module.exports = function() {
 
-  return gulp.src('dist/**/*')
+  return gulp
+    .src('dist/**/*')
     .pipe(
-      deploy({
+      require('gulp-gh-pages')({
         branch: 'gh-pages',
         cacheDir: '.deploy'
       })

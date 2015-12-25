@@ -41,12 +41,14 @@ module.exports = function() {
     cb()
   })
 
-  return gulp.src( src )
+  return gulp
+    .src( src )
     .pipe( gutil.env.dist ? gutil.noop() : require('gulp-plumber')() )
     .pipe( browserified )
     .pipe( gutil.env.dist ? require('vinyl-buffer')() : gutil.noop() )
     .pipe( gutil.env.dist ? require('gulp-uglify')( { outSourceMap: false } ) : gutil.noop() )
     .pipe( gulp.dest('dist/') )
+    .pipe( require('gulp-livereload')() )
 }
 
 

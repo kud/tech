@@ -1,14 +1,3 @@
-var Metalsmith         = require('metalsmith')
-var permalinks         = require('metalsmith-permalinks')
-var markdown           = require('metalsmith-markdown')
-var layouts            = require('metalsmith-layouts')
-var ignore             = require('metalsmith-ignore')
-var collections        = require('metalsmith-collections')
-var metallic           = require('metalsmith-metallic')
-var headingsidentifier = require("metalsmith-headings-identifier")
-var drafts             = require("metalsmith-drafts")
-var moment             = require('moment')
-
 module.exports = function( cb, lang ) {
 
   var antiLang = lang === 'fr' ? 'en' : 'fr'
@@ -19,9 +8,9 @@ module.exports = function( cb, lang ) {
   }
 
   // order is important here
-  Metalsmith( __dirname + '/..' )
+  require('metalsmith')( __dirname + '/..' )
     .use(
-      ignore([
+      require('metalsmith-ignore')([
         '**/.DS_Store',
         'files/**/*',
         'images/**/*',
@@ -32,17 +21,17 @@ module.exports = function( cb, lang ) {
         'index.md'
       ])
     )
-    .use( drafts() )
-    .use( metallic() )
+    .use( require("metalsmith-drafts")() )
+    .use( require('metalsmith-metallic')() )
     .use(
-      markdown({
+      require('metalsmith-markdown')({
         smartypants: true,
         gfm: true,
         tables: true
       })
     )
     .use(
-      collections({
+      require('metalsmith-collections')({
         posts: {
           pattern: 'src/posts/' + lang + '/*.md',
           sortBy: 'date',
@@ -51,23 +40,23 @@ module.exports = function( cb, lang ) {
       })
     )
     .use(
-      permalinks({
+      require('metalsmith-permalinks')({
         pattern: ':title'
       })
     )
     // .use( debug )
     .use(
-      layouts({
+      require('metalsmith-layouts')({
         engine: 'jade',
         directory: 'src/templates',
-        moment: moment,
+        moment: require('moment'),
         lang: lang,
         antiLang: antiLang,
         trans: require('./../locales/' + lang + '.json')
       })
     )
     .use(
-      headingsidentifier({
+      require("metalsmith-headings-identifier")({
         linkTemplate: '<a class="kud-Anchor" href="#%s"><span></span></a>'
       })
     )
