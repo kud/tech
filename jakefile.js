@@ -33,6 +33,17 @@ task('compile', function() {
 
 })
 
+desc('Compile assets minified.')
+task('compile-dist', function() {
+
+  console.log( chalk.blue('❯ Compiling...\n') )
+
+  jake.exec('gulp compile --dist', { interactive: true }, function() {
+    console.log( chalk.green('\n✔ Compiled!') )
+  })
+
+})
+
 desc('Watch your files.')
 task('watch', function() {
 
@@ -49,7 +60,7 @@ task('deploy', function() {
 
   console.log( chalk.blue('❯ Deploying...\n') )
 
-  jake.exec('gulp deploy', { interactive: true }, function() {
+  jake.exec('gulp deploy --dist', { interactive: true }, function() {
     console.log( chalk.green('\n✔ Deployed!') )
   })
 

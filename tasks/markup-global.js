@@ -1,3 +1,5 @@
+var gutil = require('gulp-util')
+
 module.exports = function(cb) {
 
   var debug = function( files, metalsmith, done ) {
@@ -28,7 +30,8 @@ module.exports = function(cb) {
       require('metalsmith-layouts')({
         engine: 'jade',
         directory: 'src/templates',
-        moment: require('moment')
+        moment: require('moment'),
+        NODE_ENV: gutil.env.dist ? 'production' : 'development'
       })
     )
     .clean( false )

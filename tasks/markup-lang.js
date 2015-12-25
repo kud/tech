@@ -1,3 +1,5 @@
+var gutil = require('gulp-util')
+
 module.exports = function( cb, lang ) {
 
   var antiLang = lang === 'fr' ? 'en' : 'fr'
@@ -52,7 +54,8 @@ module.exports = function( cb, lang ) {
         moment: require('moment'),
         lang: lang,
         antiLang: antiLang,
-        trans: require('./../locales/' + lang + '.json')
+        trans: require('./../locales/' + lang + '.json'),
+        NODE_ENV: gutil.env.dist ? 'production' : 'development'
       })
     )
     .use(
