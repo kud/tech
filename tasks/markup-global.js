@@ -1,12 +1,3 @@
-var Metalsmith  = require('metalsmith')
-var permalinks  = require('metalsmith-permalinks')
-var markdown    = require('metalsmith-markdown')
-var layouts     = require('metalsmith-layouts')
-var ignore      = require('metalsmith-ignore')
-var collections = require('metalsmith-collections')
-var metallic    = require('metalsmith-metallic')
-var moment      = require('moment')
-
 module.exports = function(cb) {
 
   var debug = function( files, metalsmith, done ) {
@@ -15,9 +6,9 @@ module.exports = function(cb) {
   }
 
   // order is important here
-  Metalsmith( __dirname + '/..' )
+  require('metalsmith')( __dirname + '/..' )
     .use(
-      ignore([
+      require('metalsmith-ignore')([
         '**/.DS_Store',
         'images/**/*',
         'posts/**/*',
@@ -26,7 +17,7 @@ module.exports = function(cb) {
       ])
     )
     .use(
-      markdown({
+      require('metalsmith-markdown')({
         smartypants: true,
         gfm: true,
         tables: true
@@ -34,10 +25,10 @@ module.exports = function(cb) {
     )
     // .use( debug )
     .use(
-      layouts({
+      require('metalsmith-layouts')({
         engine: 'jade',
         directory: 'src/templates',
-        moment: moment
+        moment: require('moment')
       })
     )
     .clean( false )

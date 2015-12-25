@@ -2,10 +2,9 @@
  * Imports
  */
 
-var gulp   = require('gulp')
-var lr     = require('tiny-lr')
-var server = lr()
-var del    = require('del')
+var gulp       = require('gulp')
+var livereload = require('gulp-livereload')
+var del        = require('del')
 
 /**
  * Private tasks
@@ -49,30 +48,33 @@ gulp.task('watch', ['compile'], function() {
 
   gulp.start('server')
 
-  require('monitorctrlc')()
+  require('monitorctrlc')() // handle ctrl+c
 
-  server.listen(35729, function (err) {
-    if ( err ) {
-      return console.log( err )
+  livereload.listen()
+
+  gulp.watch([
+      'src/**/*',
+      '!src/images/**/*',
+      '!src/scripts/**/*',
+      '!src/styles/**/*'
+    ], function() {
+      gulp.start('markup', function() {
+        livereload.reload()
+      })
     }
+  )
 
-    gulp.watch( [
-        'src/**/*.md',
-        'src/**/*.jade',
-        'templates/**/*.md',
-        'templates/**/*.jade'
-      ], function() {
-      gulp.start('markup')
-    })
+  gulp.watch([
+      'src/**/*.js'
+    ], ['scripts'])
 
-    gulp.watch( ['src/**/*.js'], function(){
-      gulp.start('scripts')
-    })
+  gulp.watch([
+      'src/**/*.css'
+    ], ['styles'])
 
-    gulp.watch( ['src/**/*.css'], function(){
-      gulp.start('styles')
-    })
-  })
+  gulp.watch([
+      'src/images/**/*'
+    ], ['images'])
 
 })
 

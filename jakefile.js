@@ -1,4 +1,4 @@
-var chalk      = require('chalk')
+var chalk = require('chalk')
 
 desc('Install environnement.')
 task('install', function() {
