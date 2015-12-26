@@ -12,11 +12,12 @@ html.post
       section.kud-Post.kud-Text--wowLink.animated.fadeIn
 
         div.kud-PostHeader
-          img(src=cover).kud-PostHeader-img
+          span(class="hint--bottom" data-hint="😺").kud-PostHeader-decorator
+            img(src=cover).kud-PostHeader-img
           div.kud-PostHeader-overlay
             div.kud-PostHeader-wrapper
               h2.kud-PostHeader-heading=title
-              time.kud-PostHeader-date= moment(date).locale(lang).format('dddd Do MMMM YYYY')
+              time(data-hint=moment(date).locale(lang).fromNow()).kud-PostHeader-date.hint--bottom= moment(date).locale(lang).format('dddd Do MMMM YYYY')
 
         div.kud-Post-content!= contents
 

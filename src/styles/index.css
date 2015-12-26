@@ -1,6 +1,7 @@
 /* node_modules */
 @import 'normalize.css/normalize';
 @import 'animate.css/animate';
+@import 'hint.css/hint';
 
 /* normal */
 @import './shared/fonts';
