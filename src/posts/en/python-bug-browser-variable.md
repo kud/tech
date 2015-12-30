@@ -12,7 +12,7 @@ Yesterday I wanted to use [HTML-CSS-JS Prettify](https://packagecontrol.io/packa
 
 Oh but? It wasn't the first time I had this error and I didn't know why: on [Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=1012443), and on [MkDocs](https://github.com/mkdocs/mkdocs/issues/465).
 
-So where does this bug come from?? It comes from `webbrowser` python lib.
+So where does this bug come from? It comes from `webbrowser` python lib.
 
 You just have to start `$ python -c 'import webbrowser; webbrowser.open("http://kud.io")'` to get it.
 
