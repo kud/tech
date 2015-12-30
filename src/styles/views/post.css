@@ -38,6 +38,7 @@
   /** content */
   .kud-Post-content {
     line-height: 1.6rem;
+    margin-bottom: 3rem;
   }
 
   .kud-Post-content p:first-of-type::first-letter {
