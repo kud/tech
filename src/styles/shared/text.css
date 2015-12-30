@@ -1,6 +1,6 @@
 a {
   /*color: #ED4545;*/
-  color: #4C9ED9;
+  color: #2a86c8;
   text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ a {
     width: 100%;
     height: 1px;
     /*background: #ED4545;*/
-    background: #4C9ED9;
+    background: #2a86c8;
     content: '';
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
