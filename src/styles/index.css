@@ -4,6 +4,7 @@
 @import 'hint.css/hint';
 
 /* normal */
+@import './shared/highlight';
 @import './shared/fonts';
 @import './shared/base';
 @import './shared/text';
