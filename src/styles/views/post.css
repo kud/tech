@@ -86,3 +86,25 @@
       font-size: 1rem;
       color: #869D9E;
     }
+
+  .kud-Post-content code {
+    border-radius: 4px;
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+    .kud-Post-content code:not(.hljs) {
+      background: #1d1f21;
+      color: #c5c8c6;
+      padding: 0 0.3rem 0.15rem 0.3rem;
+      font-size: 0.9rem;
+      vertical-align: 1px;
+    }
+
+    .kud-Post-content code.hljs {
+      background: #1d1f21;
+      color: #c5c8c6;
+      padding: 0 0.3rem 0.15rem 0.3rem;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      white-space: pre-wrap;
+    }

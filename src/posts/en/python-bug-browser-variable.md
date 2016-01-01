@@ -18,7 +18,7 @@ You just have to start `$ python -c 'import webbrowser; webbrowser.open("http://
 
 See the tracelog:
 
-```console
+```bash
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
   File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/webbrowser.py", line 669, in <module>
@@ -30,10 +30,9 @@ AttributeError: 'MacOSXOSAScript' object has no attribute 'basename'
 
 And why do you get that so? Because you defined the BROWSER environment variable, like this for instance:
 
-```console
+```bash
 export FIREFOXNIGHTLY_BIN="/Applications/FirefoxNightly.app/Contents/MacOS/firefox"
 export BROWSER=$FIREFOXNIGHTLY_BIN
 ```
 
 It's already [logged and will be fixed](https://bugs.python.org/issue24955) but for the moment either you **patch your [webbrowser.py](https://github.com/python-git/python/blob/master/Lib/webbrowser.py#L94)** or you **[comment the export of BROWSER](https://github.com/kud/my/commit/b78b46441a64c185a6178d3bd707e22b9a236cb7)**.
-
