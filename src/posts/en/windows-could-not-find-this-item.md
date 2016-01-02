@@ -8,7 +8,7 @@ collection: posts
 
 You're there, sitting on your chair, comfily and suddenly, you get this error.
 
-[![](/images/windows-could-not-find-this-item/bug.png)](/images/windows-could-not-find-this-item/bug.png)
+[![Could not find this item](/images/windows-could-not-find-this-item/bug.png)](/images/windows-could-not-find-this-item/bug.png)
 
 At start, you don't mind about it and you click on "try again". And oh! It works!
 
