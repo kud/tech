@@ -22,6 +22,7 @@
     content: '×';
     display: inline-block;
     margin-right: 2rem;
+    color: #8F8F8F;
   }
 
   .kud-Footer-listItem:first-child::before {
