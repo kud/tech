@@ -25,3 +25,8 @@
       .kud-IndexLanguageChoice-button:hover {
         border-bottom-color: #333;
       }
+
+      .kud-IndexLanguageChoice-button[data-hint]::before,
+      .kud-IndexLanguageChoice-button[data-hint]::after {
+        transition-delay: 1s;
+      }
