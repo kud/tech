@@ -16,7 +16,8 @@ html.post
             img(src=cover).kud-PostHeader-img
           div.kud-PostHeader-overlay
             div.kud-PostHeader-wrapper
-              h2.kud-PostHeader-heading=title
+              h2.kud-PostHeader-heading
+                a(href='')= title
               time(data-hint=moment(date).locale(lang).fromNow()).kud-PostHeader-date.hint--bottom= moment(date).locale(lang).format('dddd Do MMMM YYYY')
 
         div.kud-Post-content!= contents

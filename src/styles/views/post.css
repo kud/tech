@@ -28,6 +28,14 @@
       margin-bottom: 1rem;
     }
 
+      .kud-PostHeader-heading a {
+        color: inherit;
+      }
+
+        .kud-PostHeader-heading a:hover::after {
+          display: none;
+        }
+
     .kud-PostHeader-date {
       color: #869D9E;
       font-size: 1rem;
