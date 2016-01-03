@@ -75,4 +75,3 @@ The solution is to make the popup first and to change its location just after. L
 Now, you'll be able to start your popup and use the result of your request ajax to adjust it.
 
 Enjoy.
-
