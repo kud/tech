@@ -6,7 +6,7 @@ layout: post.jade
 collection: posts
 ---
 
-Aaaaaaaaaaaaah la photo. Ça faisait un moment que j'avais délaissé cette activité, à mon plus grand regret. Mais il n'est pas toujours évidemment de faire de la photo régulièrement lorsqu'on a seulement un reflex assez encombrant et un appareil photo sur son smartphone de moyenne qualité.
+Aaaaaaaaaaaaah la photo. Ça faisait un moment que j'avais délaissé cette activité, à mon plus grand regret. Mais il n'est pas toujours évident de faire de la photo régulièrement lorsqu'on a seulement un reflex assez encombrant et un appareil photo sur son smartphone de moyenne qualité.
 
 J'ai cependant repéré quelques compacts experts comme [le Sony G5 X](http://www.tomsguide.fr/actualite/canon-powershot-g5-x,48779.html), [le Fujifilm X-T1](http://www.lesnumeriques.com/appareil-photo-numerique/fujifilm-x-t1-p19220/test.html), [Panasonic Lumix LX100](http://www.lesnumeriques.com/appareil-photo-numerique/panasonic-lumix-lx100-p21696/test.html) et [Ricoh GR II](http://www.lesnumeriques.com/appareil-photo-numerique/ricoh-gr-ii-p26987/test.html) mais j'attends avant toute chose de m'acheter prochainement un nouveau smartphone avec un meilleur capteur afin de voir si un compact a encore une nécessité à mes yeux.
 
@@ -50,6 +50,6 @@ Je vous donne au passage deux articles afin d'améliorer encore plus votre Light
 
 Et si vous désirez voir mes photos, elles sont disponibles sur [500px](http://500px.kud.io/).
 
-A plus tard. 😺
+À plus tard. 😺
 
 <img style="width: 50%; margin: auto; margin-top: 150px;" src="http://i.giphy.com/Gma7Nu5lWOAQE.gif">
