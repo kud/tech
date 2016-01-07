@@ -1,7 +1,7 @@
 ---
 title: Natation - Comment bien choisir son équipement sportif
 cover: /images/natation-comment-bien-choisir-son-equipement-sportif/cover.jpg
-date: 2016-01-01
+date: 2016-01-07
 layout: post.jade
 collection: posts
 ---
