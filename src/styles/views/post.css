@@ -88,9 +88,9 @@
     .kud-Post-content li::before {
       content: '✕';
       position: absolute;
-      left: -18px;
+      left: -25px;
       top: 0px;
-      font-size: 1rem;
+      font-size: 0.7rem;
       color: #869D9E;
     }
 
