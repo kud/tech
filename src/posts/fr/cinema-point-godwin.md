@@ -1,24 +1,24 @@
 ---
 title: Le point godwin du cinéma
 cover: /images/cinema-point-godwin/cover.jpg
-date: 2016-02-24
+date: 2016-02-26
 layout: post.jade
 collection: posts
 ---
 
 Non, je ne vous parlerai pas ici du [principe](https://fr.wikipedia.org/wiki/Loi_de_Godwin) selon lequel l'un d'entre vous finira durant un débat par parler des nazis pour argumenter ses idée; ceci appliqué au cinéma. Non, non. Non ici, c'est un tout autre concept. Concept que j'ai pu expérimenter durant le fil des discussions autour du cinéma. Certes, ce point godwin du cinéma, je l'ai quelque peu inventé, mais c'est tout de même une chose qui revient assez souvent dans mon entourage ou sur internet.
 
-Voici la scène : vous êtes en plein débat sur un film que vous venez de voir; vous discutez, vous discutez… et là, bam ! La personne, sortie de nulle part, vous sort "Ouais, enfin… le livre est quand même mieux".
+Voici la scène : vous êtes en plein débat sur un film que vous venez de voir; vous discutez, vous discutez, argumentez… et là, bam ! La personne, sortie de nulle part, vous sort "Ouais, enfin… le livre est quand même mieux"…
 
-…
+<img alt="…" src="http://i.giphy.com/3oxRmfJWm7w6LHx2b6.gif" style="margin: 100px auto 40px auto;">
 
 Putain mais qu'est-ce qu'on s'en fouuuuuuuuuuuuuuuuut. On parle cinéma là. Pas livre. Ça n'a tout bonnement rien à voir.
 
 Je peux comprendre que ce soit éventuellement intéressant de comparer un livre et un film sur une même histoire, surtout quand l'un est tiré de l'autre… Mais sinon qu'est-ce que ça à faire ici ?
 
-Oui c'est probable qu'en soi le livre soit meilleur. Okay. Plus détaillé, plus subtil, et je ne sais guère quoi d'autre. Pourquoi pas. Mais il faut surtout comprendre qu'un livre permet de laisser votre imaginaire travailler. Le livre prendra forme en fonction de vos pensées, vos choix, vos goûts, plus personnelle donc; chose auquelle il est nettement plus difficile lorsqu'il s'agit d'un film, vu que tout est prémaché. Ce qui fait que vous pouvez un peu mieux vous approprier un livre plutôt qu'un film.
+Oui c'est probable qu'en soi le livre soit meilleur. Okay. Plus détaillé, plus subtil, et je ne sais guère quoi d'autre. Pourquoi pas. Mais il faut surtout comprendre qu'un livre permet de laisser votre imaginaire travailler. Le livre prendra forme en fonction de vos pensées, vos choix, vos goûts, plus personnel donc; chose auquelle il est nettement plus difficile lorsqu'il s'agit d'un film, vu que tout est prémaché. Ce qui fait que vous pouvez un peu mieux vous approprier un livre plutôt qu'un film.
 
-Tout ça pour dire qu'à mon sens, juste dire "le livre est mieux" n'a aucun intérêt en soi.
+Tout ça pour dire qu'à mon sens, sortir durant une discussion sur le cinéma que "**le livre est mieux**" n'a aucun intérêt en soi et c'**est** ceci **le point #godwin du cinéma**.
 
 ---
 
@@ -40,5 +40,5 @@ _source : http://www.collibris-app.com/blog/a-quoi-sert-le-cinema-sil-vient-apre
 
 _source : https://www.reseau-canope.fr/cndpfileadmin/mag-film/themes/madame-bovary-au-cinema-adaptation-reecriture/pistes-pour-letude/interroger-lacte-de-ladaptation-cinematographique/_
 
-Plus d'info disponible [ici](http://gerflint.fr/Base/Algerie13/laib.pdf).
+Et si vous voulez aller plus loin, lisez [L’adaptation cinématographique, entre  fidélité infidélité à l’œuvre littéraire à l’exemple de L’opium et le bâton](http://gerflint.fr/Base/Algerie13/laib.pdf) d'Ahcene Laib, Doctorant à l'Université de Mostaganem.
 
