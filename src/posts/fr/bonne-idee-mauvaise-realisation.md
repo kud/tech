@@ -1,7 +1,7 @@
 ---
 title: De la bonne idée à la mauvaise réalisation
 cover: /images/bonne-idee-mauvaise-realisation/cover.jpg
-date: 2016-05-06
+date: 2016-05-13
 layout: post.jade
 collection: posts
 ---
