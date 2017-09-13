@@ -1,5 +1,20 @@
+include partials/head
+include partials/header
+
 doctype html
-html
+html.index
+  mixin head('')
   body
-    p So long, and thanks for all the fish.
+    div.kud-IndexWrapper
+
+      div(class='kud-Header kud-Header--index')
+        div(class='kud-Header-avatar')
+          a(href="//kud.io")
+            img(src='http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=500')
+
+      p.kud-IndexLanguageChoice
+        a(href='/fr/' class="kud-IndexLanguageChoice-button hint--top" data-hint="Français") fr_FR
+        a(href='/en/' class="kud-IndexLanguageChoice-button hint--top" data-hint="English") en_UK
+
+    include partials/scripts
 
