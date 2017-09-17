@@ -48,7 +48,7 @@ gulp.task('watch', ['compile'], function() {
 
   gulp.start('server')
 
-  require('monitorctrlc')() // handle ctrl+c
+  // require('monitorctrlc')() // handle ctrl+c
 
   livereload.listen()
 
