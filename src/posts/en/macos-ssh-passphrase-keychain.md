@@ -1,0 +1,41 @@
+---
+title: Every time you want to use ssh, macOS asks you your passphrase? This is the fix.
+cover: /images/macos-ssh-passphrase-keychain/cover.png
+date: 2017-12-01
+layout: post.jade
+collection: posts
+---
+
+Since Sierra (macOS), I've got this annoying question when I want to connect to a server via ssh:
+
+```
+$ ssh kud.io
+Enter passphrase for key '/Users/kud/.ssh/id_rsa':
+```
+
+It asks you your passphrase.
+
+Ugh? Usually it's saved in Keychain. But it doesn't work anymore.
+
+However, there's a solution not to have to `$ ssh-add -K` every time you start a shell and want to connect with ssh.
+
+Just add these lines to your `~/.ssh/config` line and it forces the SSH daemon to use Keychain.
+
+```
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+```
+
+The reason is that the latest updates comes bundled with an [updated OpenSSH package](https://developer.apple.com/library/content/technotes/tn2449/_index.html) that changes some default behaviour.
+
+```html
+Prior to macOS Sierra, ssh would present a dialog asking for your passphrase and would offer the option to store it into the keychain. This UI was deprecated some time ago and has been removed.
+
+Instead, a new UseKeychain option was introduced in macOS Sierra allowing users to specify whether they would like for the passphrase to be stored in the keychain. This option was enabled by default on macOS Sierra, which caused all passphrases to be stored in the keychain.
+
+This was not the intended default behavior, so this has been changed in macOS 10.12.2.
+OpenSSH updates in macOS 10.12.2
+```
+
+
