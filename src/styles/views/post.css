@@ -2,134 +2,132 @@
  * Post
  */
 .kud-Post {
-
 }
 
-  .kud-PostHeader {
-    position: relative;
-    border-radius: 4px;
-  }
+.kud-PostHeader {
+  position: relative;
+  border-radius: 4px;
+}
 
-    .kud-PostHeader-decorator {
-      display: block;
-      width: 100%;
-    }
+.kud-PostHeader-decorator {
+  display: block;
+  width: 100%;
+}
 
-    .kud-PostHeader-img {
-      display: block;
-      width: 100%;
-    }
+.kud-PostHeader-img {
+  display: block;
+  width: 100%;
+}
 
-    .kud-PostHeader-heading {
-      color: #4F5A63;
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
+.kud-PostHeader-heading {
+  color: #4f5a63;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 
-      .kud-PostHeader-heading a {
-        color: inherit;
-      }
+.kud-PostHeader-heading a {
+  color: inherit;
+}
 
-        .kud-PostHeader-heading a:hover::after {
-          display: none;
-        }
+.kud-PostHeader-heading a:hover::after {
+  display: none;
+}
 
-    .kud-PostHeader-date {
-      color: #869D9E;
-      font-size: 1rem;
-      display: block;
-      text-align: center;
-    }
+.kud-PostHeader-date {
+  color: #869d9e;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+}
 
-  /** content */
-  .kud-Post-content {
-    line-height: 1.6rem;
-    margin-bottom: 3rem;
-  }
+/** content */
+.kud-Post-content {
+  line-height: 1.6rem;
+  margin-bottom: 3rem;
+}
 
-  .kud-Post-content > p:first-of-type::first-letter {
-    font-size: 4.375rem;
-    float: left;
-    line-height: 3.75rem;
-    font-family: Raleway, Arial, sans-serif;
-    padding: 4px 12px 0px 0px;
-  }
+.kud-Post-content > p:first-of-type::first-letter {
+  font-size: 4.375rem;
+  float: left;
+  line-height: 3.75rem;
+  font-family: Raleway, Arial, sans-serif;
+  padding: 4px 12px 0px 0px;
+}
 
-  .kud-Post-content p {
-    clear: both;
-  }
+.kud-Post-content p {
+  clear: both;
+}
 
-  .kud-Post-content img {
-    display: block;
-    border-radius: 4px;
-    width: 100%;
-  }
+.kud-Post-content img {
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+}
 
-  .kud-Post-content iframe {
-    width: 100%;
-  }
+.kud-Post-content iframe {
+  width: 100%;
+}
 
-  .kud-Post-content hr {
-    border: 0;
-    height: 0;
-    border-bottom: 1px dashed #EEE;
-  }
+.kud-Post-content hr {
+  border: 0;
+  height: 0;
+  border-bottom: 1px dashed #eee;
+}
 
+.kud-Post-content ul {
+  list-style: none;
+}
 
-  .kud-Post-content ul {
-    list-style: none;
-  }
+.kud-Post-content li {
+  position: relative;
+}
 
-  .kud-Post-content li {
-    position: relative;
-  }
+.kud-Post-content li::before {
+  content: "✕";
+  position: absolute;
+  left: -25px;
+  top: 0px;
+  font-size: 0.7rem;
+  color: #869d9e;
+}
 
-    .kud-Post-content li::before {
-      content: '✕';
-      position: absolute;
-      left: -25px;
-      top: 0px;
-      font-size: 0.7rem;
-      color: #869D9E;
-    }
+.kud-Post-content code {
+  border-radius: 4px;
+  font-family: "Ubuntu Mono", monospace;
+}
 
-  .kud-Post-content code {
-    border-radius: 4px;
-    font-family: "Ubuntu Mono", monospace;
-  }
+.kud-Post-content code:not(.hljs) {
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0 0.3rem 0.15rem 0.3rem;
+  font-size: 0.9rem;
+  vertical-align: 1px;
+}
 
-    .kud-Post-content code:not(.hljs) {
-      background: #1d1f21;
-      color: #c5c8c6;
-      padding: 0 0.3rem 0.15rem 0.3rem;
-      font-size: 0.9rem;
-      vertical-align: 1px;
-    }
+.kud-Post-content code.hljs {
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0 0.3rem 0.15rem 0.3rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  white-space: pre-wrap;
+}
 
-    .kud-Post-content code.hljs {
-      background: #1d1f21;
-      color: #c5c8c6;
-      padding: 0 0.3rem 0.15rem 0.3rem;
-      font-size: 0.8rem;
-      line-height: 1.2rem;
-      white-space: pre-wrap;
-    }
+.kud-Post-content blockquote {
+  border-left: 4px solid #f5cc36;
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  font-family: Lusitana, serif;
+  margin-left: 0;
+}
 
-  .kud-Post-content blockquote {
-    border-left: 4px solid #F5CC36;
-    font-size: 1.3rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 10px 20px;
-    font-family: Lusitana, serif;
-    margin-left: 0;
-  }
+.kud-Post-content blockquote p:first-child {
+  margin-top: 0;
+}
 
-    .kud-Post-content blockquote p:first-child {
-      margin-top: 0;
-    }
-
-    .kud-Post-content blockquote p:last-child {
-      margin-bottom: 0;
-    }
+.kud-Post-content blockquote p:last-child {
+  margin-bottom: 0;
+}

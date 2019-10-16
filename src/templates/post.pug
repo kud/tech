@@ -3,9 +3,10 @@ include partials/header
 
 doctype html
 html.post
-  mixin head(title)
+  +head(title)
   body
     div.kud-Banner
+      script
       a(class="kud-Banner-link" href='/' + lang + '/')= trans.banner.title
 
     div.kud-Wrapper

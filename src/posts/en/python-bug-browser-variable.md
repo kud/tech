@@ -2,7 +2,7 @@
 title: Python and BROWSER environment variable are not friends (yet?)
 cover: /images/python-bug-browser-variable/cover.gif
 date: 2015-12-30
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

@@ -2,7 +2,7 @@
 title: Nexus 7 - Incapable de gérer le 5ghz
 cover: /images/nexus-7-pas-5ghz/cover.jpg
 date: 2015-02-19
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

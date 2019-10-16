@@ -12,22 +12,22 @@ a {
   position: relative;
 }
 
-  .kud-Text--wowLink a:not(.kud-Anchor)::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    /*background: #ED4545;*/
-    background: #2a86c8;
-    content: '';
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
-    transform: translateY(2px);
-  }
+.kud-Text--wowLink a:not(.kud-Anchor)::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  /*background: #ED4545;*/
+  background: #2a86c8;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(2px);
+}
 
-  .kud-Text--wowLink a:not(.kud-Anchor):hover::after,
-  .kud-Text--wowLink a:not(.kud-Anchor):focus::after {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.kud-Text--wowLink a:not(.kud-Anchor):hover::after,
+.kud-Text--wowLink a:not(.kud-Anchor):focus::after {
+  opacity: 1;
+  transform: translateY(0px);
+}

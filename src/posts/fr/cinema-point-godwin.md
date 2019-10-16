@@ -2,7 +2,7 @@
 title: Le point Godwin du cinéma
 cover: /images/cinema-point-godwin/cover.jpg
 date: 2016-02-26
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

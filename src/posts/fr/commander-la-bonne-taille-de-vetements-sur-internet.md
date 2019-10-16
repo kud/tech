@@ -2,7 +2,7 @@
 title: Commander la bonne taille de vêtements sur internet
 cover: /images/commander-la-bonne-taille-de-vetements-sur-internet/cover.jpg
 date: 2016-02-13
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

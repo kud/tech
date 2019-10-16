@@ -4,8 +4,6 @@ My life, my diary.
 
 ## Installation
 
-Presuming you already have `jake` as global (`$ npm install jake -g`).
-
 ```
 $ npm install
 ```
@@ -15,7 +13,7 @@ $ npm install
 One command, as usual.
 
 ```
-$ jake
+$ npm run start
 ```
 
 ## Copyrigths

@@ -2,7 +2,7 @@
 title: Petite tournée en Sicile
 cover: /images/petite-tournee-en-sicile/cover.png
 date: 2014-06-08
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

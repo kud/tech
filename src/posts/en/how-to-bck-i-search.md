@@ -1,7 +1,7 @@
 ---
 title: How to use bck-i-search in your shell
 date: 2017-09-13
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

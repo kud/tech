@@ -2,7 +2,7 @@
 title: Comment optimiser son lightroom
 cover: /images/comment-optimiser-son-lightroom/cover.jpg
 date: 2015-12-25
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

@@ -2,7 +2,7 @@
 title: Windows - Could not find this item
 cover: http://media.giphy.com/media/h9sHcXAnI9OBG/giphy.gif
 date: 2015-04-27
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

@@ -1,17 +1,17 @@
 /* node_modules */
-@import 'normalize.css/normalize';
-@import 'animate.css/animate';
-@import 'hint.css/hint';
+@import "normalize.css/normalize";
+@import "animate.css/animate";
+@import "hint.css/hint";
 
 /* normal */
-@import './shared/highlight';
-@import './shared/fonts';
-@import './shared/base';
-@import './shared/text';
-@import './shared/banner';
-@import './shared/header';
-@import './shared/footer';
-@import './shared/anchor';
-@import './views/index';
-@import './views/posts';
-@import './views/post';
+@import "./shared/highlight";
+@import "./shared/fonts";
+@import "./shared/base";
+@import "./shared/text";
+@import "./shared/banner";
+@import "./shared/header";
+@import "./shared/footer";
+@import "./shared/anchor";
+@import "./views/index";
+@import "./views/posts";
+@import "./views/post";
