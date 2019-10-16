@@ -81,4 +81,4 @@ gulp.task(
 )
 
 // default
-gulp.task("default", gulp.series("watch"))
+// gulp.task("default", gulp.series("watch"))
