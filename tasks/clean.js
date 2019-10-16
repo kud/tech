@@ -1,5 +1,5 @@
+var del = require("del")
+
 module.exports = function() {
-
-  return require('rimraf').sync('dist/')
-
+  return del(["dist/"])
 }

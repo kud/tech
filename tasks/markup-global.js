@@ -1,45 +1,43 @@
-var gutil = require('gulp-util')
+var gutil = require("gulp-util")
 
 module.exports = function(cb) {
-
-  var debug = function( files, metalsmith, done ) {
+  var debug = function(files, metalsmith, done) {
     console.log(files)
     done()
   }
 
   // order is important here
-  require('metalsmith')( __dirname + '/..' )
+  require("metalsmith")(__dirname + "/..")
+    .metadata({
+      moment: require("moment"),
+      NODE_ENV: gutil.env.dist ? "production" : "development",
+    })
     .use(
-      require('metalsmith-ignore')([
-        '**/.DS_Store',
-        'images/**/*',
-        'posts/**/*',
-        'styles/**/*',
-        'templates/**/*'
-      ])
+      require("metalsmith-ignore")([
+        "**/.DS_Store",
+        "images/**/*",
+        "posts/**/*",
+        "styles/**/*",
+        "templates/**/*",
+      ]),
     )
     .use(
-      require('metalsmith-markdown')({
+      require("metalsmith-markdown")({
         smartypants: true,
         gfm: true,
-        tables: true
-      })
+        tables: true,
+      }),
     )
     // .use( debug )
     .use(
-      require('metalsmith-layouts')({
-        engine: 'jade',
-        directory: 'src/templates',
-        moment: require('moment'),
-        NODE_ENV: gutil.env.dist ? 'production' : 'development'
-      })
+      require("metalsmith-layouts")({
+        directory: "src/templates",
+      }),
     )
-    .clean( false )
-    .destination('./dist/')
+    .clean(false)
+    .destination("./dist/")
     .build(function(err) {
       if (err) throw err
       cb()
     })
-
-
 }

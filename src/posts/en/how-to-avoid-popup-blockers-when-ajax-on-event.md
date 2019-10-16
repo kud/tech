@@ -2,7 +2,7 @@
 title: How to avoid popup blockers when ajax + event
 cover: http://media.giphy.com/media/JdDnwsVcpa1B6/giphy.gif
 date: 2015-04-03
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

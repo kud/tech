@@ -2,7 +2,7 @@
 title: Skier à Grimentz
 cover: /images/skier-a-grimentz/img_19_small.jpg
 date: 2015-03-09
-layout: post.jade
+layout: post.pug
 collection: posts
 ---
 

@@ -1,22 +1,22 @@
 .kud-Banner {
-  background: #FAFAFA;
+  background: #fafafa;
   padding: 0.8rem 2rem 1rem;
 }
 
-  .kud-Banner-link {
-    color: #869D9A;
-    font-size: 0.8rem;
-    transition: all .3s ease;
-  }
+.kud-Banner-link {
+  color: #869d9a;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
 
-    .kud-Banner-link::before {
-      content: '«';
-      display: inline-block;
-      vertical-align: -2px;
-      margin-right: 0.5rem;
-      font-size: 1.5rem;
-    }
+.kud-Banner-link::before {
+  content: "«";
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
 
-    .kud-Banner-link:hover {
-      color: #4F5A63;
-    }
+.kud-Banner-link:hover {
+  color: #4f5a63;
+}

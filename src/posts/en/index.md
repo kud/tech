@@ -1,3 +1,3 @@
 ---
-layout: posts.jade
+layout: posts.pug
 ---

@@ -1,6 +1,3 @@
-module.exports = function( cb ) {
-
-  return require('./markup-lang')( cb, 'fr')
-
+module.exports = function(cb) {
+  return require("./markup-lang")(cb, "fr")
 }
-

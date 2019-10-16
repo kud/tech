@@ -22,26 +22,26 @@
   text-decoration: none;
   height: 100%;
   background: transparent;
-  color: #ED4545;
+  color: #ed4545;
   vertical-align: middle;
   opacity: 0;
   transition: opacity 300ms ease;
 }
 
-  .kud-Post-content .kud-Anchor span::before {
-    content: "¶";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    font-family: "Montserrat", sans-serif;
-  }
+.kud-Post-content .kud-Anchor span::before {
+  content: "¶";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  font-family: "Montserrat", sans-serif;
+}
 
-  .kud-Post-content h1:hover .kud-Anchor,
-  .kud-Post-content h2:hover .kud-Anchor,
-  .kud-Post-content h3:hover .kud-Anchor,
-  .kud-Post-content h4:hover .kud-Anchor,
-  .kud-Post-content h5:hover .kud-Anchor,
-  .kud-Post-content h6:hover .kud-Anchor {
-    opacity: 1;
-  }
+.kud-Post-content h1:hover .kud-Anchor,
+.kud-Post-content h2:hover .kud-Anchor,
+.kud-Post-content h3:hover .kud-Anchor,
+.kud-Post-content h4:hover .kud-Anchor,
+.kud-Post-content h5:hover .kud-Anchor,
+.kud-Post-content h6:hover .kud-Anchor {
+  opacity: 1;
+}
