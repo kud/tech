@@ -8,77 +8,68 @@ var del = require("del")
 /**
  * Private tasks
  */
-gulp.task("clean", require(__dirname + "/tasks/clean"))
-gulp.task("markup-global", require(__dirname + "/tasks/markup-global"))
-gulp.task("markup-fr", require(__dirname + "/tasks/markup-fr"))
-gulp.task("markup-en", require(__dirname + "/tasks/markup-en"))
-gulp.task(
-  "markup",
-  gulp.series("markup-global", "markup-fr", "markup-en", function(cb) {
-    // crap hack
-    gulp.src("./dist/fr/posts/fr/index.html").pipe(gulp.dest("./dist/fr/"))
-
-    gulp.src("./dist/en/posts/en/index.html").pipe(gulp.dest("./dist/en/"))
-
-    return del(["./dist/fr/posts/", "./dist/en/posts/"])
-  }),
-)
-gulp.task("styles", require(__dirname + "/tasks/styles"))
-gulp.task("validate", require(__dirname + "/tasks/validate"))
-gulp.task(
-  "scripts",
-  gulp.series("validate", require(__dirname + "/tasks/scripts")),
-)
-gulp.task("images", require(__dirname + "/tasks/images"))
-gulp.task("server", require(__dirname + "/tasks/server"))
+gulp.task("_markup-global", require(__dirname + "/tasks/markup-global"))
+gulp.task("_markup-fr", require(__dirname + "/tasks/markup-fr"))
+gulp.task("_markup-en", require(__dirname + "/tasks/markup-en"))
+gulp.task("_markup-hack", require(__dirname + "/tasks/markup-hack"))
+gulp.task("_scripts", require(__dirname + "/tasks/scripts"))
+gulp.task("_deploy", require(__dirname + "/tasks/deploy"))
 
 /**
  * Public tasks
+ */
+gulp.task("clean", require(__dirname + "/tasks/clean"))
+gulp.task(
+  "markup",
+  gulp.series("_markup-global", "_markup-fr", "_markup-en", "_markup-hack"),
+)
+gulp.task("styles", require(__dirname + "/tasks/styles"))
+gulp.task("images", require(__dirname + "/tasks/images"))
+gulp.task("validate", require(__dirname + "/tasks/validate"))
+gulp.task("scripts", gulp.series("validate", "_scripts"))
+gulp.task("server", require(__dirname + "/tasks/server"))
+
+/**
+ * Main tasks
  */
 gulp.task(
   "compile",
   gulp.series("clean", "markup", "images", "scripts", "styles"),
 )
 
-// gulp.task(
-//   "watch",
-//   gulp.series("compile", function(cb) {
-//     gulp.parallel("server")
-//
-//     livereload.listen()
-//
-//     gulp.watch(
-//       ["src/**/*", "!src/images/**/*", "!src/scripts/**/*", "!src/styles/**/*"],
-//       function(_cb) {
-//         gulp.parallel("markup", function() {
-//           livereload.reload()
-//         })
-//
-//         _cb()
-//       },
-//     )
-//
-//     gulp.watch(["src/**/*.js"], gulp.parallel("scripts"))
-//
-//     gulp.watch(["src/**/*.css"], gulp.parallel("styles"))
-//
-//     gulp.watch(
-//       ["src/images/**/*"],
-//       gulp.parallel("images", function(_cb) {
-//         livereload.reload()
-//
-//         _cb()
-//       }),
-//     )
-//
-//     cb()
-//   }),
-// )
-
 gulp.task(
-  "deploy",
-  gulp.series("compile", require(__dirname + "/tasks/deploy")),
+  "watch",
+  gulp.series(
+    "compile",
+    gulp.parallel("server", function(cb) {
+      livereload.listen()
+
+      gulp.watch(
+        [
+          "src/**/*",
+          "!src/images/**/*",
+          "!src/scripts/**/*",
+          "!src/styles/**/*",
+        ],
+        gulp.series("markup", function(_cb) {
+          livereload.reload()
+          _cb()
+        }),
+      )
+
+      gulp.watch(["src/**/*.js"], gulp.series("scripts"))
+      gulp.watch(["src/**/*.css"], gulp.series("styles"))
+
+      gulp.watch(
+        ["src/images/**/*"],
+        gulp.series("images", function(_cb) {
+          livereload.reload()
+          _cb()
+        }),
+      )
+    }),
+  ),
 )
 
-// default
-// gulp.task("default", gulp.series("watch"))
+gulp.task("deploy", gulp.series("compile", "_deploy"))
+// gulp.task("default", "watch")
