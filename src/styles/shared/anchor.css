@@ -23,7 +23,6 @@
   height: 100%;
   background: transparent;
   color: #ed4545;
-  vertical-align: middle;
   opacity: 0;
   transition: opacity 300ms ease;
 }
