@@ -4,14 +4,18 @@
 @import "hint.css/hint";
 
 /* normal */
+@import "./shared/box-sizing";
+@import "./shared/set-rem";
 @import "./shared/highlight";
-@import "./shared/fonts";
+/*@import "./shared/fonts";*/
 @import "./shared/base";
+@import "./shared/layout";
 @import "./shared/text";
 @import "./shared/banner";
 @import "./shared/header";
 @import "./shared/footer";
 @import "./shared/anchor";
+
 @import "./views/index";
 @import "./views/posts";
 @import "./views/post";

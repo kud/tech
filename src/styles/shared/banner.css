@@ -1,18 +1,18 @@
 .kud-Banner {
   background: #fafafa;
-  padding: 0.8rem 2rem 1rem;
+  padding: 1.5rem 2rem 1.5rem;
 }
 
 .kud-Banner-link {
   color: #869d9a;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
+  display: inline-flex;
 }
 
 .kud-Banner-link::before {
   content: "«";
-  display: inline-block;
-  vertical-align: -2px;
+  display: block;
   margin-right: 0.5rem;
   font-size: 1.5rem;
 }
