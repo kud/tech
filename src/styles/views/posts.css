@@ -2,7 +2,7 @@
  * Posts
  */
 html.posts {
-  background: url("./../images/background.jpg") center -600px fixed no-repeat;
+  background: url("./../images/background.jpg") center -800px fixed no-repeat;
   padding-top: 250px;
   background-size: cover;
 }
@@ -13,6 +13,7 @@ html.posts .kud-Wrapper {
 
 .kud-Posts-list {
   list-style: none;
+  font-size: 1.8rem;
 }
 
 .kud-Posts-listItem {

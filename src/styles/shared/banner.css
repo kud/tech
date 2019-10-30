@@ -1,10 +1,10 @@
 .kud-Banner {
   background: #fafafa;
-  padding: 1.5rem 2rem 1.5rem;
+  padding: 2rem 2rem;
 }
 
 .kud-Banner-link {
-  color: #869d9a;
+  color: #475957;
   font-size: 1.5rem;
   transition: all 0.3s ease;
   display: inline-flex;
@@ -18,5 +18,5 @@
 }
 
 .kud-Banner-link:hover {
-  color: #4f5a63;
+  color: #333;
 }

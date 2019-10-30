@@ -9,6 +9,14 @@
 .kud-PostHeader-decorator {
   display: block;
   width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height 500ms ease-in;
+  cursor: pointer;
+}
+
+.kud-PostHeader-decorator:hover {
+  max-height: 9999px;
 }
 
 .kud-PostHeader-img {
@@ -20,7 +28,7 @@
   color: #4f5a63;
   text-align: center;
   font-size: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .kud-PostHeader-heading a {
@@ -36,6 +44,7 @@
   font-size: 1.6rem;
   display: block;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 /** content */
@@ -45,14 +54,16 @@
 }
 
 .kud-Post-content > p:first-of-type::first-letter {
-  font-size: 4.375rem;
+  font-weight: 500;
   float: left;
-  line-height: 3.75rem;
-  padding: 4px 5px 0px 0px;
+  padding-top: 0.3rem;
+  font-size: 2.5rem;
 }
 
 .kud-Post-content p {
   clear: both;
+  margin: 3rem 0;
+  line-height: 1.8;
 }
 
 .kud-Post-content img {
