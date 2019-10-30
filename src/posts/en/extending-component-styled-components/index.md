@@ -75,6 +75,7 @@ The trick is here, in `layout.js`, add the `className`.
 
 ```javascript
 // layout.js
+
 class Layout extends React.Component {
   render() {
     const { className, children, aside } = this.props
