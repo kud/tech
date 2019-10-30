@@ -70,6 +70,3 @@ gulp.task(
     }),
   ),
 )
-
-gulp.task("deploy", gulp.series("compile", "_deploy"))
-// gulp.task("default", "watch")
