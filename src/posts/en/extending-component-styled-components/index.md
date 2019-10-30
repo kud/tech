@@ -67,9 +67,9 @@ class Page extends React.Component {
 export default Page
 ```
 
-As you can see here, I extended my `<Layout>` to change the property `background-color`. However, when I did that, nothing happened and I was thinking why.
+As you can see here, I extended my `<Layout>` to change the property `background-color`. However, when I did that, nothing happened and I was wondering why.
 
-The reason is that you need to also transfer the className. Ha!
+The reason is that you need to also transfer the `className`. Ha!
 
 The trick is here, in `layout.js`, add the `className`.
 
