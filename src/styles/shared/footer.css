@@ -19,7 +19,7 @@
 }
 
 .kud-Footer-listItem::before {
-  content: "×";
+  content: "•";
   display: inline-block;
   margin-right: 2rem;
   color: #8f8f8f;

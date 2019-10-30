@@ -77,6 +77,6 @@ Une petite note aussi quant au choix de la pointure. Prenez facilement 1 cm voi
 
 Bonne course !
 
-<img style="width: 50%; margin: auto;" src="http://i.giphy.com/fUMhF7Vp5iLVm.gif">
+<img style="width: 50%;;" src="http://i.giphy.com/fUMhF7Vp5iLVm.gif">
 
 (Merci à [@madx](https://twitter.com/madx) et [@Macxim](https://twitter.com/Macxim) pour leurs corrections de texte).

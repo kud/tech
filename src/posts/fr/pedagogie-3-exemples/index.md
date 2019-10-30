@@ -10,7 +10,7 @@ collection: posts
   .kud-Post-content img {
     width: 50%;
     display: block;
-    margin: auto;
+   ;
   }
 </style>
 

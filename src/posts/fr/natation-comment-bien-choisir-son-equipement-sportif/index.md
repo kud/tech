@@ -51,7 +51,7 @@ Il y a plusieurs paramètres à prendre en compte dans une paire de lunettes, le
 Toutes les lunettes ne sont pas égales sur le champ de vision. En fonction de vos besoins et de votre niveau, vous n'allez pas prendre forcément le même type de lunettes.
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/champ-de-vision-lunettes.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/champ-de-vision-lunettes.jpg" style="width: 70%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/champ-de-vision-lunettes.jpg" style="width: 70%;;" />
 </a>
 
 Les visions panoramiques sont par exemple très sympa pour le loisir mais s'il s'agit de faire du sport (tel qu'on peut l'entendre), il vaut mieux favoriser une paire de lunettes dont le champ se concentre sur la ligne droite que vous parcourez.
@@ -61,7 +61,7 @@ Les visions panoramiques sont par exemple très sympa pour le loisir mais s'il s
 #### Monobloc
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-monobloc-natation.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-monobloc-natation.jpg" style="width: 30%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-monobloc-natation.jpg" style="width: 30%;;" />
 </a>
 
 Aucun ajustement possible, le pont est figé. (Comme les masques par exemple).
@@ -69,7 +69,7 @@ Aucun ajustement possible, le pont est figé. (Comme les masques par exemple).
 #### Réglable
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-reglable-natation.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-reglable-natation.jpg" style="width: 30%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-reglable-natation.jpg" style="width: 30%;;" />
 </a>
 
 Auto-ajustement. Rien à faire, elles s'ajustent à la forme de votre visage.
@@ -77,7 +77,7 @@ Auto-ajustement. Rien à faire, elles s'ajustent à la forme de votre visage.
 #### Interchangeable
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-interchangable-natation.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-interchangable-natation.jpg" style="width: 30%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-interchangable-natation.jpg" style="width: 30%;;" />
 </a>
 
 Interchangeable avec 3 tailles différentes. Elles mixent plus ou moins monobloc et réglable. Le pont est fixe mais comme vous pouvez le changer, il vous permettra d'avoir les lunettes à votre taille. L'auto-ajustement (solution précédente) est bien mais demande à ce qu'il s'ajuste constamment et le pont peut à terme fatigué. Là, ce n'est pas le cas, avec un pont fixe.
@@ -86,7 +86,7 @@ Interchangeable avec 3 tailles différentes. Elles mixent plus ou moins monobloc
 #### Sur mesure
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-a-monter-natation.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-a-monter-natation.jpg" style="width: 30%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/pont-de-nez-a-monter-natation.jpg" style="width: 30%;;" />
 </a>
 
 Un kit pour personnaliser au mieux votre paire de lunettes. Généralement pour les pro, et parfois sans joint donc pas forcément agréable.
@@ -104,7 +104,7 @@ Plusieurs types de sangles :
 En ce qui me concerne, après en avoir essayé pas mal en magasin, j'ai fini avec une paire qui me tient vraiment bien au visage et sont agréables : les [Speedo Aquapure IQfit Goggle](http://www.speedostoreeu.com/goggles/goggles-all-goggles/809002.html?dwvar_809002_color=8912) (~25€).
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/lunettes.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/lunettes.jpg" style="width: 50%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/lunettes.jpg" style="width: 50%;;" />
 </a>
 
 En résumé, ne choisissez pas une paire de lunettes sous prétexte qu'elles sont chères ou jolies ou qu'on vous les a conseillées. Choisissez une paire parce qu'elles vous tiennent bien aux yeux lorsque vous les mettez sans la sangle.
@@ -124,14 +124,14 @@ Des accessoires, il y en a plusieurs : mini-palmes (les seules généralement au
 
 Une serviette, lorsqu'on va à la piscine, c'est quand même bien pratique. Je ne sais pas vous mais moi, remettre mes affaires alors que je suis encore tout mouillé, c'est pas l'idéal. Après, ça peut avoir son charme, hein.
 
-<img src="/images/natation-comment-bien-choisir-son-equipement-sportif/justinwet.jpg" style="width: 30%; margin: auto;">
+<img src="/images/natation-comment-bien-choisir-son-equipement-sportif/justinwet.jpg" style="width: 30%;;">
 
 Pour ça, on a inventé les serviettes. Et d'ailleurs pas n'importe quelle serviette, les serviettes microfibres. Peu encombrantes, et sèchent vite.
 
 Pour ça, je suis allé chez Decathlon, ne voulant pas trop y mettre cher. J'étais assez sceptique sur le produit alors j'ai acheté la "[serviette microfibre jaune ultra compacte taille L 80 x 130 cm NABAIJI](http://www.decathlon.fr/serviette-microfibre-jaune-l-id_8271389.html)" (ça en jette, n'est-ce pas). Visible ci-dessous. Environ 7€.
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/serviette.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/serviette.jpg" style="width: 50%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/serviette.jpg" style="width: 50%;;" />
 </a>
 
 Je dois dire que j'ai été assez surpris. Bon okay, vous avez l'impression de vous essuyer avec une serviette McDo en pseudo-plastique qui étale plus qu'elle n'essuie. Même concept ici. Mais côté rangement et rapidité de séchage, cela fonctionne bien. Une fois habitué, finalement ce genre de produit est pratique. Je ne l'utiliserai pas cependant pour ma salle de bain, c'est bien trop peu agréable pour mon petit corps tout doux.
@@ -143,7 +143,7 @@ On passe à la partie accessoire non obligatoire mais intéressant, les claquett
 Bon, par contre je vous préviens direct. Si c'est pour mettre ce genre de chose avec des chaussettes lorsque vous êtes chez vous (voire dehors, encore pire), c'est tout bonnement non.
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/beauf.png">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/beauf.png" style="width: 50%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/beauf.png" style="width: 50%;;" />
 </a>
 
 Il faut avoir un peu de respect pour soi tout de même.
@@ -151,7 +151,7 @@ Il faut avoir un peu de respect pour soi tout de même.
 Aller à la piscine c'est prendre parfois des risques. Entre le carrelage froid, les chutes, les mycoses, et je ne sais guère autres problèmes, avoir une paire de claquettes, ça ne mange pas de pain. Je ne sais pas si ça évite les mycoses mais je me sens plus rassuré. Pour ça, rien de tel qu'une excellente et jolie paire d'[Arena](http://www.arenawaterinstinct.com/fr_fr/).
 
 <a href="/images/natation-comment-bien-choisir-son-equipement-sportif/claquette.jpg">
-  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/claquette.jpg" style="width: 50%; margin: auto;" />
+  <img src="/images/natation-comment-bien-choisir-son-equipement-sportif/claquette.jpg" style="width: 50%;;" />
 </a>
 
 Elles sont chouettes hein, ? Bon, ça reste des claquettes. Disons que ce sont les moins pires que j'ai trouvées, disponible d'ailleurs sur [les4nages.com](http://les4nages.com/contents/fr/p4462_claquettes-mixte-arena-marco-x-grip-logo-lime-turquoise.html). Pas forcément super comfy, mais ce n'est pas l'objectif, elles permettent d'avoir toujours les pieds au sec avec ses picots. Comptez 27€.
@@ -192,7 +192,7 @@ On évite aussi de pratiquer le dos lorsqu'on est dans une zone réservée à la
 
 En soi, il est évident que le rythme de chacun est différent, et que la piscine peut être parfois trop petite par rapport aux nombres de personnes dedans, mais soyez attentif/attentive aux autres et voyez si vous avez le même rythme ou si vous êtes sur la bonne ligne. Cela sera profitable pour tous.
 
-<img src="/images/natation-comment-bien-choisir-son-equipement-sportif/hey.gif" style="width: 30%; margin: auto;" />
+<img src="/images/natation-comment-bien-choisir-son-equipement-sportif/hey.gif" style="width: 30%;;" />
 
 ---
 
@@ -202,7 +202,7 @@ Pour les parisiens, si vous souhaitez connaître les piscines proches de chez vo
 
 Allez salut, j'y vais moi.
 
-<img src="/images/natation-comment-bien-choisir-son-equipement-sportif/diving.gif" style="width: 70%; margin: auto;" />
+<img src="/images/natation-comment-bien-choisir-son-equipement-sportif/diving.gif" style="width: 70%;;" />
 
 
 ## Resources

@@ -52,4 +52,4 @@ Et si vous désirez voir mes photos, elles sont disponibles sur [500px](http://5
 
 À plus tard. 😺
 
-<img style="width: 50%; margin: auto; margin-top: 150px;" src="http://i.giphy.com/Gma7Nu5lWOAQE.gif">
+<img style="width: 50%;; margin-top: 150px;" src="http://i.giphy.com/Gma7Nu5lWOAQE.gif">
