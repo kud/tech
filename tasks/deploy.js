@@ -5,6 +5,6 @@ module.exports = function() {
     require("gulp-gh-pages")({
       branch: "gh-pages",
       cacheDir: ".deploy",
-    })
+    }),
   )
 }
