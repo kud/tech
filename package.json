@@ -23,7 +23,7 @@
     "del": "5.1.0",
     "envify": "4.1.0",
     "finalhandler": "1.1.2",
-    "gh-pages": "2.1.1",
+    "gh-pages": "2.2.0",
     "gulp": "4.0.2",
     "gulp-cssnext": "1.0.1",
     "gulp-eslint": "6.0.0",
