@@ -16,6 +16,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/Layout/Post.js"),
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -29,7 +37,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    `gatsby-plugin-mdx`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

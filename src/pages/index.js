@@ -78,8 +78,8 @@ const IndexPage = () => {
             </Avatar>
           </AvatarBox>
 
-          <EntryLink to="/fr/">{"fr_FR"}</EntryLink>
-          <EntryLink to="/en/">{"en_UK"}</EntryLink>
+          <EntryLink to="/fr/posts/">{"fr_FR"}</EntryLink>
+          <EntryLink to="/en/posts/">{"en_UK"}</EntryLink>
         </Container>
       </Wrapper>
     </Global>
