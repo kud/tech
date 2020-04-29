@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Global from "~/components/Layout/Global"
+import Layout from "~/components/Layout"
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -67,7 +67,7 @@ const IndexPage = () => {
   `)
 
   return (
-    <Global>
+    <Layout>
       <Wrapper>
         <Container>
           <AvatarBox>
@@ -82,7 +82,7 @@ const IndexPage = () => {
           <EntryLink to="/en/posts/">{"en_UK"}</EntryLink>
         </Container>
       </Wrapper>
-    </Global>
+    </Layout>
   )
 }
 
