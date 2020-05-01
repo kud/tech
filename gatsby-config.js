@@ -49,24 +49,11 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          {
-            family: "Muli",
-            variants: [
-              `100`,
-              `200`,
-              `300`,
-              `400`,
-              `500`,
-              `600`,
-              `700`,
-              `800`,
-              `900`,
-            ],
-          },
-        ],
+        google: {
+          families: ["Muli"],
+        },
       },
     },
     {

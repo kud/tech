@@ -4,6 +4,8 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import { HomeIcon as NativeHomeIcon } from "evergreen-ui"
 
+import Avatar from "~/components/Avatar"
+
 import Layout from "./index.js"
 import Footer from "./Footer"
 
@@ -59,10 +61,28 @@ const Cover = styled.div`
 `
 
 const Wrapper = styled.div`
-  max-width: 740px;
+  max-width: 900px;
   padding: 2rem 2rem;
   margin: auto;
 `
+
+const Content = styled.div`
+  margin-top: -70px;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-family: Georgia, serif;
+  position: relative;
+  z-index: 1;
+`
+
+const ContentHeading = styled.h1`
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 40px;
+  margin: 5rem 0;
+`
+
+const ContentBody = styled.div``
 
 const PostLayout = ({
   children,
@@ -94,9 +114,13 @@ const PostLayout = ({
         </Cover>
 
         <Wrapper>
-          <h2>{title}</h2>
+          <Content>
+            <Avatar size={"100px"} />
 
-          <div>{children}</div>
+            <ContentHeading>{title}</ContentHeading>
+
+            <ContentBody>{children}</ContentBody>
+          </Content>
         </Wrapper>
       </Main>
 

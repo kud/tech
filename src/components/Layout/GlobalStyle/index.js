@@ -5,26 +5,16 @@ import normalize from "normalize.css"
 import boxSizing from "./box-sizing"
 import fonts from "./fonts"
 import setRem from "./set-rem"
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-`
+import globalAnimation from "./global-animation"
+import base from "./base"
 
 const styles = css`
   ${normalize}
   ${boxSizing}
   ${setRem}
   ${fonts}
-
-  html {
-    animation: ${fadeIn} 300ms ease;
-  }
+  ${globalAnimation}
+  ${base}
 `
 
 export default () => <Global styles={styles} />
