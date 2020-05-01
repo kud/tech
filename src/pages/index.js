@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Layout from "~/components/Layout"
+import HomeLayout from "~/components/Layout/Home"
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -34,6 +34,11 @@ const Avatar = styled.div`
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   cursor: pointer;
+  transition: transform 150ms ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   img {
     height: 100%;
@@ -49,7 +54,7 @@ const EntryLink = styled(Link)`
   color: #333;
   font-size: 3rem;
   border-bottom: 2px dotted transparent;
-  transition: 0.5s ease;
+  transition: border 300ms ease;
   text-decoration: none;
 
   &:hover {
@@ -67,7 +72,7 @@ const IndexPage = () => {
   `)
 
   return (
-    <Layout>
+    <HomeLayout>
       <Wrapper>
         <Container>
           <AvatarBox>
@@ -82,7 +87,7 @@ const IndexPage = () => {
           <EntryLink to="/en/posts/">{"en_UK"}</EntryLink>
         </Container>
       </Wrapper>
-    </Layout>
+    </HomeLayout>
   )
 }
 

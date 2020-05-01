@@ -37,6 +37,13 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
+        useLangKeyLayout: false,
+      },
+    },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -46,7 +53,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Libre Franklin`,
+            family: "Muli",
             variants: [
               `100`,
               `200`,

@@ -3,6 +3,9 @@ import { css } from "@emotion/core"
 export default css`
   html,
   body {
-    font-family: "Libre Franklin", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    line-height: 1.5;
   }
 `
