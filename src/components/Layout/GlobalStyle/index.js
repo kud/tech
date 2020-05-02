@@ -1,5 +1,5 @@
 import React from "react"
-import { Global, css, keyframes } from "@emotion/core"
+import { Global, css } from "@emotion/core"
 import normalize from "normalize.css"
 
 import boxSizing from "./box-sizing"

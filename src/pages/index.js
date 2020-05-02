@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 import Avatar from "~/components/Avatar"

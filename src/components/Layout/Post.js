@@ -67,12 +67,17 @@ const Wrapper = styled.div`
 `
 
 const Content = styled.div`
-  margin-top: -70px;
   font-size: 1.8rem;
   line-height: 1.4;
   font-family: Georgia, serif;
   position: relative;
   z-index: 1;
+
+  ${({ cover }) =>
+    cover &&
+    css`
+      margin-top: -70px;
+    `}
 `
 
 const ContentHeading = styled.h1`
@@ -109,12 +114,14 @@ const PostLayout = ({
       </Header>
 
       <Main>
-        <Cover fullscreen={coverActive}>
-          <CoverImage src={cover} onClick={handleClickCover} />
-        </Cover>
+        {cover && (
+          <Cover fullscreen={coverActive}>
+            <CoverImage src={cover} onClick={handleClickCover} />
+          </Cover>
+        )}
 
         <Wrapper>
-          <Content>
+          <Content cover={cover}>
             <Avatar size={"100px"} />
 
             <ContentHeading>{title}</ContentHeading>
