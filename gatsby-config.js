@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "~": path.resolve(__dirname, "src/"),
+          "~": path.resolve(__dirname, "src"),
         },
       },
     },
@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/components/Layout/Post.js"),
+          default: path.resolve(__dirname, "src/components/Layout/Post"), // @NOTE: how to change default property here?
         },
       },
     },
@@ -27,14 +27,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.resolve(__dirname, "src/images"),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`,
+        path: path.resolve(__dirname, "src/pages"),
       },
     },
     {

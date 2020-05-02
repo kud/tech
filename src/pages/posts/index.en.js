@@ -10,7 +10,10 @@ const EnglishPostsPage = () => {
   const data = useStaticQuery(
     graphql`
       query EnglishPosts {
-        allMdx(filter: { fileAbsolutePath: { glob: "**/*.en.mdx" } }) {
+        allMdx(
+          sort: { fields: fileAbsolutePath, order: DESC }
+          filter: { fileAbsolutePath: { glob: "**/*.en.mdx" } }
+        ) {
           edges {
             node {
               fileAbsolutePath

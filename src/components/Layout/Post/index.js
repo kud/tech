@@ -6,8 +6,9 @@ import { HomeIcon as NativeHomeIcon } from "evergreen-ui"
 
 import Avatar from "~/components/Avatar"
 
-import Layout from "./index.js"
-import Footer from "./Footer"
+import Footer from "~/components/Footer"
+
+import Layout from "./../index.js"
 
 const Header = styled.header`
   background-color: #ffffff;
@@ -131,7 +132,9 @@ const PostLayout = ({
         </Wrapper>
       </Main>
 
-      <Footer />
+      <Wrapper>
+        <Footer />
+      </Wrapper>
     </Layout>
   )
 }

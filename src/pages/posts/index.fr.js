@@ -13,7 +13,10 @@ const FrenchPostsPage = () => {
   const data = useStaticQuery(
     graphql`
       query FrenchPosts {
-        allMdx(filter: { fileAbsolutePath: { glob: "**/*.fr.mdx" } }) {
+        allMdx(
+          sort: { fields: fileAbsolutePath, order: DESC }
+          filter: { fileAbsolutePath: { glob: "**/*.fr.mdx" } }
+        ) {
           edges {
             node {
               fileAbsolutePath
