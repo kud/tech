@@ -129,7 +129,9 @@ const PostLayout = ({
     frontmatter: { title, cover },
   },
   uri,
+  ...rest
 }) => {
+  console.log(rest)
   const [coverActive, setCoverActive] = useState(false)
 
   const handleClickCover = () => setCoverActive(!coverActive)
