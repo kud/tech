@@ -88,17 +88,12 @@ const PostsLayout = ({ posts }) => {
           <Subheading>Articles</Subheading>
 
           <List>
-            {posts.map(
-              ({ url, redirect, title, date }, i) => (
-                console.log(redirect),
-                (
-                  <ListItem key={i}>
-                    <Time>{date}</Time>
-                    <Link to={redirect ? redirect : url}>{title}</Link>
-                  </ListItem>
-                )
-              )
-            )}
+            {posts.map(({ url, redirect, title, date }, i) => (
+              <ListItem key={i}>
+                <Time>{date}</Time>
+                <Link to={redirect ? redirect : url}>{title}</Link>
+              </ListItem>
+            ))}
           </List>
         </Wrapper>
       </Main>

@@ -99,11 +99,27 @@ const ContentTime = styled.time`
 `
 
 const ContentBody = styled.div`
+  // @FIXME: should be in gatsby-browser
   img {
     display: block;
     border-radius: 4px;
     width: 100%;
     margin: 6rem auto;
+  }
+
+  a {
+    color: #2a86c8;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: 0;
+    height: 0;
+    border-bottom: 1px dashed #eee;
   }
 `
 

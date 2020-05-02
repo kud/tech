@@ -15,12 +15,21 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
           default: path.resolve(__dirname, "src/components/Layout/Post"), // @NOTE: how to change default property here?
         },
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-images`,
+          `gatsby-remark-static-images`,
+          `gatsby-remark-copy-linked-files`,
+        ],
       },
     },
     {
@@ -44,10 +53,6 @@ module.exports = {
         useLangKeyLayout: false,
       },
     },
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
