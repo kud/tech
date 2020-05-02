@@ -22,6 +22,7 @@ const FrenchPostsPage = () => {
               fileAbsolutePath
               frontmatter {
                 title
+                redirect
               }
             }
           }
@@ -34,6 +35,7 @@ const FrenchPostsPage = () => {
     url: `/${LANG}/${node.fileAbsolutePath
       .match(/(\/posts\/.*)/)[0]
       .replace("index." + LANG + ".mdx", "/")}`,
+    redirect: node.frontmatter.redirect,
     title: node.frontmatter.title,
     date: dayjs(
       node.fileAbsolutePath.match(/\d{4}\/\d{2}\/\d{2}/)[0].replaceAll("/", "-")

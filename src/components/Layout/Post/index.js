@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import { HomeIcon as NativeHomeIcon } from "evergreen-ui"
+import dayjs from "dayjs"
 
 import Avatar from "~/components/Avatar"
 
@@ -51,9 +52,11 @@ const Cover = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 100;
 
       ${CoverImage} {
-        height: auto;
+        height: 100%;
+        width: auto;
         border: 5px solid #ffffff;
         border-radius: 4px;
         overflow: hidden;
@@ -85,10 +88,24 @@ const ContentHeading = styled.h1`
   font-weight: 700;
   line-height: 1.2;
   font-size: 40px;
-  margin: 5rem 0;
+  margin: 5rem 0 1rem 0;
 `
 
-const ContentBody = styled.div``
+const ContentTime = styled.time`
+  color: #869d9e;
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 8rem;
+`
+
+const ContentBody = styled.div`
+  img {
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    margin: 6rem auto;
+  }
+`
 
 const PostLayout = ({
   children,
@@ -103,6 +120,9 @@ const PostLayout = ({
 
   const splitUri = uri.split("/")
   const homeUrl = `/${splitUri[1]}/${splitUri[2]}/`
+  const date = dayjs(
+    uri.match(/\d{4}\/\d{2}\/\d{2}/)[0].replaceAll("/", "-")
+  ).format("DD MMMM YYYY")
 
   return (
     <Layout>
@@ -126,6 +146,8 @@ const PostLayout = ({
             <Avatar size={"100px"} />
 
             <ContentHeading>{title}</ContentHeading>
+
+            <ContentTime>{date}</ContentTime>
 
             <ContentBody>{children}</ContentBody>
           </Content>

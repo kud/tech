@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
 
+import Link from "~/components/Link"
+
 const Root = styled.footer`
   margin: 6rem 0;
   text-align: center;
@@ -21,8 +23,6 @@ const ListItem = styled.li`
     color: #8f8f8f;
   }
 `
-
-const Link = styled.a``
 
 const Footer = () => {
   const linkList = [
@@ -52,7 +52,7 @@ const Footer = () => {
       <List>
         {linkList.map(({ url, title, external }) => (
           <ListItem key={url}>
-            <Link href={url} target={external ? "_blank" : "_self"}>
+            <Link to={url} forceNoIcon>
               {title}
             </Link>
           </ListItem>

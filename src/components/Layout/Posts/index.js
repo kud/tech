@@ -1,9 +1,9 @@
 import React from "react"
-import { Link as NativeLink } from "gatsby"
 import styled from "@emotion/styled"
 
 import backgroundSrc from "~/images/background.jpg"
 
+import Link from "~/components/Link"
 import Footer from "~/components/Footer"
 import Avatar from "~/components/Avatar"
 
@@ -70,8 +70,6 @@ const Time = styled.time`
   text-align: right;
 `
 
-const Link = styled(NativeLink)``
-
 const PostsLayout = ({ posts }) => {
   return (
     <Layout>
@@ -90,12 +88,17 @@ const PostsLayout = ({ posts }) => {
           <Subheading>Articles</Subheading>
 
           <List>
-            {posts.map(({ url, title, date }, i) => (
-              <ListItem key={i}>
-                <Time>{date}</Time>
-                <Link to={url}>{title}</Link>
-              </ListItem>
-            ))}
+            {posts.map(
+              ({ url, redirect, title, date }, i) => (
+                console.log(redirect),
+                (
+                  <ListItem key={i}>
+                    <Time>{date}</Time>
+                    <Link to={redirect ? redirect : url}>{title}</Link>
+                  </ListItem>
+                )
+              )
+            )}
           </List>
         </Wrapper>
       </Main>
