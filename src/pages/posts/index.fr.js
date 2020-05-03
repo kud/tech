@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import dayjs from "dayjs"
 import "dayjs/locale/fr"
 
@@ -9,28 +9,7 @@ const LANG = "fr"
 
 dayjs.locale(LANG)
 
-const FrenchPostsPage = () => {
-  const data = useStaticQuery(
-    graphql`
-      query FrenchPosts {
-        allMdx(
-          sort: { fields: fileAbsolutePath, order: DESC }
-          filter: { fileAbsolutePath: { glob: "**/*.fr.mdx" } }
-        ) {
-          edges {
-            node {
-              fileAbsolutePath
-              frontmatter {
-                title
-                redirect
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-
+const FrenchPostsPage = ({ data }) => {
   const posts = data.allMdx.edges.map(({ node }) => ({
     url: `/${LANG}/${node.fileAbsolutePath
       .match(/(\/posts\/.*)/)[0]
@@ -46,3 +25,22 @@ const FrenchPostsPage = () => {
 }
 
 export default FrenchPostsPage
+
+export const query = graphql`
+  query FrenchPosts {
+    allMdx(
+      sort: { fields: fileAbsolutePath, order: DESC }
+      filter: { fileAbsolutePath: { glob: "**/*.fr.mdx" } }
+    ) {
+      edges {
+        node {
+          fileAbsolutePath
+          frontmatter {
+            title
+            redirect
+          }
+        }
+      }
+    }
+  }
+`

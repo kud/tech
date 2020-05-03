@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import { HomeIcon as NativeHomeIcon } from "evergreen-ui"
@@ -129,9 +129,17 @@ const PostLayout = ({
     frontmatter: { title, cover },
   },
   uri,
-  ...rest
 }) => {
-  console.log(rest)
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   const [coverActive, setCoverActive] = useState(false)
 
   const handleClickCover = () => setCoverActive(!coverActive)
@@ -149,7 +157,7 @@ const PostLayout = ({
           <HomeIcon />
         </Link>
 
-        <span>Diary of the _kud</span>
+        <span>{data.site.siteMetadata.title}</span>
       </Header>
 
       <Main>

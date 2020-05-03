@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { graphql, useStaticQuery } from "gatsby"
 
 import backgroundSrc from "~/images/background.jpg"
 
@@ -71,6 +72,16 @@ const Time = styled.time`
 `
 
 const PostsLayout = ({ posts }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <Cover>
@@ -83,7 +94,7 @@ const PostsLayout = ({ posts }) => {
             <Avatar size={"100px"} />
           </AvatarBox>
 
-          <Heading>Diary of the _kud</Heading>
+          <Heading>{data.site.siteMetadata.title}</Heading>
 
           <Subheading>Articles</Subheading>
 

@@ -1,34 +1,12 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import dayjs from "dayjs"
 
 import PostsLayout from "~/components/Layout/Posts"
 
 const LANG = "en"
 
-const EnglishPostsPage = () => {
-  // @NOTE: find a way to handle english and french
-  const data = useStaticQuery(
-    graphql`
-      query EnglishPosts {
-        allMdx(
-          sort: { fields: fileAbsolutePath, order: DESC }
-          filter: { fileAbsolutePath: { glob: "**/*.en.mdx" } }
-        ) {
-          edges {
-            node {
-              fileAbsolutePath
-              frontmatter {
-                title
-                redirect
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-
+const EnglishPostsPage = ({ data }) => {
   const posts = data.allMdx.edges.map(({ node }) => ({
     url: `/${LANG}/${node.fileAbsolutePath
       .match(/(\/posts\/.*)/)[0]
@@ -44,3 +22,22 @@ const EnglishPostsPage = () => {
 }
 
 export default EnglishPostsPage
+
+export const query = graphql`
+  query {
+    allMdx(
+      sort: { fields: fileAbsolutePath, order: DESC }
+      filter: { fileAbsolutePath: { glob: "**/*.en.mdx" } }
+    ) {
+      edges {
+        node {
+          fileAbsolutePath
+          frontmatter {
+            title
+            redirect
+          }
+        }
+      }
+    }
+  }
+`
