@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import backgroundSrc from "~/images/background.jpg"
 
+import Metadata from "~/components/Metadata"
 import Link from "~/components/Link"
 import Footer from "~/components/Footer"
 import Avatar from "~/components/Avatar"
@@ -66,7 +67,7 @@ const ListItem = styled.li``
 const Time = styled.time`
   color: #aaa;
   margin-right: 1rem;
-  width: 13rem;
+  width: 15rem;
   display: inline-block;
   text-align: right;
 `
@@ -83,36 +84,40 @@ const PostsLayout = ({ posts }) => {
   `)
 
   return (
-    <Layout>
-      <Cover>
-        <CoverImage src={backgroundSrc} />
-      </Cover>
+    <>
+      <Metadata title="Articles" />
 
-      <Main>
+      <Layout>
+        <Cover>
+          <CoverImage src={backgroundSrc} />
+        </Cover>
+
+        <Main>
+          <Wrapper>
+            <AvatarBox>
+              <Avatar size={"100px"} />
+            </AvatarBox>
+
+            <Heading>{data.site.siteMetadata.title}</Heading>
+
+            <Subheading>Articles</Subheading>
+
+            <List>
+              {posts.map(({ url, redirect, title, date }, i) => (
+                <ListItem key={i}>
+                  <Time>{date}</Time>
+                  <Link to={redirect ? redirect : url}>{title}</Link>
+                </ListItem>
+              ))}
+            </List>
+          </Wrapper>
+        </Main>
+
         <Wrapper>
-          <AvatarBox>
-            <Avatar size={"100px"} />
-          </AvatarBox>
-
-          <Heading>{data.site.siteMetadata.title}</Heading>
-
-          <Subheading>Articles</Subheading>
-
-          <List>
-            {posts.map(({ url, redirect, title, date }, i) => (
-              <ListItem key={i}>
-                <Time>{date}</Time>
-                <Link to={redirect ? redirect : url}>{title}</Link>
-              </ListItem>
-            ))}
-          </List>
+          <Footer />
         </Wrapper>
-      </Main>
-
-      <Wrapper>
-        <Footer />
-      </Wrapper>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 

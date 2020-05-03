@@ -5,8 +5,8 @@ import { css } from "@emotion/core"
 import { HomeIcon as NativeHomeIcon } from "evergreen-ui"
 import dayjs from "dayjs"
 
+import Metadata from "~/components/Metadata"
 import Avatar from "~/components/Avatar"
-
 import Footer from "~/components/Footer"
 
 import Layout from "./../index.js"
@@ -146,44 +146,49 @@ const PostLayout = ({
 
   const splitUri = uri.split("/")
   const homeUrl = `/${splitUri[1]}/${splitUri[2]}/`
-  const date = dayjs(
-    uri.match(/\d{4}\/\d{2}\/\d{2}/)[0].replaceAll("/", "-")
-  ).format("DD MMMM YYYY")
+  // const date = dayjs(
+  //   uri.match(/\d{4}\/\d{2}\/\d{2}/)[0].replaceAll("/", "-")
+  // ).format("DD MMMM YYYY")
+  const date = "1970-01-01"
 
   return (
-    <Layout>
-      <Header>
-        <Link to={homeUrl}>
-          <HomeIcon />
-        </Link>
+    <>
+      <Metadata title={title} />
 
-        <span>{data.site.siteMetadata.title}</span>
-      </Header>
+      <Layout>
+        <Header>
+          <Link to={homeUrl}>
+            <HomeIcon />
+          </Link>
 
-      <Main>
-        {cover && (
-          <Cover fullscreen={coverActive}>
-            <CoverImage src={cover} onClick={handleClickCover} />
-          </Cover>
-        )}
+          <span>{data.site.siteMetadata.title}</span>
+        </Header>
+
+        <Main>
+          {cover && (
+            <Cover fullscreen={coverActive}>
+              <CoverImage src={cover} onClick={handleClickCover} />
+            </Cover>
+          )}
+
+          <Wrapper>
+            <Content cover={cover}>
+              <Avatar size={"100px"} />
+
+              <ContentHeading>{title}</ContentHeading>
+
+              <ContentTime>{date}</ContentTime>
+
+              <ContentBody>{children}</ContentBody>
+            </Content>
+          </Wrapper>
+        </Main>
 
         <Wrapper>
-          <Content cover={cover}>
-            <Avatar size={"100px"} />
-
-            <ContentHeading>{title}</ContentHeading>
-
-            <ContentTime>{date}</ContentTime>
-
-            <ContentBody>{children}</ContentBody>
-          </Content>
+          <Footer />
         </Wrapper>
-      </Main>
-
-      <Wrapper>
-        <Footer />
-      </Wrapper>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 
