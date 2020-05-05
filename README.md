@@ -1,20 +1,6 @@
-# _kud.diary
+# \_kud.diary
 
 My life, my diary.
-
-## Installation
-
-```
-$ npm install
-```
-
-## Usage
-
-One command, as usual.
-
-```
-$ npm run start
-```
 
 ## Copyrigths
 
