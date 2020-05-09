@@ -60,6 +60,8 @@ const IndexPage = () => {
 
     if (favouriteLanguage) {
       window.location.href = `/${favouriteLanguage}/posts`
+
+      return <span />
     }
   }
 

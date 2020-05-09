@@ -18,6 +18,7 @@
     "dayjs": "1.8.26",
     "fast-glob": "3.2.2",
     "gh-pages": "2.2.0",
+    "hint.css": "2.6.0",
     "next": "latest",
     "next-compose-plugins": "2.2.0",
     "next-images": "1.4.0",

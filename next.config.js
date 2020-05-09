@@ -10,14 +10,8 @@ const withMDX = require("@next/mdx")({
 })
 const withImages = require("next-images")
 
-// @FIXME: translate into es6?
-module.exports = withPlugins([withMDX, withImages], {
-  pageExtensions: ["mdx", "js"],
-
-  devIndicators: {
-    autoPrerender: false,
-  },
-
+// @NOTE: translate into es6?
+module.exports = withPlugins([withImages, withMDX], {
   env: {
     metadata: {
       title: `Diary of the _kud`,
@@ -26,7 +20,14 @@ module.exports = withPlugins([withMDX, withImages], {
     },
     avatar: {
       url: `http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=500`,
+      mediumUrl: `http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=1024`,
     },
+  },
+
+  pageExtensions: ["mdx", "js"],
+
+  devIndicators: {
+    autoPrerender: false,
   },
 
   webpack: (config) =>

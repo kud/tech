@@ -7,6 +7,7 @@ import theme from "prism-react-renderer/themes/oceanicNext"
 
 // Global styles must be necessarily here: https://github.com/zeit/next.js/blob/master/errors/css-global.md
 import "normalize.css"
+import "hint.css"
 
 import "~/styles/box-sizing.css"
 import "~/styles/fonts.css"

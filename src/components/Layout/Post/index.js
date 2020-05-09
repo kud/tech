@@ -5,8 +5,12 @@ import { css } from "@emotion/core"
 import { FaHome } from "react-icons/fa"
 
 import dayjs from "dayjs"
+import "dayjs/locale/fr"
+import relativeTime from "dayjs/plugin/relativeTime"
+dayjs.extend(relativeTime)
 
 import getDateFromPath from "~/lib/get-date-from-path"
+import getLangFromPathname from "~/lib/get-lang-from-pathname"
 
 import Metadata from "~/components/Metadata"
 import Avatar from "~/components/Avatar"
@@ -28,7 +32,13 @@ const Header = styled.header`
 `
 
 const HomeIcon = styled(FaHome)`
+  margin-bottom: -2px;
   fill: #413f39 !important;
+  transition: fill 150ms ease;
+
+  &:hover {
+    fill: #8f8f8f !important;
+  }
 `
 
 const Main = styled.main``
@@ -66,9 +76,9 @@ const Cover = styled.div`
       ${CoverImage} {
         height: 100%;
         width: auto;
-        border: 5px solid #ffffff;
-        border-radius: 4px;
+        border-radius: 6px;
         overflow: hidden;
+        background-color: #fff;
       }
     `}
 `
@@ -138,6 +148,7 @@ const ContentBody = styled.div`
     font-weight: bold;
     text-decoration: underline;
     color: #333;
+    transition: color 150ms ease, background-color 150ms ease;
   }
 
   a:hover {
@@ -160,13 +171,18 @@ const PostLayout = ({ children, meta: { title, description, cover } }) => {
 
   const handleClickCover = () => setCoverActive(!coverActive)
 
+  const LANG = getLangFromPathname(pathname)
+
   const splitUri = pathname.split("/")
   const homeUrl = `/${splitUri[1]}/${splitUri[2]}`
-  const date = dayjs(getDateFromPath(pathname)).format("DD MMMM YYYY")
+  const date = dayjs(getDateFromPath(pathname))
+    .locale(LANG)
+    .format("DD MMMM YYYY")
+  const fromNow = dayjs(getDateFromPath(pathname)).locale(LANG).fromNow()
 
   return (
     <>
-      <Metadata title={title} />
+      <Metadata title={title} cover={cover} description={description} />
 
       <Layout>
         <Header>
@@ -194,7 +210,11 @@ const PostLayout = ({ children, meta: { title, description, cover } }) => {
                 <ContentDescription>{description}</ContentDescription>
               )}
 
-              <ContentTime>{date}</ContentTime>
+              <ContentTime>
+                <span className="hint--bottom" aria-label={fromNow}>
+                  {date}
+                </span>
+              </ContentTime>
 
               <ContentBody>{children}</ContentBody>
             </Content>
