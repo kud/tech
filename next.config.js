@@ -4,6 +4,7 @@ const images = require("remark-images")
 const emoji = require("remark-emoji")
 const withPlugins = require("next-compose-plugins")
 const withMDX = require("@next/mdx")({
+  extension: /\.md$/,
   options: {
     remarkPlugins: [images, emoji],
   },
@@ -24,7 +25,7 @@ module.exports = withPlugins([withImages, withMDX], {
     },
   },
 
-  pageExtensions: ["mdx", "js"],
+  pageExtensions: ["md", "js"],
 
   devIndicators: {
     autoPrerender: false,

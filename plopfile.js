@@ -37,7 +37,7 @@ module.exports = (plop) => {
       {
         type: "add",
         templateFile: `${PLOP_DIR}/page.hbs`,
-        path: `${SRC_DIR}/pages/{{lang}}/posts/${currentDate}/{{kebabCase title}}/index.mdx`,
+        path: `${SRC_DIR}/pages/{{lang}}/posts/${currentDate}/{{kebabCase title}}/index.md`,
         skipIfExists: true,
       },
     ],

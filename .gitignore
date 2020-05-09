@@ -11,9 +11,6 @@
 /out/
 /dist/
 
-# ignore next-mdx-enhanced cache directory
-.mdx-data
-
 # production
 /build
 
