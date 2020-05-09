@@ -1,3 +1,32 @@
-/dist
+# dependencies
 /node_modules
-/.deploy
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+/dist/
+
+# ignore next-mdx-enhanced cache directory
+.mdx-data
+
+# production
+/build
+
+# misc
+.DS_Store
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
