@@ -72,10 +72,11 @@ const ListItem = styled.li`
   border: 1px solid #e3e3e2;
   border-radius: 6px;
   overflow: hidden;
-  transition: box-shadow 300ms ease;
+  transition: box-shadow 300ms ease, border-color 150ms ease;
 
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px;
+    /*    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px;*/
+    border-color: #a4a4a1;
   }
 
   ${({ redirect }) =>
@@ -162,14 +163,19 @@ const PostsLayout = ({ posts }) => {
                           // cover ? cover : "https://source.unsplash.com/random"
                           cover
                             ? cover
-                            : "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg"
+                            : "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=640"
                         }
                       />
                     </ImageBox>
 
                     <ContentBox>
-                      <Title>{title}</Title>
-                      {description && <Description>{description}</Description>}
+                      <div>
+                        <Title>{title}</Title>
+
+                        {description && (
+                          <Description>{description}</Description>
+                        )}
+                      </div>
 
                       <Time>{date}</Time>
                     </ContentBox>
