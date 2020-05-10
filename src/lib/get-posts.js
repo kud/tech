@@ -4,7 +4,7 @@ import "dayjs/locale/fr"
 
 const getPosts = (lang) => {
   // using here sync to have the right order of files
-  const filepathList = fg.sync(`src/pages/${lang}/posts/**/*.md`, {
+  const filepathList = fg.sync(`src/pages/${lang}/posts/**/*.(md|mdx)`, {
     onlyFiles: true,
   })
 
@@ -13,7 +13,7 @@ const getPosts = (lang) => {
     const { meta } = require(`../../${filepath}`)
 
     return {
-      url: filepath.replace("src/pages", "").replace("/index.md", ""),
+      url: filepath.replace("src/pages", "").replace(/\/index.mdx?/, ""),
       title: meta?.title || null,
       description: meta?.description || null,
       date: dayjs(filepath.match(/\d{4}\/\d{2}\/\d{2}/g)[0])
