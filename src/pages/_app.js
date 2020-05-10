@@ -74,17 +74,24 @@ const components = {
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <Pre className={className} style={style}>
-            {tokens.map((line, i) => (
-              <Line key={i} {...getLineProps({ line, key: i })}>
-                <LineNo>{i + 1}</LineNo>
+            {tokens.map((line, i) => {
+              // @HACK: for a reason I don't know, there's an empty line in the end of any code part
+              if (line[0].content === "" && i === tokens.length - 1) {
+                return undefined
+              }
 
-                <LineContent>
-                  {line.map((token, key) => (
-                    <span key={key} {...getTokenProps({ token, key })} />
-                  ))}
-                </LineContent>
-              </Line>
-            ))}
+              return (
+                <Line key={i} {...getLineProps({ line, key: i })}>
+                  <LineNo>{i + 1}</LineNo>
+
+                  <LineContent>
+                    {line.map((token, key) => (
+                      <span key={key} {...getTokenProps({ token, key })} />
+                    ))}
+                  </LineContent>
+                </Line>
+              )
+            })}
           </Pre>
         )}
       </Highlight>
