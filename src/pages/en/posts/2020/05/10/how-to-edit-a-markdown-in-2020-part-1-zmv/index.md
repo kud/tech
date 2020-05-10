@@ -1,7 +1,7 @@
 export const meta = {
-  title: "How to edit a markdown in 2020, part 1: zmv",
-  description: "Sorry .mdx but I renamed you.",
-  cover: "https://i.imgur.com/afxmh3O.png",
+title: "How to edit a markdown in 2020, part 1: zmv",
+description: "Sorry .mdx but I renamed you.",
+cover: "https://i.imgur.com/afxmh3O.png",
 }
 
 As you may know, I now use [Next.js](https://nextjs.org/) to compile my website. It allows me to write my layout and pages in [React](https://reactjs.org/) and still have the benefit to use static files in the end.
@@ -81,14 +81,13 @@ It's quite easy, no worries, you simply need to go to `next.config.js` and speci
 // next.config.js
 const withPlugins = require("next-compose-plugins")
 const withMDX = require("@next/mdx")({
-+	extension: /\.md$/,
++ extension: /\.md$/,
 })
 
 module.exports = withPlugins([withMDX], {
 - pageExtensions: ["mdx", "js"],
 + pageExtensions: ["md", "js"],
 })
-
 ```
 
 If you still want to keep `.md` and `.mdx`, no issues, you can write it like this:
@@ -97,14 +96,12 @@ If you still want to keep `.md` and `.mdx`, no issues, you can write it like thi
 // next.config.js
 const withPlugins = require("next-compose-plugins")
 const withMDX = require("@next/mdx")({
-	extension: /\.md?$/,
+  extension: /\.md?$/,
 })
 
 module.exports = withPlugins([withMDX], {
   pageExtensions: ["md", "mdx", "js"],
 })
-
-
 ```
 
 (As you can see in this code, I use the excellent pluging next-compose-plugins which allows you to have a better readability of your list of plugins.)
@@ -119,7 +116,5 @@ And if you want some resources about `zvm`:
 - [Renaming files in subfolders using zmv](https://stackoverflow.com/questions/35229991/renaming-files-in-subfolders-using-zmv)
 - [Mass renaming files with zmv (zsh)](https://coderwall.com/p/yepegw/mass-renaming-files-with-zmv-zsh)
 - [Renaming Magically With zmv](https://coderwall.com/p/yepegw/mass-renaming-files-with-zmv-zsh)
-
-
 
 Bye bye 👋🏻
