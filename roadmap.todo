@@ -1,5 +1,4 @@
 - @FIXME: add a way to inject images from the same folder that the .md
-- @FIXME: switch "time ago" with real time
-- @FIXME: handle blockquotes
 - @FIXME: handle meta resources?
 - @FIXME: adjust depending on feedbacks from Julie
+- @FIXME: time to read a post

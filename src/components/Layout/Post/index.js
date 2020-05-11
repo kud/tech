@@ -135,7 +135,7 @@ const ContentBody = styled.div`
     display: block;
     border-radius: 4px;
     max-width: 100%;
-    margin: 6rem auto;
+    margin: 4rem auto;
   }
 
   iframe {
@@ -211,8 +211,8 @@ const PostLayout = ({ children, meta: { title, description, cover } }) => {
               )}
 
               <ContentTime>
-                <span className="hint--bottom" aria-label={fromNow}>
-                  {date}
+                <span className="hint--bottom" aria-label={date}>
+                  {fromNow}
                 </span>
               </ContentTime>
 

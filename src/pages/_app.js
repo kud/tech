@@ -29,6 +29,22 @@ const Code = styled.code`
   font-family: monospace;
 `
 
+const Blockquote = styled.blockquote`
+  margin: 0;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+
+  &:before {
+    content: "💬";
+    margin-right: 2rem;
+    font-style: normal;
+  }
+`
+
 const Pre = styled.pre`
   text-align: left;
   margin: 3rem 0;
@@ -56,6 +72,8 @@ const components = {
   wrapper: PostLayout,
 
   inlineCode: ({ children }) => <Code>{children}</Code>,
+
+  blockquote: ({ children }) => <Blockquote>{children}</Blockquote>,
 
   pre: ({ children }) => {
     const className = children.props.className || ""
