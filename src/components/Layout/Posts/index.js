@@ -23,7 +23,8 @@ const Cover = styled.div`
 const CoverImage = styled.img`
   display: block;
   object-fit: cover;
-  object-position: center 50%;
+  /*  object-position: center 50%;*/
+  object-position: center 35%;
   width: 100%;
   height: 100%;
 `
