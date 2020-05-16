@@ -20,6 +20,8 @@ const Metadata = ({ lang, title, cover, description }) => {
 
       <title>{_title}</title>
 
+      <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
       <meta property="og:type" content="website" />
       <meta property="og:title" content={_title} />
       <meta property="og:url" content="http://diary.kud.io" />
