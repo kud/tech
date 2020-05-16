@@ -17,7 +17,9 @@ This is the second case we're interested.
 
 If you fork only because you want to contribute, in my opinion, you should notify any visitor that it's not a project they can use.
 
-How to do this?
+And as developer, you won't care so much about your `master` branch, you won't update it, you won't use it to make your PR, you only will only submit feature branches, one by one.
+
+So. How to do this?
 
 We'll make the command step-by-step.
 
