@@ -20,8 +20,8 @@ module.exports = withPlugins([withImages, withMDX], {
       author: `@_kud`,
     },
     avatar: {
-      url: `http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=500`,
-      mediumUrl: `http://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=1024`,
+      url: `https://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=500`,
+      mediumUrl: `https://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0?s=1024`,
     },
   },
 
