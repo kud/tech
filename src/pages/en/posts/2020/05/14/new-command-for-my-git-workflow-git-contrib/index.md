@@ -6,7 +6,7 @@ export const meta = {
 
 You probably don't know me so much but I love when something is perfect, shiny, well designed. Yes, some people could say I'm a maniac. Anyway. 😜
 
-So why we're today. We are here today because I want to talk about how to make a good fork on GitHub (or whatever but my command only works on GitHub yet) to contribute to a project and not to have an alternative of this one.
+So why we're here today. We are here today because I want to talk about how to make a good fork on GitHub (or whatever but my command only works on GitHub yet) to contribute to a project and not to have an alternative of this one.
 
 Indeed, when you fork, you could have two ideas behind:
 
