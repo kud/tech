@@ -132,6 +132,12 @@ const Link = styled.a`
   left: 0;
   right: 0;
   bottom: 0;
+
+  ${({ redirect }) =>
+    redirect &&
+    css`
+      cursor: alias;
+    `}
 `
 
 const PostsLayout = ({ posts }) => {
@@ -186,6 +192,7 @@ const PostsLayout = ({ posts }) => {
                         href={redirect}
                         target="_blank"
                         rel="noopener noreferrer"
+                        redirect
                       />
                     ) : (
                       <Link href={url} />

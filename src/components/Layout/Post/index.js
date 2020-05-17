@@ -129,7 +129,9 @@ const ContentMeta = styled.time`
   }
 `
 
-const ContentMetaTime = styled.span``
+const ContentMetaTime = styled.span`
+  cursor: help;
+`
 
 const ContentMetaReadingTime = styled.span``
 
