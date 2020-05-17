@@ -52,6 +52,7 @@ const LineNo = styled.span`
   user-select: none;
   opacity: 0.5;
   width: 6rem;
+  flex-shrink: 0;
 `
 
 const LineContent = styled.span`

@@ -32,6 +32,15 @@ const ListItem = styled.li`
   &:first-of-type:before {
     display: none;
   }
+
+  @media (max-width: 500px) {
+    padding: 10px;
+    display: block;
+
+    &:before {
+      display: none;
+    }
+  }
 `
 
 const Link = styled(NativeLink)`
