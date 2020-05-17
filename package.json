@@ -46,5 +46,6 @@
     "export": "next export -o dist",
     "serve": "npm run export && serve dist",
     "deploy": "npm run export && gh-pages --dotfiles -d dist -b gh-pages"
-  }
+  },
+  "devDependencies": {}
 }

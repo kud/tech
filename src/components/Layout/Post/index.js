@@ -9,6 +9,7 @@ import "dayjs/locale/fr"
 import relativeTime from "dayjs/plugin/relativeTime"
 dayjs.extend(relativeTime)
 
+import getReadingTime from "~/lib/get-reading-time"
 import getDateFromPath from "~/lib/get-date-from-path"
 import getLangFromPathname from "~/lib/get-lang-from-pathname"
 
@@ -115,7 +116,7 @@ const ContentDescription = styled.div`
   font-size: 2rem;
 `
 
-const ContentTime = styled.time`
+const ContentMeta = styled.time`
   color: #869d9e;
   font-size: 1.6rem;
   display: block;
@@ -126,6 +127,10 @@ const ContentTime = styled.time`
     margin-right: 0.5rem;
   }
 `
+
+const ContentMetaTime = styled.span``
+
+const ContentMetaReadingTime = styled.span``
 
 const ContentBody = styled.div`
   line-height: 1.6;
@@ -179,6 +184,7 @@ const PostLayout = ({ children, meta: { title, description, cover } }) => {
     .locale(LANG)
     .format("DD MMMM YYYY")
   const fromNow = dayjs(getDateFromPath(pathname)).locale(LANG).fromNow()
+  const readingTime = getReadingTime(children)
 
   return (
     <>
@@ -210,11 +216,17 @@ const PostLayout = ({ children, meta: { title, description, cover } }) => {
                 <ContentDescription>{description}</ContentDescription>
               )}
 
-              <ContentTime>
-                <span className="hint--bottom" aria-label={date}>
+              <ContentMeta>
+                <ContentMetaTime className="hint--bottom" aria-label={date}>
                   {fromNow}
-                </span>
-              </ContentTime>
+                </ContentMetaTime>
+
+                {" — "}
+
+                <ContentMetaReadingTime>
+                  {`~${readingTime} min`}
+                </ContentMetaReadingTime>
+              </ContentMeta>
 
               <ContentBody>{children}</ContentBody>
             </Content>
