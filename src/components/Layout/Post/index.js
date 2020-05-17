@@ -114,6 +114,7 @@ const ContentDescription = styled.div`
   margin-top: 0rem;
   margin-bottom: 2rem;
   font-size: 2rem;
+  font-family: "Libre Baskerville", serif;
 `
 
 const ContentMeta = styled.time`
