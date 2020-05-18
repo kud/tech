@@ -35,8 +35,10 @@ const Header = styled.header`
 `
 
 const Name = styled.span`
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2.2rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 `
 
 const HomeIcon = styled(FaHome)`
