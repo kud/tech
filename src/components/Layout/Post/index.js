@@ -30,6 +30,8 @@ const Header = styled.header`
   position: sticky;
   top: 0;
   z-index: 2;
+
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 8px;
 `
 
 const HomeIcon = styled(FaHome)`
@@ -150,6 +152,10 @@ const ContentBody = styled.div`
     display: block;
     width: 100%;
     margin: 6rem auto;
+  }
+
+  ul {
+    list-style-type: "👉🏻 ";
   }
 
   a {
