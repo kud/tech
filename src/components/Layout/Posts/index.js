@@ -90,10 +90,12 @@ const ListItem = styled.li`
 `
 
 const ImageBox = styled.div`
+  /*  flex-grow: 0;*/
+  flex-shrink: 0;
+  /*  flex-basis: auto;*/
   overflow: hidden;
   min-height: 100px;
-  flex-grow: 0;
-  width: 100px; // @FIXME: not respected, should use flex properties
+  width: 100px;
   background-color: #faf3f5;
   border-right: 1px solid #e3e3e2;
 `
