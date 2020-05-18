@@ -76,8 +76,8 @@ const ListItem = styled.li`
   transition: box-shadow 300ms ease, border-color 150ms ease;
 
   &:hover {
-    /*    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px;*/
-    border-color: #a4a4a1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 11px;
+    /*    border-color: #a4a4a1;*/
   }
 
   ${({ redirect }) =>
