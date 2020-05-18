@@ -34,6 +34,11 @@ const Header = styled.header`
   box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 8px;
 `
 
+const Name = styled.span`
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+`
+
 const HomeIcon = styled(FaHome)`
   margin-bottom: -2px;
   fill: #413f39 !important;
@@ -205,7 +210,7 @@ const PostLayout = ({ children, meta: { title, description, cover } }) => {
             <HomeIcon />
           </Link>
 
-          <span>{process.env.metadata.title}</span>
+          <Name>{process.env.metadata.title}</Name>
         </Header>
 
         <Main>
