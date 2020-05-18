@@ -37,7 +37,7 @@ const Header = styled.header`
 const Name = styled.span`
   font-family: "Nanum Pen Script", cursive;
   font-size: 2.2rem;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: -1rem;
 `
 
