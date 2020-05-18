@@ -73,10 +73,12 @@ const ListItem = styled.li`
   border: 1px solid #e3e3e2;
   border-radius: 6px;
   overflow: hidden;
-  transition: box-shadow 300ms ease, border-color 150ms ease;
+  transition: all 100ms ease;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 11px;
+    /*    transform: translateX(-1rem);*/
+    transform: scale(1.01);
     /*    border-color: #a4a4a1;*/
   }
 
@@ -90,6 +92,7 @@ const ListItem = styled.li`
 const ImageBox = styled.div`
   overflow: hidden;
   min-height: 100px;
+  flex-grow: 0;
   width: 100px; // @FIXME: not respected, should use flex properties
   background-color: #faf3f5;
   border-right: 1px solid #e3e3e2;
