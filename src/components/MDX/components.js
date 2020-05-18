@@ -1,8 +1,45 @@
 import styled from "@emotion/styled"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import theme from "prism-react-renderer/themes/oceanicNext"
+import { paramCase } from "param-case"
+
+import onlyText from "~/lib/react-children-utilities/only-text"
 
 import PostLayout from "~/components/Layout/Post"
+
+const Anchor = styled.a`
+  margin-top: -40px;
+  padding-top: 40px;
+
+  text-decoration: none !important;
+  color: #45423c !important;
+
+  &:hover {
+    color: #45423c !important;
+  }
+`
+
+const Hx = styled.span`
+  position: relative;
+  text-decoration: none;
+
+  &:before {
+    content: "#";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    opacity: 0;
+    transition: all 300ms ease;
+    color: #94a5a6;
+  }
+
+  &:hover {
+    &:before {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  }
+`
 
 const Code = styled.code`
   background: #33363e;
@@ -61,6 +98,60 @@ const LineContent = styled.span`
 
 const components = {
   wrapper: PostLayout,
+
+  h1: ({ children }) => (
+    <Anchor
+      href={`#${paramCase(onlyText(children))}`}
+      id={`${paramCase(onlyText(children))}`}
+    >
+      <Hx as="h1">{children}</Hx>
+    </Anchor>
+  ),
+
+  h2: ({ children }) => (
+    <Anchor
+      href={`#${paramCase(onlyText(children))}`}
+      id={`${paramCase(onlyText(children))}`}
+    >
+      <Hx as="h2">{children}</Hx>
+    </Anchor>
+  ),
+
+  h3: ({ children }) => (
+    <Anchor
+      href={`#${paramCase(onlyText(children))}`}
+      id={`${paramCase(onlyText(children))}`}
+    >
+      <Hx as="h3">{children}</Hx>
+    </Anchor>
+  ),
+
+  h4: ({ children }) => (
+    <Anchor
+      href={`#${paramCase(onlyText(children))}`}
+      id={`${paramCase(onlyText(children))}`}
+    >
+      <Hx as="h4">{children}</Hx>
+    </Anchor>
+  ),
+
+  h5: ({ children }) => (
+    <Anchor
+      href={`#${paramCase(onlyText(children))}`}
+      id={`${paramCase(onlyText(children))}`}
+    >
+      <Hx as="h5">{children}</Hx>
+    </Anchor>
+  ),
+
+  h6: ({ children }) => (
+    <Anchor
+      href={`#${paramCase(onlyText(children))}`}
+      id={`${paramCase(onlyText(children))}`}
+    >
+      <Hx as="h6">{children}</Hx>
+    </Anchor>
+  ),
 
   inlineCode: ({ children }) => <Code>{children}</Code>,
 
