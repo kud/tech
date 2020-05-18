@@ -161,6 +161,9 @@ const components = {
     const className = children.props.className || ""
     const matches = className.match(/language-(?<lang>.*)/)
 
+    // @HACK: this current theme doesn't have any style for shebang
+    theme.styles[2].types.push("shebang")
+
     return (
       <Highlight
         {...defaultProps}
