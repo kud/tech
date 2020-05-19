@@ -56,7 +56,7 @@ const Main = styled.main``
 const CoverImage = styled.img`
   display: block;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center ${({ coverPosition }) => `${coverPosition}%`};
   width: 100%;
   height: 100%;
 `
@@ -185,7 +185,10 @@ const ContentBody = styled.div`
   }
 `
 
-const PostLayout = ({ children, meta: { title, description, cover } }) => {
+const PostLayout = ({
+  children,
+  meta: { title, description, cover, coverPosition = 50 },
+}) => {
   const { pathname } = useRouter()
 
   const [coverActive, setCoverActive] = useState(false)
@@ -218,7 +221,7 @@ const PostLayout = ({ children, meta: { title, description, cover } }) => {
         <Main>
           {cover && (
             <Cover fullscreen={coverActive} onClick={handleClickCover}>
-              <CoverImage src={cover} />
+              <CoverImage src={cover} coverPosition={coverPosition} />
             </Cover>
           )}
 
