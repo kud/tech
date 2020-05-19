@@ -1,5 +1,6 @@
 const path = require("path")
 const dayjs = require("dayjs")
+const slugify = require("slugify")
 
 const currentDate = dayjs().format("YYYY/MM/DD")
 
@@ -7,6 +8,13 @@ const SRC_DIR = path.resolve(__dirname, "src")
 const PLOP_DIR = path.resolve(__dirname, "__plop__")
 
 module.exports = (plop) => {
+  plop.setHelper("slugify", (txt) =>
+    slugify(txt, { lower: true, strict: true }),
+  )
+
+  plop.setHelper("currentDate", () => currentDate)
+  plop.setHelper("srcDir", () => SRC_DIR)
+
   plop.setGenerator("page", {
     description: "Creation of a page.",
 
@@ -37,7 +45,7 @@ module.exports = (plop) => {
       {
         type: "add",
         templateFile: `${PLOP_DIR}/page.hbs`,
-        path: `${SRC_DIR}/pages/{{lang}}/posts/${currentDate}/{{kebabCase title}}/index.md`,
+        path: `{{ srcDir }}/pages/{{ lang }}/posts/{{ currentDate }}/{{ slugify title }}/index.mdx`,
         skipIfExists: true,
       },
     ],

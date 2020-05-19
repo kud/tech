@@ -1,0 +1,224 @@
+import { Container, Item } from "./components"
+
+export const meta = {
+  title: "Introduction à Parcel, le Web Application Bundler zero config",
+  description: "Mais vraiment.",
+  cover: require("./cover.jpg"),
+  coverPosition: 40,
+}
+
+Bonjour et bienvenu·e aujourd'hui pour une petite introduction à [Parcel](https://parceljs.org/), ce bundler (pensez [gulp](https://gulpjs.com/), [webpack](https://webpack.js.org/!)) qui arrive avec une promesse - pas des moindres - d'être super rapide ⚡, et ce sans aucune configuration à définir 🙌🏻. Plutôt séduisant dit comme ça. C'est ce que nous allons voir.
+
+## Pourquoi avez-nous besoin d'un bundler ?
+
+C'est la première question qu'on doit se poser, pourquoi avons-nous besoin de cela ?
+
+Il y a plusieurs raisons à avoir envie d'un bundler, et les voici :
+
+- vous voulez optimiser vos images ;
+- vous voulez minifier vos fichiers css, html, js ;
+- vous voulez réduire le nombre de requêtes http en fusionnant plusieurs fichiers de même type ensemble ;
+- vous voulez séparer votre code afin d'en faire des modules mais joindre tout ça à la fin ;
+- vous voulez enfin écrire dans une version avancée de ECMAScript (comme ES6 ou ES7) mais que cela soit compris par tous les navigateurs à la fin.
+
+Voilà les principales différentes raisons de pourquoi on aimerait un bundler. On souhaite aussi que celui-ci _watch_ vos fichiers afin de recompiler à chaque changement de ceux-ci.
+
+## Parlons maintenant des bundlers du marché
+
+Je ne connais pas votre parcours, mais dans mon cas, je suis passé par pas mal d'étapes. Ca a été de gérer les _assets_ à travers [Django](https://www.djangoproject.com/), [Ruby on Rails](https://rubyonrails.org/), [Symfony](https://symfony.com/) côté back. Côté front, à utiliser d'abord [grunt](https://gruntjs.com/) puis gulp puis webpack, en passant par quelques scripts shell. Et même si ç'a été efficace et ca l'est toujours, je crois que le plus traumatisant pour moi a été de maintenir mon bundler sur gulp avec [browserify](http://browserify.org/). Chacun avait son propre système de stream et pour mélanger tout ça, _poh poh poh_, c'était coton
+.
+Heureusement est arrivé par la suite [babel](https://babeljs.io/), mais j'avais rapidement birfuqué à ce moment là sur webpack, donc l'expérience gulp + babel n'a jamais été vraiment un sujet pour le moment chez moi.
+
+Côté webpack, rien à dire, c'est assez déclaratif certes, faut connaître un peu les regex, j'ai eu aussi une certaine douleur lorsqu'il y avait des changements d'API majeurs mais dans l'ensemble j'en suis plutôt content, et je n'arrive pas à vouloir utiliser [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) (appelé CRA dans la suite du texte) tellement je suis bien à configurer webpack aux petits oignons 🧅. Alors, certes quand je dois _shipper_ un produit assez rapidement ou faire un _PoC_ (proof-of-concept), je vous avoue que je pourrais utiliser CRA. Mais c'est justement ce qui me fait venir à parler de Parcel justement !
+
+L'idée de Parcel est de ne pas vous préoccuper de votre bundler, et de simplement coder directement votre application sans avoir à définir chaque tâche pour chaque type de fichiers. Plutôt pratique. Alors oui, webpack a fait d'énorme effort (surtout depuis la version 4) pour être _zero config_ à travers ces modes `development` et `production` mais je n'ai pas testé ce cas.
+
+## Introduction à Parcel
+
+<img src={require("./parcel-site.png")} />
+
+Premièrement le site est super propre, on comprend direct à quoi on a affaire. Voici les points principaux :
+
+<Container>
+  <Item>
+    <strong>🚀 Des temps d'empaquetage ultra-rapide</strong>
+    <p>Parcel utilise des processus de travail en parallèle pour permettre la compilation multicœur et dispose d'un cache de système de fichiers pour des reconstructions rapides même après un redémarrage.</p>
+  </Item>
+
+<Item>
+  <strong>📦 Empaquetez toutes vos ressources</strong>
+  <p>
+    Parcel a un support prêt à l'emploi pour les fichiers ressources JS, CSS,
+    HTML, etc - pas de plugins nécessaires.
+  </p>
+</Item>
+
+<Item>
+  <strong>🐠 Transformations automatiques</strong>
+  <p>
+    En cas de besoin, le code est automatiquement transformé en utilisant Babel,
+    PostCSS et PostHTML - mêmes les `node_modules`.
+  </p>
+</Item>
+
+<Item>
+  <strong>✂️ Découpage du code sans aucune configuration</strong>
+  <p>
+    En utilisant la syntaxe dynamique `import()`, Parcel découpe la génération
+    de vos paquets, cela permet de récupérer seulement ce qui est nécessaire au
+    chargement initial.
+  </p>
+</Item>
+
+<Item>
+  <strong>🔥 Remplacement de module à chaud</strong>
+  <p>
+    Parcel met à jour automatiquement les modules dans le navigateur lorsque
+    vous apportez des modifications au cours du développement, aucune
+    configuration n'est nécessaire.
+  </p>
+</Item>
+
+<Item>
+  <strong>🚨 Journalisateur* convivial</strong>
+  <p>
+    Parcel affiche des extraits de code avec coloration syntaxique lorsqu'il rencontre des erreurs pour vous aider à identifier le problème.
+  </p>
+
+  <p>* comprendre <em>Logger</em></p>
+</Item>
+</Container>
+
+## Installons Parcel
+
+Vous pouvez installer parcel soit globalement, soit localement, avec [yarn](https://yarnpkg.com/) ou [npm](https://www.npmjs.com/), avec comme nom de projet `parcel-bundler`. Nous l'installerons ici localement.
+
+```shell
+$ npm install parcel-bundler --save-dev
+```
+
+## Créons notre premier projet avec Parcel
+
+Commençons simplement en créant une page html basique avec un fichier JavaScript inclus.
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Demo</title>
+  </head>
+
+  <body>
+    <p>Parcel Demo</p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
+```
+
+```js
+// index.js
+console.log("Parcel demo 🙌🏻")
+```
+
+Maintenant, lançons le mode par défaut de parcel (watch + server):
+
+```shell
+$ npx parcel index.html
+```
+
+Un serveur http se lance :
+
+<img src={require("./parcel-running.gif")} style={{ width: "50%" }} />
+
+que nous pouvons visiter à travers l'url [http://localhost:1234/](http://localhost:1234/) afin de voir notre superbe site. 🙌🏻
+
+<img src={require("./demo.png")} />
+
+Tadaaaaaaaaa 👯‍♀️
+
+Maintenant, si en revanche vous ne voulez que _watcher_ vos fichiers, Parcel vous propose une commande directe qui ne lancera pas de serveur :
+
+```shell
+$ npx parcel watch index.html
+```
+
+Enfin, afin de livrer ça en production, une simple commande suffit :
+
+```shell
+$ npx parcel build index.html
+
+✨  Built in 879ms.
+
+dist/parcel.5f6f196c.js        1.15 KB     78ms
+dist/parcel.5f6f196c.js.map      200 B      2ms
+dist/index.html                  144 B    750ms
+```
+
+### Arborescence
+
+Si on regarde de plus près ce qui a été construit, on peut voir ceci :
+
+```
+.
+├── dist
+│   ├── index.html
+│   ├── parcel.5f6f196c.js
+│   └── parcel.5f6f196c.js.map // sourcemaps
+├── index.html
+├── index.js
+└── package-lock.json
+```
+
+Nous avons bien nos fichiers sources, et dans le dossier `/dist`, les fichiers compilés sont présents avec notre `index.html` minifié, et notre fichier JavaScript minifié ainsi que _cache busté_ (le _cache busting_ est une technique d'invalidation de caches en modifiant le nom des fichiers afin qu'ils soient reconnus comme tout autre et donc téléchargés à nouveau).
+
+---
+
+Côté CSS, vous pouvez tout aussi bien l'insérer soit en l'incluant dans le fichier HTML, soit en l'important dans votre fichier JavaScript.
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Demo</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+
+  <body>
+    <p>Parcel Demo</p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
+```
+
+ou
+
+```js
+// index.js
+
+import "./index.css"
+
+console.log("Parcel demo 🙌🏻")
+```
+
+On a bien tout ce qu'il nous faut pour débuter notre projet.
+
+## Enfin, quelques notes
+
+Notez que Parcel supporte les [aliases](https://fr.parceljs.org/module_resolution.html), intègre Babel dans sa compilation donc possibilité de le configurer via `.babelrc`. Et si vous avez des SVG inlines dans votre HTML et que vous avez des problèmes en sortie une fois compressés, c'est peut-être dû à [htmlnano](https://github.com/posthtml/htmlnano). De ce fait, je vous recommande de désactiver l'optimisation des SVG à travers ceci :
+
+```js
+// .htmlnanorc.js
+module.exports = {
+  minifySvg: false,
+}
+```
+
+## Conclusion 📦
+
+Je suis plutôt impressionné par ce projet qui est vraiment clé en main pour le coup. Il est devenu pour de nombreux PoC ou petits projets mon bundler par défaut. À voir si un jour je remplace Webpack sur de gros projets par Parcel. En tout cas, il m'a fait oublier CRA pour le moment, et me fait gagner un temps fou quand je débute un projet.
+
+J'espère que vous avez apprécié cette présentation et que cela vous a donné envie d'essayer Parcel. À bientôt ! 👋🏻
