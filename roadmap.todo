@@ -1,3 +1,4 @@
 - @FIXME: add a way to inject images from the same folder that the .md
 - @FIXME: handle meta resources?
 - @FIXME: https://shellcreeper.com/how-to-load-multiple-google-font-in-one-url-request/
+- @FIXME: shouldn't be .javascript in pages
