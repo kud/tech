@@ -7,7 +7,7 @@ export const meta = {
   coverPosition: 40,
 }
 
-Bonjour et bienvenu·e aujourd'hui pour une petite introduction à [Parcel](https://parceljs.org/), ce bundler (pensez [gulp](https://gulpjs.com/), [webpack](https://webpack.js.org/!)) qui arrive avec une promesse - pas des moindres - d'être super rapide ⚡, et ce sans aucune configuration à définir 🙌🏻. Plutôt séduisant dit comme ça. C'est ce que nous allons voir.
+Bonjour et bienvenu·e aujourd'hui pour une petite introduction à [Parcel](https://parceljs.org/), ce bundler (pensez [Gulp.js](https://gulpjs.com/), [webpack](https://webpack.js.org/!)) qui arrive avec une promesse - pas des moindres - d'être super rapide ⚡, et ce sans aucune configuration à définir 🙌🏻. Plutôt séduisant dit comme ça. C'est ce que nous allons voir.
 
 ## Pourquoi avez-nous besoin d'un bundler ?
 
@@ -15,19 +15,19 @@ C'est la première question qu'on doit se poser, pourquoi avons-nous besoin de c
 
 Il y a plusieurs raisons à avoir envie d'un bundler, et les voici :
 
-- vous voulez optimiser vos images ;
-- vous voulez minifier vos fichiers css, html, js ;
-- vous voulez réduire le nombre de requêtes http en fusionnant plusieurs fichiers de même type ensemble ;
-- vous voulez séparer votre code afin d'en faire des modules mais joindre tout ça à la fin ;
+- vous voulez optimiser vos images,
+- vous voulez minifier vos fichiers CSS, HTML, JS ;
+- vous voulez réduire le nombre de requêtes HTTP en fusionnant plusieurs fichiers de même type ensemble,
+- vous voulez séparer votre code afin d'en faire des modules mais joindre tout ça à la fin,
 - vous voulez enfin écrire dans une version avancée de ECMAScript (comme ES6 ou ES7) mais que cela soit compris par tous les navigateurs à la fin.
 
 Voilà les principales différentes raisons de pourquoi on aimerait un bundler. On souhaite aussi que celui-ci _watch_ vos fichiers afin de recompiler à chaque changement de ceux-ci.
 
 ## Parlons maintenant des bundlers du marché
 
-Je ne connais pas votre parcours, mais dans mon cas, je suis passé par pas mal d'étapes. Ca a été de gérer les _assets_ à travers [Django](https://www.djangoproject.com/), [Ruby on Rails](https://rubyonrails.org/), [Symfony](https://symfony.com/) côté back. Côté front, à utiliser d'abord [grunt](https://gruntjs.com/) puis gulp puis webpack, en passant par quelques scripts shell. Et même si ç'a été efficace et ca l'est toujours, je crois que le plus traumatisant pour moi a été de maintenir mon bundler sur gulp avec [browserify](http://browserify.org/). Chacun avait son propre système de stream et pour mélanger tout ça, _poh poh poh_, c'était coton
-.
-Heureusement est arrivé par la suite [babel](https://babeljs.io/), mais j'avais rapidement birfuqué à ce moment là sur webpack, donc l'expérience gulp + babel n'a jamais été vraiment un sujet pour le moment chez moi.
+Je ne connais pas votre parcours, mais dans mon cas, je suis passé par pas mal d'étapes. Ça a été de gérer les _assets_ à travers [Django](https://www.djangoproject.com/), [Ruby on Rails](https://rubyonrails.org/), [Symfony](https://symfony.com/) côté back. Côté front, à utiliser d'abord [Grunt](https://gruntjs.com/) puis Gulp puis webpack, en passant par quelques scripts shell. Et même si ça été efficace et ça l'est toujours, je crois que le plus traumatisant pour moi a été de maintenir mon bundler sur Gulp avec [browserify](http://browserify.org/). Chacun avait son propre système de stream et pour mélanger tout ça, _poh poh poh_, c'était coton.
+
+Heureusement est arrivé par la suite [Babel](https://babeljs.io/), mais j'avais rapidement birfuqué à ce moment là sur webpack, donc l'expérience Gulp + Babel n'a jamais été vraiment un sujet pour le moment chez moi.
 
 Côté webpack, rien à dire, c'est assez déclaratif certes, faut connaître un peu les regex, j'ai eu aussi une certaine douleur lorsqu'il y avait des changements d'API majeurs mais dans l'ensemble j'en suis plutôt content, et je n'arrive pas à vouloir utiliser [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) (appelé CRA dans la suite du texte) tellement je suis bien à configurer webpack aux petits oignons 🧅. Alors, certes quand je dois _shipper_ un produit assez rapidement ou faire un _PoC_ (proof-of-concept), je vous avoue que je pourrais utiliser CRA. Mais c'est justement ce qui me fait venir à parler de Parcel justement !
 
@@ -49,7 +49,7 @@ Premièrement le site est super propre, on comprend direct à quoi on a affaire.
   <strong>📦 Empaquetez toutes vos ressources</strong>
   <p>
     Parcel a un support prêt à l'emploi pour les fichiers ressources JS, CSS,
-    HTML, etc - pas de plugins nécessaires.
+    HTML, etc. - pas de plugins nécessaires.
   </p>
 </Item>
 
@@ -128,7 +128,7 @@ Maintenant, lançons le mode par défaut de parcel (watch + server):
 $ npx parcel index.html
 ```
 
-Un serveur http se lance :
+Un serveur HTTP se lance :
 
 <img src={require("./parcel-running.gif")} style={{ width: "50%" }} />
 
@@ -219,6 +219,6 @@ module.exports = {
 
 ## Conclusion 📦
 
-Je suis plutôt impressionné par ce projet qui est vraiment clé en main pour le coup. Il est devenu pour de nombreux PoC ou petits projets mon bundler par défaut. À voir si un jour je remplace Webpack sur de gros projets par Parcel. En tout cas, il m'a fait oublier CRA pour le moment, et me fait gagner un temps fou quand je débute un projet.
+Je suis plutôt impressionné par ce projet qui est vraiment clé en main pour le coup. Il est devenu pour de nombreux PoC ou petits projets mon bundler par défaut. À voir si un jour je remplace webpack sur de gros projets par Parcel. En tout cas, il m'a fait oublier CRA pour le moment, et me fait gagner un temps fou quand je débute un projet.
 
 J'espère que vous avez apprécié cette présentation et que cela vous a donné envie d'essayer Parcel. À bientôt ! 👋🏻
