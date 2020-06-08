@@ -58,13 +58,16 @@ const Code = styled.code`
 const Blockquote = styled.blockquote`
   margin: 0;
   padding: 0.5rem 2rem;
+  padding-left: 8rem;
   border-radius: 4px;
   background-color: #f3f3f3;
-  display: flex;
-  align-items: center;
-  font-style: italic;
+  position: relative;
+  font-size: 1.7rem;
 
   &:before {
+    position: absolute;
+    top: 45%;
+    left: 3rem;
     content: "💬";
     margin-right: 2rem;
     font-style: normal;
