@@ -1,0 +1,73 @@
+export const meta = {
+  title: "How to include a file in your SSH config",
+  description: "",
+  cover: require("./cover.jpg"),
+  coverPosition: 10,
+}
+
+Since the confinement (COVID-19 😷), we all had in my company to work remotely. Even if it was a real experience as human being, technically we were already prepared as we have some colleagues who work full-time remotely.
+
+However, depending on your situation - if you're at work 🏢 or at home 🏡 - our configuration changes if you want to connect to some servers.
+
+This is where I'll talk about the SSH config file. As you may know, you can find all your ssh config in this file `~/.ssh/config`.
+
+By default (I mean my own use), this is what I got:
+
+```bash
+# use keychain for SSH — https://ma.ttias.be/mac-osx-keeps-prompting-ssh-key-passphrase-not-use-keychain/
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+
+# jumper
+Host *+*
+  ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/;s/:/ -p /') nc -w1 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
+```
+
+The first block is a way to prevent to be asked every time you want to connect to a server your passphrase, using the Keychain.
+
+The second block is to ease the connection of a server via another server. A jumper so.
+
+Anyway. As I said, I've got a different configuration depending on my situation, I'm inside or outside my company building.
+
+For that, I found that since `ssh 7.3p1` (type `ssh -V` to know yours) , it's possible to use the keyword `Include` which allows you to include any file.
+
+From [the doc](https://man7.org/linux/man-pages/man5/ssh_config.5.html):
+
+> **Include**
+>
+> Include the specified configuration file(s). Multiple path‐
+> names may be specified and each pathname may contain glob(7)
+> wildcards and, for user configurations, shell-like ‘~’ refer‐
+> ences to user home directories. Files without absolute paths
+> are assumed to be in ~/.ssh if included in a user configuration
+> file or /etc/ssh if included from the system configuration
+> file. Include directive may appear inside a Match or Host
+> block to perform conditional inclusion.
+
+For security reason, I won't display what I've got in those files for sure, but this is what I've got now. I created two files in `~/.ssh/config.d/work/` called `inside` and `outside` and I (un)comment the include depending on where I am.
+
+```bash
+# work
+# Include config.d/work/inside
+Include config.d/work/outside
+
+# use keychain for SSH — https://ma.ttias.be/mac-osx-keeps-prompting-ssh-key-passphrase-not-use-keychain/
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+
+# jumper
+Host *+*
+  ProxyCommand ssh $(echo %h | sed 's/+[^+]*$//;s/\([^+%%]*\)%%\([^+]*\)$/\2 -l \1/;s/:/ -p /') nc -w1 $(echo %h | sed 's/^.*+//;/:/!s/$/ %p/;s/:/ /')
+```
+
+Taaaaaaadaaa 🎉.
+
+The next step could be to make a script which switches those lines automatically but for the moment I'm happy with it.
+
+A little tips before leaving, you can include a whole folder by doing `Include config.d/*`.
+
+---
+
+Source: [https://superuser.com/questions/247564/is-there-a-way-for-one-ssh-config-file-to-include-another-one](https://superuser.com/questions/247564/is-there-a-way-for-one-ssh-config-file-to-include-another-one)
