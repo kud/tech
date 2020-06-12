@@ -72,7 +72,7 @@ const Blockquote = styled.blockquote`
   margin: 0;
   padding: 0.5rem 2rem;
   padding-left: 8rem;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #f3f3f3;
   position: relative;
   font-size: 1.7rem;
