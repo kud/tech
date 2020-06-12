@@ -92,7 +92,7 @@ const Pre = styled.pre`
   margin: 3rem 0;
   padding: 1rem 2rem 1rem 0rem;
   overflow: scroll;
-  border-radius: 4px;
+  border-radius: 6px;
 `
 
 const Line = styled.div`
