@@ -32,7 +32,7 @@ Now, we want to take the first one, the second one, but also the rest.
 const [a, b, ...rest] = [10, 20, 30, 40, 50]
 ```
 
-In this way, you'll get those returns:
+In this way, you'll get those return values:
 
 ```js
 const [a, b, ...rest] = [10, 20, 30, 40, 50]
@@ -42,7 +42,7 @@ console.log(b) // 20
 console.log(rest) // [30, 40, 50]
 ```
 
-(By the way, `rest` can be call as you prefer as long as you use `...` before).
+(By the way, `rest` can be called as you prefer as long as you use `...` before).
 
 ## slice
 
@@ -58,7 +58,7 @@ console.log(a) // 50
 
 ---
 
-A little note, be careful with this way because using `slice(-1)` keeps you only the last item, so:
+A little note, be careful with this way because using `slice(-1)` only keeps the last item, so:
 
 ```js
 const [a, ...rest] = [10, 20, 30, 40, 50].slice(-1)
