@@ -1,0 +1,97 @@
+export const meta = {
+  title: "How to get the last item of an array with destructuring",
+  description: "",
+  cover: require("./cover.jpg"),
+}
+
+Today, we'll see a little trick to get the last item of an array with destructuring.
+
+As you may already know, [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) is a way to unpack values from an array. It's really useful to create some variables really quickly.
+
+So let's say we've got an array of numbers like that:
+
+```js
+const arr = [10, 20, 30, 40, 50]
+```
+
+## destructuring
+
+In this array, we want the first element that we'll call `a`, so this is where destructuring will be useful:
+
+```js
+const [a] = [10, 20, 30, 40, 50]
+```
+
+As you can imagine, `a` will return `10`.
+
+## rest?
+
+Now, we want to take the first one, the second one, but also the rest.
+
+```js
+const [a, b, ...rest] = [10, 20, 30, 40, 50]
+```
+
+In this way, you'll get those returns:
+
+```js
+const [a, b, ...rest] = [10, 20, 30, 40, 50]
+
+console.log(a) // 10
+console.log(b) // 20
+console.log(rest) // [30, 40, 50]
+```
+
+(By the way, `rest` can be call as you prefer as long as you use `...` before).
+
+## slice
+
+Now, and this is the trick of this post, we want the last item of this array. In other way, we want a variable with the value `50`.
+
+For that, we'll use `slice(-1)`.
+
+```js
+const [a] = [10, 20, 30, 40, 50].slice(-1)
+
+console.log(a) // 50
+```
+
+---
+
+A little note, be careful with this way because using `slice(-1)` keeps you only the last item, so:
+
+```js
+const [a, ...rest] = [10, 20, 30, 40, 50].slice(-1)
+
+console.log(a) // 50
+console.log(rest) // []
+```
+
+## reverse
+
+Another way could be to use `reverse()` like:
+
+```js
+const [a, ...rest] = [10, 20, 30, 40, 50].reverse()
+
+console.log(a) // 50
+console.log(rest) // [40, 30, 20, 10]
+```
+
+## 💡 idea
+
+The reason of this post is that I was a bit surprised at first not to be able to do:
+
+```js
+const [a, ...rest, z] = [10, 20, 30, 40, 50]
+
+console.log(a) // 10
+console.log(rest) // [20, 30, 40]
+console.log(z) // [50]
+```
+
+It sounded logical to me. I'd be interested of your point of view about this.
+
+---
+
+Hope you enjoyed the reading and you'll get fun with destructuring, it's really powerful. Bye!
