@@ -42,24 +42,37 @@ const Hx = styled.span`
 `
 
 const Code = styled.code`
-  background: #33363e;
-  color: rgb(255, 255, 255);
-  padding: 0.2rem 0.5rem;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  vertical-align: 1px;
-  border-radius: 4px;
+  /*  background: #33363e;*/
+  /*  color: rgb(255, 255, 255);*/
+  /*  padding: 0.2rem 0.5rem;*/
+  /*  font-size: 1.6rem;*/
+  /*  line-height: 1.4;*/
+  /*  vertical-align: 1px;*/
+  /*  border-radius: 4px;*/
+  /*  font-family: monospace;*/
+  /*  border: 4px solid #33363e;*/
+  /*  border-top-width: 2px;*/
+  /*  border-bottom-width: 2px;*/
+
+  background: #efefef;
+  box-shadow: 0 2px 0 #d6d6d6;
+  padding: 2px 8px 3px;
+  border-radius: 5px;
+  line-height: 24px;
+  color: #333;
+  /*  font-weight: 600;*/
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
   font-family: monospace;
-  border: 4px solid #33363e;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
 `
 
 const Blockquote = styled.blockquote`
   margin: 0;
   padding: 0.5rem 2rem;
   padding-left: 8rem;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #f3f3f3;
   position: relative;
   font-size: 1.7rem;
@@ -79,7 +92,7 @@ const Pre = styled.pre`
   margin: 3rem 0;
   padding: 1rem 2rem 1rem 0rem;
   overflow: scroll;
-  border-radius: 4px;
+  border-radius: 6px;
 `
 
 const Line = styled.div`
