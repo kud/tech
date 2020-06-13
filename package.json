@@ -17,7 +17,7 @@
     "babel-plugin-emotion": "10.0.33",
     "dayjs": "1.8.28",
     "fast-glob": "3.2.2",
-    "gh-pages": "2.2.0",
+    "gh-pages": "3.0.0",
     "hint.css": "2.6.0",
     "next": "9.4.4",
     "next-compose-plugins": "2.2.0",
