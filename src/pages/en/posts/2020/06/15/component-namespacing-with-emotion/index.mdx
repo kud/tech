@@ -1,0 +1,185 @@
+export const meta = {
+  title: "Component namespacing with Emotion",
+  description: "(or styled-components or whatever CSS-in-JS)",
+  cover: require("./cover.jpg"),
+}
+
+Naming, naming, naming. Oh god. One of the hardest part in computer science. Fortunately, we've got some conventions about that which help us not to overthink every time we must name something.
+
+For instance, there's one: [BEM](http://getbem.com/).
+
+## BEM
+
+I'm a BEM lover for ages. The first time I saw this method, I understood quickly it was a really great way to avoid conflict between elements and - <abbr title="In My Opinion">IMO</abbr> - to remove all the painful part of CSS. (You've got a good article about this on [css-tricks.com](https://css-tricks.com/bem-101/)).
+
+Before using [CSS Modules](https://github.com/css-modules/css-modules) or [styled-components](https://styled-components.com/) or [Emotion](https://emotion.sh/), my stylesheet code was something like that:
+
+```css
+.MyBlock {
+  [...]
+}
+
+.MyBlock-myElement {
+  [...]
+}
+
+.MyBlock-myElement--myModifier {
+  [...]
+}
+```
+
+It's not exactly [the ✌️ official ✌️ convention](http://getbem.com/naming/) ([you've got different ones in fact](https://en.bem.info/methodology/naming-convention/)) but for some reasons like readability or double-clicking on name to select, this was the convention I used and it worked really well!
+
+But this is a different time and now I mostly use Emotion to create my styled components.
+
+## Emotion
+
+So let's begin about how to namespace your components.
+
+Here is a basic example:
+
+```jsx
+import styled from "@emotion/styled"
+
+const MyStyledComponent = styled.div``
+```
+
+Alright, now let's imagine now we've got two components: one parent, one child.
+
+The classic way could be:
+
+```jsx
+const Parent = styled.div``
+
+const Child = styled.div``
+```
+
+We want now to adjust `Child` depending on triggering a hover on `Parent`.
+
+We can write this:
+
+```jsx
+const Parent = styled.div`
+  &:hover ${Child} {
+    color: red;
+  }
+`
+
+const Child = styled.div``
+```
+
+Great.
+
+But as a BEM fan, I rather prefer to write my code like this:
+
+```jsx
+const MyBlock = styled.div`
+  &:hover ${MyBlockMyElement} {
+    color: red;
+  }
+`
+
+const MyBlockMyElement = styled.div``
+```
+
+This is cool because you know that your element depends on a block. But when you want to export, you'll get something like:
+
+```jsx
+// my-component.js
+export const MyBlock = styled.div`
+  &:hover ${MyBlockMyElement} {
+    color: red;
+  }
+`
+
+export const MyBlockMyElement = styled.div``
+```
+
+```jsx
+// app.js
+import { MyBlock, MyBlockMyElement } from "./my-component"
+```
+
+Nope. It's unpleasant to read now.
+
+A solution could be to create a namespace by using objects.
+
+```jsx
+// my-component.js
+const MyComponent = styled.div``
+
+MyComponent.MyElement = styled.div``
+
+export default MyBlock
+```
+
+which is great because you can do:
+
+```jsx
+// app.js
+import MyComponent from "./my-component"
+
+const MyApp = () => (
+  <MyComponent>
+    <MyComponent.MyElement />
+  </MyComponent>
+)
+```
+
+Elegant, no?
+
+This is my favourite way to write namespaced components. 🙌🏻
+
+## Oh noes!
+
+But, there's a _but_. 😬
+
+Did you remember when we added a `:hover` trigger? Let's try with this convention:
+
+```jsx
+// my-component.js
+const MyComponent = styled.div`
+  &:hover ${MyComponent.MyElement} {
+    color: red;
+  }
+`
+
+MyComponent.MyElement = styled.div``
+
+export default MyBlock
+```
+
+By doing this, you'll get this error:
+
+```
+🙅‍♂️ can't access property "MyElement", MyComponent is undefined
+```
+
+Well, it's quite obvious as at this moment, `MyComponent` doesn't exist yet.
+
+_🗣 So you told us to use namespacing via objects but it seems that it creates some issues now!._
+
+Yes, that's right but I still find that this convention is elegant and I want to go deeper with it. So how could we do?
+
+## The trick
+
+Well, after looking into the github issues of emotion, I found a solution, it's just to create an anonymous function which returns the child!
+
+```jsx
+// my-component.js
+const MyComponent = styled.div`
+  &:hover ${() => MyComponent.MyElement} {
+    color: red;
+  }
+`
+
+MyComponent.MyElement = styled.div``
+
+export default MyBlock
+```
+
+Boom! 💥
+
+Be careful however to use the [babel-plugin-emotion](https://emotion.sh/docs/styled#targeting-another-emotion-component) to do that.
+
+Bye bye and see you soon!
