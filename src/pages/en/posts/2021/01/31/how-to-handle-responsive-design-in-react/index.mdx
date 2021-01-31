@@ -1,0 +1,134 @@
+export const meta = {
+  title: "How to handle responsive design in React",
+  description: "Also works with Next.js",
+  cover: require("./cover.jpg"),
+}
+
+Hello and welcome in 2021 🥳. I didn't write for ages, glad to see you again.
+
+Okay, alright. Today, let's talk about [Responsive Web Design](https://web.dev/responsive-web-design-basics/) (also known as _rwd_) in a [React](https://reactjs.org/) context. (This also works with [Next.js](https://nextjs.org/)). As you may say, the most obvious way could be to use `@media` in a CSS file, which makes totally sense as it's how it works.
+
+But I'm not here for that. I'm here to show you different ways to handle Responsive Design which can be really helpful when you want to change more than only the CSS.
+
+For that, we will use [contra/react-responsive](https://github.com/contra/react-responsive) which is really good. You have multiple libs to handle our subject but this one also works with <abbr title="Server-Side Rendering">SSR</abbr> (that's why I find it interesting for [Next.js](https://nextjs.org/)) and has a `onChange` trigger which can be useful.
+
+So, stop talking, let's see my solution.
+
+### Installation
+
+```shell
+$ npm install react-responsive
+```
+
+### Reference file
+
+Let's create our main file. This is where you set all your responsive cases.
+
+```js
+// ./media-queries.js
+
+const MQ = {
+  "--tablet": "(max-width: 1279px)",
+  "--desktop": "(min-width: 1280px)",
+}
+
+export default MQ
+```
+
+It will be our reference.
+
+### Hooks
+
+Time to create our custom hooks.
+
+```js
+// ./src/hooks/media-queries.js
+
+import { useMediaQuery } from "react-responsive"
+
+import MQ from "media-queries"
+
+export const useDesktopMediaQuery = () =>
+  useMediaQuery({ query: MQ["--desktop"] })
+
+export const useTabletMediaQuery = () =>
+  useMediaQuery({ query: MQ["--tablet"] })
+```
+
+### Components
+
+Now, our components.
+
+```js
+// ./src/components/MediaQueries/index.js
+
+import { useDesktopMediaQuery, useTabletMediaQuery } from "hooks/media-queries"
+
+export const Desktop = ({ children }) => {
+  const isDesktop = useDesktopMediaQuery()
+
+  return isDesktop ? children : null
+}
+
+export const Tablet = ({ children }) => {
+  const isTablet = useTabletMediaQuery()
+
+  return isTablet ? children : null
+}
+```
+
+### Usage
+
+That's great! As you can see, now we've got our references in one file, also some hooks if needed, and the components if you think it's easier to read. I assume here you've got [@emotion/styled](https://emotion.sh/docs/styled) or [styled-components](https://styled-components.com/) for a certain part of this code.
+
+Let's see how we can use it.
+
+```js
+// ./src/pages/index.js
+
+import MQ from "media-queries"
+
+import { useDesktopMediaQuery, useTabletMediaQuery } from "hooks/media-queries"
+
+import { Desktop, Tablet } from "components/MediaQueries"
+
+const Root = styled.div`
+  {/* direct way */}
+  @media ${MQ["--desktop"]} {
+    {...}
+  }
+
+  @media ${MQ["--tablet"]} {
+    {...}
+  }
+`
+
+const IndexPage = () => {
+  // hook way
+  const isDesktop = useDesktopMediaQuery()
+  const isTablet = useTabletMediaQuery()
+
+  if (isDesktop) {
+    alert("Wow! Nice display screen!")
+  }
+
+  return (
+    <Root>
+      {/* component way */}
+      <Desktop>
+        <LargeMap />
+      </Desktop>
+
+      <Tablet>
+        <BurgerIcon />
+      </Tablet>
+
+      <Button fullWidth={isTablet}>{`My button`}</Button>
+    </Root>
+  )
+}
+```
+
+This is perfect! Now, You have different ways depending on your context (jsx, style, etc), really easy to read.
+
+Enjoy.
