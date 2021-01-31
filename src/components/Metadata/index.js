@@ -6,7 +6,9 @@ const Metadata = ({ lang, title, cover, description }) => {
     ? `${title} | ${process.env.metadata.title}`
     : process.env.metadata.title
 
-  const _cover = cover ? cover : process.env.avatar.mediumUrl
+  const _cover = cover
+    ? `http://diary.kud.io${cover}`
+    : process.env.avatar.mediumUrl
 
   const _description = description
     ? description
