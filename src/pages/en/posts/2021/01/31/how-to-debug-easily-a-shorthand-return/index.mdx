@@ -1,0 +1,55 @@
+export const meta = {
+  title: "How to easily debug a shorthand return",
+  description: "like a map().",
+  cover: require("./cover.jpg"),
+}
+
+See this code:
+
+```js
+const arr = [
+  {
+    title: "ha",
+    another: "thing",
+  },
+  {
+    title: "oh",
+    another: "stuff",
+  },
+  {
+    title: "hey",
+    another: "person",
+  },
+]
+
+const MyComponent = () => (
+  <div>
+    {arr.map((item) => (
+      <div>{item.title}</div>
+    ))}
+  </div>
+)
+```
+
+As you can see, you've got here a shorthand return for your `Array.map()`.
+
+But for a reason you want to debug `item` without uncoding this shorthand and code a classic return like `arr.map(item => { return ... })`.
+
+This is my solution:
+
+```diff
+const MyComponent = () => (
+  <div>
+    {arr.map((item) => (
++     console.log(item),
+      <div>{item.title}</div>
+    ))}
+  </div>
+)
+```
+
+Yyyyyes.
+
+This can be possible because `console.log()` returns `undefined` and a shorthand returns the first value not undefined.
+
+Nice trick, isn't it?
