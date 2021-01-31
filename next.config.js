@@ -1,5 +1,5 @@
 const path = require("path")
-const merge = require("webpack-merge")
+const { merge } = require("webpack-merge")
 const images = require("remark-images")
 const emoji = require("remark-emoji")
 const withPlugins = require("next-compose-plugins")
