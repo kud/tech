@@ -6,9 +6,9 @@ export const meta = {
 
 As you may know, I now use [Next.js](https://nextjs.org/) to compile my website. It allows me to write my layout and pages in [React](https://reactjs.org/) and still have the benefit to use static files in the end.
 
-For my posts, [MDX](https://mdxjs.com/) was my choice: it's [Markdown](https://daringfireball.net/projects/markdown/syntax) but with [JSX](https://facebook.github.io/jsx/) capacity, perfect when you want to display a live version of your code, or to use custom components to inject into your Markdown documents.
+For my posts, [MDX](https://mdxjs.com/) was my choice: it is [Markdown](https://daringfireball.net/projects/markdown/syntax) but with [JSX](https://facebook.github.io/jsx/) capacity, perfect when you want to display a live version of your code, or to use custom components to inject into your Markdown documents.
 
-Okay, now that you know more about my stack, let's talk about MDX. If you read the documentation of MDX, the extension of the files used is `.mdx` by default. It's a good idea to make the difference between markdown documents and mdx documents.
+Okay, now that you know more about my stack, let's talk about MDX. If you read the documentation of MDX, the extension of the files used is `.mdx` by default. It is a good idea to make the difference between markdown documents and mdx documents.
 
 However, it provokes some issues on different topics.
 
@@ -18,11 +18,11 @@ First of all, as you can read on [Wikipedia](https://en.wikipedia.org/wiki/.MDX)
 
 > Media Data Extended files are a binary [file format](https://en.wikipedia.org/wiki/File_format) for storing [3D models](https://en.wikipedia.org/wiki/3D_model), engineered and used by [Blizzard Entertainment](https://en.wikipedia.org/wiki/Blizzard_Entertainment) in its games.
 
-Okay fine, but what's the problem? The problem is some editors like [Sublime Text](https://www.sublimetext.com/) (and plugins) could ignore them by default as [they think it's a binary](https://github.com/SublimeText/AFileIcon/blob/92ca2285588873f6a1aadaf186a9c4f7b23e188f/.sublime/Preferences.sublime-settings#L58) so you won't be able to see them in the sidebar or whatever.
+Okay fine, but what's the problem? The problem is some editors like [Sublime Text](https://www.sublimetext.com/) (and plugins) could ignore them by default as [they think it is a binary](https://github.com/SublimeText/AFileIcon/blob/92ca2285588873f6a1aadaf186a9c4f7b23e188f/.sublime/Preferences.sublime-settings#L58) so you won't be able to see them in the sidebar or whatever.
 
 ### Impossible to open on Markdown Editors
 
-Second issue, it's not recognised yet by different Markdown editors. Indeed, they only display `.md` files.
+Second issue, it is not recognised yet by different Markdown editors. Indeed, they only display `.md` files.
 
 ### _So what's the solution?_
 
@@ -75,7 +75,7 @@ autoload zmv
 
 Okay we're good, our files are now with the good extension and can be easily opened via different editors. However, we still need to change the way Next.js compile our files.
 
-It's quite easy, no worries, you simply need to go to `next.config.js` and specify the string of the extension like this:
+It is quite easy, no worries, you simply need to go to `next.config.js` and specify the string of the extension like this:
 
 ```diff
 // next.config.js

@@ -28,7 +28,7 @@ Before using [CSS Modules](https://github.com/css-modules/css-modules) or [style
 }
 ```
 
-It's not exactly [the ✌️ official ✌️ convention](http://getbem.com/naming/) ([you've got different ones in fact](https://en.bem.info/methodology/naming-convention/)) but for some reasons like readability or double-clicking on name to select, this was the convention I used and it worked really well!
+It is not exactly [the ✌️ official ✌️ convention](http://getbem.com/naming/) ([you've got different ones in fact](https://en.bem.info/methodology/naming-convention/)) but for some reasons like readability or double-clicking on name to select, this was the convention I used and it worked really well!
 
 But this is a different time and now I mostly use Emotion to create my styled components.
 
@@ -100,7 +100,7 @@ export const MyBlockMyElement = styled.div``
 import { MyBlock, MyBlockMyElement } from "./my-component"
 ```
 
-Nope. It's unpleasant to read now.
+Nope. It is unpleasant to read now.
 
 A solution could be to create a namespace by using objects.
 
@@ -155,7 +155,7 @@ By doing this, you'll get this error:
 🙅‍♂️ can't access property "MyElement", MyComponent is undefined
 ```
 
-Well, it's quite obvious as at this moment, `MyComponent` doesn't exist yet.
+Well, it is quite obvious as at this moment, `MyComponent` doesn't exist yet.
 
 _🗣 So you told us to use namespacing via objects but it seems that it creates some issues now!._
 
@@ -163,7 +163,7 @@ Yes, that's right but I still find that this convention is elegant and I want to
 
 ## The trick
 
-Well, after looking into the github issues of emotion, I found a solution, it's just to create an anonymous function which returns the child!
+Well, after looking into the github issues of emotion, I found a solution, it is just to create an anonymous function which returns the child!
 
 ```jsx
 // my-component.js

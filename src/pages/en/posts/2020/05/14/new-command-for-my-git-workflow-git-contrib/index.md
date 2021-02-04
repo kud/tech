@@ -15,7 +15,7 @@ Indeed, when you fork, you could have two ideas behind:
 
 This is the second case we're interested.
 
-If you fork only because you want to contribute, in my opinion, you should notify any visitor that it's not a project they can use.
+If you fork only because you want to contribute, in my opinion, you should notify any visitor that it is not a project they can use.
 
 And as developer, you won't care so much about your `master` branch, you won't update it, you won't use it to make your PR, you only will only submit feature branches, one by one.
 
@@ -31,7 +31,7 @@ First of all, we fork a project via [this great cli command](https://github.com/
 gh repo fork $1 --clone
 ```
 
-Fine. Now we want to create the `master` branch as an orphan one where we notify the user it's not a real project, just a contribution.
+Fine. Now we want to create the `master` branch as an orphan one where we notify the user it is not a real project, just a contribution.
 
 ```shell
 #! /usr/bin/env zsh
@@ -58,7 +58,7 @@ This is what we've got:
 
 <img src={require("./fork-project.png")} />
 
-Now if anyone goes to your fork project, they know it's not an extended one, just your base to contribute.
+Now if anyone goes to your fork project, they know it is not an extended one, just your base to contribute.
 
 The final script. We just need a way to get to name of the project to open it in the shell.
 
