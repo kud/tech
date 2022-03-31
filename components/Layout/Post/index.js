@@ -61,6 +61,7 @@ const Cover = styled.div`
   overflow: hidden;
   cursor: pointer;
   user-select: none;
+  background: #efefef;
 
   ${({ fullscreen }) =>
     fullscreen &&
