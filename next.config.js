@@ -31,7 +31,12 @@ module.exports = withPlugins([], {
   },
 
   images: {
-    domains: ["www.gravatar.com"],
+    domains: [
+      "www.gravatar.com",
+      "s3.us-west-2.amazonaws.com",
+      "images.unsplash.com",
+      "media.giphy.com",
+    ],
   },
 
   async redirects() {
