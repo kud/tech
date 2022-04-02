@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/react"
+import NextImage from "next/image"
 
 import Metadata from "components/Metadata"
 import Footer from "components/Footer"
@@ -21,7 +22,7 @@ const Cover = styled.div`
   background: #efefef;
 `
 
-const CoverImage = styled.img`
+const CoverImage = styled(NextImage)`
   display: block;
   object-fit: cover;
   object-position: center 37%;
@@ -102,7 +103,7 @@ const ImageBox = styled.div`
   border-right: 1px solid #e3e3e2;
 `
 
-const Image = styled.img`
+const Image = styled(NextImage)`
   display: block;
   object-fit: cover;
   object-position: center 50%;
@@ -155,7 +156,7 @@ const PostsLayout = ({ posts }) => {
 
       <Layout>
         <Cover>
-          <CoverImage src="/images/background.jpg" />
+          <CoverImage src="/images/background.jpg" layout="fill" />
         </Cover>
 
         <Main>
@@ -179,6 +180,8 @@ const PostsLayout = ({ posts }) => {
                             ? cover
                             : "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=640"
                         }
+                        width={200}
+                        height={200}
                       />
                     </ImageBox>
 
