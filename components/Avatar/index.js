@@ -14,6 +14,7 @@ const Root = styled.div`
   overflow: hidden;
   cursor: pointer;
   transition: transform 150ms ease;
+  background: #3d4e4a;
 
   &:hover {
     transform: translateY(-5px);

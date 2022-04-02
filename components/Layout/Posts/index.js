@@ -18,12 +18,12 @@ const Cover = styled.div`
   z-index: -1;
   height: ${coverHeight};
   overflow: hidden;
+  background: #efefef;
 `
 
 const CoverImage = styled.img`
   display: block;
   object-fit: cover;
-  /*  object-position: center 50%;*/
   object-position: center 37%;
   width: 100%;
   height: 100%;
