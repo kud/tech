@@ -14,6 +14,20 @@ module.exports = withPlugins([], {
     avatar: {
       url: `https://www.gravatar.com/avatar/e6eaeaa6da69e804c27c2d4cd55107e0`,
     },
+    footer: [
+      {
+        url: "http://kud.io",
+        title: "La Maison",
+      },
+      // {
+      //   url: "http://instagram.kud.io",
+      //   title: "Le Instagram",
+      // },
+      {
+        url: "http://twitter.kud.io",
+        title: "Le Twitter",
+      },
+    ],
   },
 
   images: {

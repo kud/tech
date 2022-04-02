@@ -1,13 +1,10 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { useRouter } from "next/router"
 
 import NativeLink from "components/Link"
 
-const Root = styled.footer`
-  margin: 0;
-  text-align: center;
-  border-top: 1px solid #eee;
+const Link = styled(NativeLink)`
+  color: #8f8f8f;
 `
 
 const List = styled.ul`
@@ -41,24 +38,13 @@ const ListItem = styled.li`
   }
 `
 
-const Link = styled(NativeLink)`
-  color: #8f8f8f;
+const Root = styled.footer`
+  margin: 0;
+  text-align: center;
+  border-top: 1px solid #eee;
 `
 
-const linkList = [
-  {
-    url: "http://kud.io",
-    title: "La Maison",
-  },
-  {
-    url: "http://instagram.kud.io",
-    title: "Le Instagram",
-  },
-  {
-    url: "http://twitter.kud.io",
-    title: "Le Twitter",
-  },
-]
+const linkList = process.env.footer
 
 const Footer = () => (
   <Root>

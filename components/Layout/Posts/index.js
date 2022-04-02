@@ -8,13 +8,15 @@ import Avatar from "components/Avatar"
 
 import Layout from "../index.js"
 
+const coverHeight = "15vh"
+
 const Cover = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: -1;
-  height: 30vh;
+  height: ${coverHeight};
   overflow: hidden;
 `
 
@@ -22,14 +24,14 @@ const CoverImage = styled.img`
   display: block;
   object-fit: cover;
   /*  object-position: center 50%;*/
-  object-position: center 35%;
+  object-position: center 37%;
   width: 100%;
   height: 100%;
 `
 
 const Main = styled.main`
   background-color: #ffffff;
-  margin-top: 30vh;
+  margin-top: ${coverHeight};
   position: relative;
   padding-top: 30px;
   font-size: 1.8rem;
@@ -68,16 +70,14 @@ const ListItem = styled.li`
   align-items: stretch;
   margin-bottom: 1rem;
   position: relative;
-  border: 1px solid #e3e3e2;
-  border-radius: 6px;
+  border-bottom: 1px solid #e3e3e2;
+  padding: 2rem;
   overflow: hidden;
   transition: all 100ms ease;
+  font-family: "Libre Baskerville", serif;
 
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 11px;
-    /*    transform: translateX(-1rem);*/
-    transform: scale(1.01);
-    /*    border-color: #a4a4a1;*/
+    background: #f2f2f2;
   }
 
   ${({ redirect }) =>
@@ -85,6 +85,10 @@ const ListItem = styled.li`
     css`
       border: 1px dashed #e3e3e2;
     `}
+
+  &:last-child {
+    border-bottom-color: transparent;
+  }
 `
 
 const ImageBox = styled.div`
@@ -92,8 +96,8 @@ const ImageBox = styled.div`
   flex-shrink: 0;
   /*  flex-basis: auto;*/
   overflow: hidden;
-  min-height: 100px;
   width: 100px;
+  height: 100px;
   background-color: #faf3f5;
   border-right: 1px solid #e3e3e2;
 `
@@ -127,6 +131,7 @@ const Time = styled.time`
   display: block;
   text-align: right;
   margin-top: 1rem;
+  font-family: "Roboto Mono", serif;
 `
 
 const Link = styled.a`
@@ -156,7 +161,7 @@ const PostsLayout = ({ posts }) => {
         <Main>
           <Wrapper>
             <AvatarBox>
-              <Avatar size={"100px"} />
+              <Avatar size="100px" />
             </AvatarBox>
 
             <Heading>{process.env.metadata.title}</Heading>
