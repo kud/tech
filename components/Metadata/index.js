@@ -3,12 +3,12 @@ import Head from "next/head"
 
 import getAvatarUrl from "lib/get-avatar-url"
 
-const Metadata = ({ lang, title, cover, description }) => {
+const Metadata = ({ title, cover, description }) => {
   const _title = title
     ? `${title} | ${process.env.metadata.title}`
     : process.env.metadata.title
 
-  const _cover = cover ? `http://diary.kud.io${cover}` : getAvatarUrl(1024)
+  const _cover = cover ? cover : getAvatarUrl(1024)
 
   const _description = description
     ? description
@@ -42,7 +42,7 @@ const Metadata = ({ lang, title, cover, description }) => {
 }
 
 Metadata.defaultProps = {
-  lang: `en`,
+  lang: "en",
 }
 
 export default Metadata
