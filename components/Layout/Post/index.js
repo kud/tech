@@ -186,6 +186,11 @@ const ContentBody = styled.div`
     height: 0;
     border-bottom: 1px dashed #eee;
   }
+
+  pre,
+  code {
+    font-family: "Roboto Mono", monospace;
+  }
 `
 
 const PostLayout = ({

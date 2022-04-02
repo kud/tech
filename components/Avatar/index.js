@@ -5,8 +5,8 @@ import Image from "next/image"
 import getAvatarUrl from "lib/get-avatar-url"
 
 const Root = styled.div`
-  width: ${({ volume }) => volume};
-  height: ${({ volume }) => volume};
+  width: ${({ size }) => size};
+  height: ${({ size }) => size};
   display: block;
   border-radius: 50%;
   border: 3px solid #fff;
@@ -31,7 +31,7 @@ const Avatar = ({ size = "200px" }) => {
   const imgSize = !isNaN(intSize) ? intSize * 2.5 : 500
 
   return (
-    <Root volume={size}>
+    <Root size={size}>
       <a href="https://kud.io">
         <Image
           src={getAvatarUrl(imgSize)}

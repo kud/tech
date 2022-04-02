@@ -116,18 +116,17 @@ const LineContent = styled.span`
   padding-right: 2rem;
 `
 
+const Video = styled.video`
+  width: 100%;
+  border-radius: 6px;
+`
+
 const components = {
   a: ({ children, ...rest }) => {
     const { href } = rest
 
     if (href.match(".mp4")) {
-      return (
-        <video
-          style={{ width: "100%", borderRadius: "6px" }}
-          controls
-          src={href}
-        ></video>
-      )
+      return <Video controls src={href}></Video>
     }
 
     return <A {...rest}>{children}</A>
