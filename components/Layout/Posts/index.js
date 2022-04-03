@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 import NextImage from "next/image"
+import NextLink from "next/link"
 
 import Metadata from "components/Metadata"
 import Footer from "components/Footer"
@@ -205,7 +206,9 @@ const PostsLayout = ({ posts }) => {
                         redirect
                       />
                     ) : (
-                      <Link href={`/posts/${slug}`} />
+                      <NextLink href={`/posts/${slug}`} passHref>
+                        <Link />
+                      </NextLink>
                     )}
                   </ListItem>
                 ),

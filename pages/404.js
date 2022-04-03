@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { keyframes } from "@emotion/react"
+import NextLink from "next/link"
 
 const Link = styled.a`
   text-decoration: none;
@@ -53,9 +54,11 @@ const Root = styled.div`
 
 const NotFoundPage = () => (
   <Root>
-    <Link href="/">
-      <a title="404">{"🤭"}</a>
-    </Link>
+    <NextLink href="/" passHref>
+      <Link href="/">
+        <a title="404">{"🤭"}</a>
+      </Link>
+    </NextLink>
   </Root>
 )
 

@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa"
 import dayjs from "dayjs"
 import relativeTime from "dayjs/plugin/relativeTime"
 dayjs.extend(relativeTime)
+import NextLink from "next/link"
 
 import getReadingTime from "lib/get-reading-time"
 
@@ -211,9 +212,11 @@ const PostLayout = ({
 
       <Layout>
         <Header>
-          <Link href={homeUrl}>
-            <HomeIcon />
-          </Link>
+          <NextLink href={homeUrl} passHref>
+            <Link>
+              <HomeIcon />
+            </Link>
+          </NextLink>
 
           <Name>{process.env.metadata.title}</Name>
         </Header>
